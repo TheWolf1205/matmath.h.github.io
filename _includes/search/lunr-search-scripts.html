@@ -1,9 +1,9 @@
-{% assign lang = site.locale | slice: 0,2 | default: "en" %}
+{% assign lang = site.locale | slice: 0,2 | default: "es" %}
 {% case lang %}
-{% when "gr" %}
-  {% assign lang = "gr" %}
+{% when "es" %}
+  {% assign lang = "es" %}
 {% else %}
-  {% assign lang = "en" %}
+  {% assign lang = "es" %}
 {% endcase %}
 <script src="{{ '/assets/js/lunr/lunr.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/lunr/lunr-store.js' | relative_url }}"></script>
