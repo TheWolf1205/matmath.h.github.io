@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-21T01:22:15-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MatMath.h</title><subtitle>Posts about mathemathics</subtitle><author><name>MatMath.h</name></author><entry><title type="html">División por tentativa</title><link href="http://localhost:4000/post-primero/" rel="alternate" type="text/html" title="División por tentativa" /><published>2022-01-24T00:00:00-05:00</published><updated>2022-01-24T00:00:00-05:00</updated><id>http://localhost:4000/post-primero</id><content type="html" xml:base="http://localhost:4000/post-primero/">&lt;center&gt; &lt;img src=&quot;/assets/images/division-por-tentativa/euler.jpeg&quot; /&gt; &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Un número primo \(n\) es un entero que solo es divisible por \(2\) números distintos, siendo estos \(1\) y \(n\), entonces, si queremos verificar si un número \(n\) es primo, debemos comprobar que no tiene algún factor primo \(k\) tal que \(1&amp;lt;k&amp;lt;n\), lo cual puede ser una tarea tediosa y larga. Así, a continuación presentaremos un teorema que nos ayudará a ahorrar tiempo a la hora de verificar si un número \(n\) es primo, siendo este el mismo que usó &lt;strong&gt;Euler&lt;/strong&gt; en su demostración.&lt;/p&gt;
+
+&lt;h2 id=&quot;teorema&quot;&gt;Teorema&lt;/h2&gt;
+&lt;p&gt;Sea \(n\in\mathbb{Z}\), si \(n\) es compuesto, entonces \(n\) tiene un factor primo \(k\) menor o igual a \(\sqrt{n}\).&lt;/p&gt;
+
+&lt;h2 id=&quot;demostración&quot;&gt;Demostración&lt;/h2&gt;
+
+&lt;p&gt;#Aquí se escribe la demo&lt;/p&gt;
+
+&lt;p&gt;Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si \(n\) no tiene un factor primo \(k\) menor o igual a \(\sqrt{n}\), entonces \(n\) es un número primo.&lt;/p&gt;
+
+&lt;p&gt;Algo interesante que podemos hacer es construir un programa que verifique la primalidad de un número dividiendolo entre los \(n\) números menores que él y verificando el resultado, claramente este algoritmo no será muy eficiente, pero lo bueno es que es sencillo de programar y nos puede arrojar una gran diferencia de tiempo empleado si usamos o no el teorema anterior.&lt;/p&gt;
+
+&lt;p&gt;#Insertr imagenes con tiempo de cálculo de los códigos XD&lt;/p&gt;
+
+&lt;p&gt;La imagen de la izquierda muestra el tiempo empleado por el programa para verificar la primalidad de \(2.147.483.647\) usando el teorema y la de la derecha no la utiliza.&lt;/p&gt;
+
+&lt;p&gt;#Algoritmo XD&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Euler&lt;/strong&gt; Utilizó este resultado para verificar que el número \(2.147.483.647\) es primo y mejoró el método de &lt;strong&gt;Cataldi&lt;/strong&gt;, por lo que solo tuvo que verificar \(372\) divisiones.&lt;/p&gt;
+
+&lt;p&gt;Curiosamente \(2.147.483.647 = 2^{(2^{5}-1)}-1\) lo que lo convierte en un primo doble de &lt;strong&gt;Mersenne&lt;/strong&gt;, además a continuación mencionaremos otro par de curiosidades sobre este número.&lt;/p&gt;
+
+&lt;p&gt;Durante diciembre de &lt;strong&gt;2014&lt;/strong&gt; cuando el vídeo que hizo famoso a &lt;strong&gt;PSY, “Gangnam Style”&lt;/strong&gt;, llegó a las \(2.147.483.647\) views y el sistema de \(32-bit\) de la web de vídeos no pudo continuar contándolas porque simplemente había llegado a su máximo.&lt;/p&gt;
+
+&lt;p&gt;El 4 de junio de &lt;strong&gt;1996&lt;/strong&gt; despegó el primer vuelo del cohete &lt;strong&gt;Ariane 5&lt;/strong&gt; manejado por la Agencia Espacial Europea. Dentro de él no había una tripulación pero sí estaba cargado con cuatro satélites científicos muy costosos. El vuelo explotó apenas 39 segundos después de despegar, perdiendo alrededor de &lt;strong&gt;370 millones de dólares&lt;/strong&gt;. Después de un poco de investigación se dieron cuenta que el problema no era más que un bug de software que involucraba el número \(2.147.483.647\). Aparentemente, Ariane 5 necesitaba una aceleración horizontal mayor que los modelos previos porque su trayecto era distinto, y esto hizo que todos los computadores que controlaban el auto-piloto se confundieran y que comenzara una secuencia para auto-destruirse.&lt;/p&gt;</content><author><name>MatMath.h</name></author><category term="ponga categoria" /><category term="ponga etiqueta o tag" /><summary type="html">Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es un numero primo y le mando una carta a Daniel Bernoulli informandole de su prueba, ¿Cómo fue que lo hizo con las limitaciones de su epoca para realizar cálculos?</summary></entry></feed>
