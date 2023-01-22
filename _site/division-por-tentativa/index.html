@@ -1,0 +1,461 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>División por tentativa - MatMath.h</title>
+<meta name="description" content="Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es un numero primo y le mando una carta a Daniel Bernoulli informandole de su prueba, ¿Cómo fue que lo hizo con las limitaciones de su epoca para realizar cálculos?">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="MatMath.h">
+<meta property="og:title" content="División por tentativa">
+<meta property="og:url" content="http://localhost:4000/division-por-tentativa/">
+
+
+  <meta property="og:description" content="Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es un numero primo y le mando una carta a Daniel Bernoulli informandole de su prueba, ¿Cómo fue que lo hizo con las limitaciones de su epoca para realizar cálculos?">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/division-por-tentativa/euler.jpeg">
+
+
+
+
+
+  <meta property="article:published_time" content="2022-01-24T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/division-por-tentativa/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "MatMath.h",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MatMath.h Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/masthead.png" alt=""></a>
+                
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Inicio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Post</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categorias</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >Acerca de</a>
+            </li><li class="masthead__menu-item">
+              <a href="/buscador/" >Buscador</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    
+
+    <div class="initial-content">
+      <script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">División por tentativa</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/avatar.png" alt="MatMath.h" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">MatMath.h</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Nosotros somos estudiantes de matemáticas 🦉.<br>Post divulgativos de matemáticas, particularmente de teoría de números, álgebra y temas relacionados.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Colombia</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://instagram.com/matmath.h" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="División por tentativa">
+    <meta itemprop="description" content="Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es un numero primo y le mando una carta a Daniel Bernoulli informandole de su prueba, ¿Cómo fue que lo hizo con las limitaciones de su epoca para realizar cálculos?">
+    <meta itemprop="datePublished" content="January 24, 2022">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">División por tentativa
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p class="page__meta">
+          
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-01-24T00:00:00-05:00">January 24, 2022 </time>&emsp;
+          
+          
+        </p>
+        <center> <img src="/assets/images/division-por-tentativa/euler.jpeg" /> </center>
+<p><br /></p>
+
+<p>Un número primo \(n\) es un entero que solo es divisible por \(2\) números distintos, siendo estos \(1\) y \(n\), entonces, si queremos verificar si un número \(n\) es primo, debemos comprobar que no tiene algún factor primo \(k\) tal que \(1&lt;k&lt;n\), lo cual puede ser una tarea tediosa y larga. Así, a continuación presentaremos un teorema que nos ayudará a ahorrar tiempo a la hora de verificar si un número \(n\) es primo, siendo este el mismo que usó <strong>Euler</strong> en su demostración.</p>
+
+<h2 id="teorema">Teorema</h2>
+<p>Sea \(n\in\mathbb{Z}\), si \(n\) es compuesto, entonces \(n\) tiene un factor primo \(k\) menor o igual a \(\sqrt{n}\).</p>
+
+<h2 id="demostración">Demostración</h2>
+
+<p>#Aquí se escribe la demo</p>
+
+<p>Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si \(n\) no tiene un factor primo \(k\) menor o igual a \(\sqrt{n}\), entonces \(n\) es un número primo.</p>
+
+<p>Algo interesante que podemos hacer es construir un programa que verifique la primalidad de un número dividiendolo entre los \(n\) números menores que él y verificando el resultado, claramente este algoritmo no será muy eficiente, pero lo bueno es que es sencillo de programar y nos puede arrojar una gran diferencia de tiempo empleado si usamos o no el teorema anterior.</p>
+
+<p>#Insertr imagenes con tiempo de cálculo de los códigos XD</p>
+
+<p>La imagen de la izquierda muestra el tiempo empleado por el programa para verificar la primalidad de \(2.147.483.647\) usando el teorema y la de la derecha no la utiliza.</p>
+
+<p>#Algoritmo XD</p>
+
+<p><strong>Euler</strong> Utilizó este resultado para verificar que el número \(2.147.483.647\) es primo y mejoró el método de <strong>Cataldi</strong>, por lo que solo tuvo que verificar \(372\) divisiones.</p>
+
+<p>Curiosamente \(2.147.483.647 = 2^{(2^{5}-1)}-1\) lo que lo convierte en un primo doble de <strong>Mersenne</strong>, además a continuación mencionaremos otro par de curiosidades sobre este número.</p>
+
+<p>Durante diciembre de <strong>2014</strong> cuando el vídeo que hizo famoso a <strong>PSY, “Gangnam Style”</strong>, llegó a las \(2.147.483.647\) views y el sistema de \(32-bit\) de la web de vídeos no pudo continuar contándolas porque simplemente había llegado a su máximo.</p>
+
+<p>El 4 de junio de <strong>1996</strong> despegó el primer vuelo del cohete <strong>Ariane 5</strong> manejado por la Agencia Espacial Europea. Dentro de él no había una tripulación pero sí estaba cargado con cuatro satélites científicos muy costosos. El vuelo explotó apenas 39 segundos después de despegar, perdiendo alrededor de <strong>370 millones de dólares</strong>. Después de un poco de investigación se dieron cuenta que el problema no era más que un bug de software que involucraba el número \(2.147.483.647\). Aparentemente, Ariane 5 necesitaba una aceleración horizontal mayor que los modelos previos porque su trayecto era distinto, y esto hizo que todos los computadores que controlaban el auto-piloto se confundieran y que comenzara una secuencia para auto-destruirse.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#euler" class="page__taxonomy-item" rel="tag">Euler</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#numeros-de-mersenne" class="page__taxonomy-item" rel="tag">Numeros de Mersenne</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#numeros-primos" class="page__taxonomy-item" rel="tag">Numeros Primos</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#teor%C3%ADa-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría de Números</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#%C3%A1lgebra-computacional" class="page__taxonomy-item" rel="tag">Álgebra Computacional</a>
+    
+    </span>
+  </p>
+
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-01-24T00:00:00-05:00">January 24, 2022</time></p>
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 MatMath.h</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

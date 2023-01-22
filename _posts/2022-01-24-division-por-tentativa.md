@@ -9,9 +9,12 @@ header:
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
-  - ponga categoria
+  - Teoría de Números
+  - Álgebra Computacional
 tags:  
-  - ponga etiqueta o tag
+  - Numeros de Mersenne
+  - Numeros Primos
+  - Euler
 ---
 
 <center> <img src="/assets/images/division-por-tentativa/euler.jpeg"> </center>
