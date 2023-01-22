@@ -7,7 +7,7 @@ classes: wide
 header:
   teaser: /assets/images/division-por-tentativa/euler.jpeg
   teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
+  icon: 
 categories:
   - Teoría de Números
   - Álgebra Computacional
