@@ -29,7 +29,7 @@ Sea $$n\in\mathbb{Z}$$, si $$n$$ es compuesto, entonces $$n$$ tiene un factor pr
 
 #Aquí se escribe la demo
 
-$$\\hfill \\qedsymbol$$
+$$\\hfill \\blacksquare$$
 
 
 Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si $$n$$ no tiene un factor primo $$k$$ menor o igual a $$\sqrt{n}$$, entonces $$n$$ es un número primo.
