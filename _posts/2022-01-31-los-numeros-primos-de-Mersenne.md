@@ -16,7 +16,7 @@ tags:
   - Numeros Primos
 ---
 
-<center> <img src="/assets/images/division-por-tentativa/euler.png"> </center>
+<center> <img src="/assets/images/los-numeros-primos-de-mersenne/graph.png"> </center>
 <br>
 
 ## Teorema 
