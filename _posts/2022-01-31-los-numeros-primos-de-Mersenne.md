@@ -16,7 +16,7 @@ tags:
   - Numeros Primos
 ---
 
-<center> <img src="/assets/images/los-numeros-primos-de-mersenne/graph.png"> </center>
+<center> <img src="/assets/images/los-numeros-primos-de-mersenne/graph.png" width="800" height="450"> </center>
 <br>
 
 ## Teorema 
