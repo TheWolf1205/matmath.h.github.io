@@ -25,7 +25,7 @@ Un número primo $$n$$ es un entero que solo es divisible por $$2$$ números dis
 ## Teorema
 Sea $$n\in\mathbb{Z}$$, si $$n$$ es compuesto, entonces $$n$$ tiene un factor primo $$k$$ menor o igual a $$\sqrt{n}$$.
 
-## Demostración
+## Demostración.
 
 Sea $$n$$ un compuesto (positivo), entonces existen a y $$b \in \mathbb{Z}$$ tales que $$n=a b$$, con $$1<a, b<n$$. Por tricotomía podemos suponer que $$a \leq b$$, sin pérdida de generalidad.
 
