@@ -59,13 +59,13 @@ Algunos datos adicionales a considerar sobre los números perfectos es que todos
 
 Supongamos que $$2^n-1$$ es primo, veamos que $$\left(2^{n-1}\right) \cdot\left(2^n-1\right)=N$$ es un número perfecto.
 
-Queremos ver que $$N$$ es la suma de sus divisores menos él mismo, luego tenemos que por definición de $$\mathrm{N}$$, la suma de sus divisores el producto de la suma de los divisores de $$2^{n-1}$ y $2^n-1$$.
+Queremos ver que $$N$$ es la suma de sus divisores menos él mismo, luego tenemos que por definición de $$\mathrm{N}$$, la suma de sus divisores el producto de la suma de los divisores de $$2^{n-1}$$ y $$2^n-1$$.
 
-Los divisores de $$2^{n-1}$$ son $$1,2,4,8, \ldots, 2^{n-1}$$, y tenemos que $$1+$ $2+\ldots+2^{n-1}=2^n-1$$.
+Los divisores de $$2^{n-1}$$ son $$1,2,4,8, \ldots, 2^{n-1}$$, y tenemos que $$1+2+\ldots+2^{n-1}=2^n-1$$.
 
 Y como $$2^n-1$$ es primo sus divisores son 1 y $$2^n-1$$, por lo tanto la suma de sus divisores es $$2^n$$.
 
-Luego al hacer el producto de la suma de los divisores de $$2^{n-1} \mathrm{y}$$ $$2^n-1$$ y restar el propio $$N$$ (por definición de número perfecto) tenemos que:
+Luego al hacer el producto de la suma de los divisores de $$2^{n-1}$$ y $$2^n-1$$ y restar el propio $$N$$ (por definición de número perfecto) tenemos que:
 
 $$
 \begin{aligned}
