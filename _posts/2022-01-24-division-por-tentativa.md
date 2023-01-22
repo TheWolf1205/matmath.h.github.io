@@ -17,7 +17,7 @@ tags:
   - Euler
 ---
 
-<center> <img src="/assets/images/division-por-tentativa/Euler.jpg"> </center>
+<center> <img src="/assets/images/division-por-tentativa/euler.jpeg"> </center>
 <br>
 
 Un número primo $$n$$ es un entero que solo es divisible por $$2$$ números distintos, siendo estos $$1$$ y $$n$$, entonces, si queremos verificar si un número $$n$$ es primo, debemos comprobar que no tiene algún factor primo $$k$$ tal que $$1<k<n$$, lo cual puede ser una tarea tediosa y larga. Así, a continuación presentaremos un teorema que nos ayudará a ahorrar tiempo a la hora de verificar si un número $$n$$ es primo, siendo este el mismo que usó **Euler** en su demostración.
