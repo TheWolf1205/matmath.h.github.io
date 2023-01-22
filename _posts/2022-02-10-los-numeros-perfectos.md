@@ -12,6 +12,7 @@ categories:
   - Teoría de Números
 tags:  
   - Numeros de Mersenne
+  - Numeros perfectos
 ---
 
 <center> <img src="/assets/images/los-numeros-perfectos/graph.png" width="450" height="250"> </center>
