@@ -5,7 +5,7 @@ excerpt: "El 7 de diciembre de 2018 fue descubierto el que actualmente es el nú
 date: 2022-01-31
 classes: wide
 header:
-  teaser: /assets/images/division-por-tentativa/euler.png
+  teaser: /assets/images/los-numeros-primos-de-mersenne/graph.png
   teaser_home_page: true
   icon: 
 categories:
