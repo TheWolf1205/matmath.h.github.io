@@ -32,7 +32,10 @@ $$a^m-b^m=(a-b)\left(a^{m-1}+a^{m-2} b+\ldots+a b^{m-2}+b^{m-1}\right)$$
 Tomando $$a=2^p$$ y $$m=q$$ tenemos lo siguiente:
 
 $$
-\left(2^p\right)^q-1=\left(2^p\right)^q-1^q=\left(2^p-1\right)\left(\left(2^p\right)^{q-1}+\left(2^p\right)^{q-2}+\ldots+2^p+1\right)
+\begin{aligned}
+\left(2^p\right)^q-1 & =\left(2^p\right)^q-1^q \\
+& =\left(2^p-1\right)\left(\left(2^p\right)^{q-1}+\left(2^p\right)^{q-2}+\ldots+2^p+1\right)
+\end{aligned}
 $$
 
 Y por la propiedad clausurativa en los enteros en cada caso, podemos garantizar que $$2^{p \cdot q}-1$$ es compuesto, por tanto no es primo, lo cual es una contradicción, luego, es claro que $$n$$ debe ser primo.
