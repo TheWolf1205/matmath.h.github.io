@@ -35,19 +35,19 @@ Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si $a$
 
 $$\\blacksquare$$
 
-##
+##  
 
 Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si $$n$$ no tiene un factor primo $$k$$ menor o igual a $$\sqrt{n}$$, entonces $$n$$ es un número primo.
 
 Algo interesante que podemos hacer es construir un programa que verifique la primalidad de un número dividiendolo entre los $$n$$ números menores que él y verificando el resultado, claramente este algoritmo no será muy eficiente, pero lo bueno es que es sencillo de programar y nos puede arrojar una gran diferencia de tiempo empleado si usamos o no el teorema anterior.
 
-#Insertr imagenes con tiempo de cálculo de los códigos XD
+## Imágenes de comparación
 
 La imagen de la izquierda muestra el tiempo empleado por el programa para verificar la primalidad de $$2.147.483.647$$ usando el teorema y la de la derecha no la utiliza.
 
 ## Algoritmo C++
 
-##
+## 
 
 **Euler** Utilizó este resultado para verificar que el número $$2.147.483.647$$ es primo y mejoró el método de **Cataldi**, por lo que solo tuvo que verificar $$372$$ divisiones.
 
