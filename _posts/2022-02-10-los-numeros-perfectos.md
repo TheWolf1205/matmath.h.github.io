@@ -14,7 +14,7 @@ tags:
   - Numeros de Mersenne
 ---
 
-<center> <img src="/assets/images/los-numeros-perfectos/graph.png" width="600" height="350"> </center>
+<center> <img src="/assets/images/los-numeros-perfectos/graph.png" width="450" height="250"> </center>
 <br>
 
 Se conocen actualmente 51 números perfectos y 51 primos de Mersenne, ¿es esto coincidencia?
