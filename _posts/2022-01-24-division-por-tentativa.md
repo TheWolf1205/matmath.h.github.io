@@ -27,10 +27,15 @@ Sea $$n\in\mathbb{Z}$$, si $$n$$ es compuesto, entonces $$n$$ tiene un factor pr
 
 ## Demostración
 
-#Aquí se escribe la demo
+Sea $$n$$ un compuesto (positivo), entonces existen a y $$b \in \mathbb{Z}$$ tales que $$n=a b$$, con $$1<a, b<n$$. Por tricotomía podemos suponer que $$a \leq b$$, sin pérdida de generalidad.
+
+Veamos que $$a \leq \sqrt{n}$$ (lo que queremos demostrar), de lo contrario $$\sqrt{n}<a \leq b$$ así $$n=a \cdot b \geq a \cdot a>\sqrt{n} \cdot \sqrt{n}=n$$, es decir que $n>n$, **CONTRADICCIÓN**, entonces queda demostrado que $n$ tiene un factor $$a \leq \sqrt{n}$$, pero aún tenemos que verificar si es primo.
+
+Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si $a$ no es primo, como $$a>1$$, entonces por el TFA a tiene un factor primo que lo divide y por transitividad también divide a $$n$$, que es justamente lo que se quería demostrar.
 
 $$\\blacksquare$$
 
+##
 
 Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si $$n$$ no tiene un factor primo $$k$$ menor o igual a $$\sqrt{n}$$, entonces $$n$$ es un número primo.
 
@@ -40,7 +45,9 @@ Algo interesante que podemos hacer es construir un programa que verifique la pri
 
 La imagen de la izquierda muestra el tiempo empleado por el programa para verificar la primalidad de $$2.147.483.647$$ usando el teorema y la de la derecha no la utiliza.
 
-#Algoritmo XD
+## Algoritmo C++
+
+##
 
 **Euler** Utilizó este resultado para verificar que el número $$2.147.483.647$$ es primo y mejoró el método de **Cataldi**, por lo que solo tuvo que verificar $$372$$ divisiones.
 
