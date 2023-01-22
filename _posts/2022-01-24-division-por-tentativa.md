@@ -5,7 +5,7 @@ excerpt: "Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es 
 date: 2022-01-24
 classes: wide
 header:
-  teaser: /assets/images/division-por-tentativa/euler.jpeg
+  teaser: /assets/images/division-por-tentativa/euler.png
   teaser_home_page: true
   icon: 
 categories:
@@ -17,7 +17,7 @@ tags:
   - Euler
 ---
 
-<center> <img src="/assets/images/division-por-tentativa/euler.jpeg"> </center>
+<center> <img src="/assets/images/division-por-tentativa/euler.png"> </center>
 <br>
 
 Un número primo $$n$$ es un entero que solo es divisible por $$2$$ números distintos, siendo estos $$1$$ y $$n$$, entonces, si queremos verificar si un número $$n$$ es primo, debemos comprobar que no tiene algún factor primo $$k$$ tal que $$1<k<n$$, lo cual puede ser una tarea tediosa y larga. Así, a continuación presentaremos un teorema que nos ayudará a ahorrar tiempo a la hora de verificar si un número $$n$$ es primo, siendo este el mismo que usó **Euler** en su demostración.
@@ -29,11 +29,13 @@ Sea $$n\in\mathbb{Z}$$, si $$n$$ es compuesto, entonces $$n$$ tiene un factor pr
 
 Sea $$n$$ un compuesto (positivo), entonces existen a y $$b \in \mathbb{Z}$$ tales que $$n=a b$$, con $$1<a, b<n$$. Por tricotomía podemos suponer que $$a \leq b$$, sin pérdida de generalidad.
 
-Veamos que $$a \leq \sqrt{n}$$ (lo que queremos demostrar), de lo contrario $$\sqrt{n}<a \leq b$$ así $$n=a \cdot b \geq a \cdot a>\sqrt{n} \cdot \sqrt{n}=n$$, es decir que $n>n$, **CONTRADICCIÓN**, entonces queda demostrado que $n$ tiene un factor $$a \leq \sqrt{n}$$, pero aún tenemos que verificar si es primo.
+Veamos que $$a \leq \sqrt{n}$$ (lo que queremos demostrar), de lo contrario $$\sqrt{n}<a \leq b$$ así $$n=a \cdot b \geq a \cdot a>\sqrt{n} \cdot \sqrt{n}=n$$, es decir que $$n>n$$, **CONTRADICCIÓN**, entonces queda demostrado que $$n$$ tiene un factor $$a \leq \sqrt{n}$$, pero aún tenemos que verificar si es primo.
 
-Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si $a$ no es primo, como $$a>1$$, entonces por el Teorema Fundamental de la Aritmética a tiene un factor primo que lo divide y por transitividad también divide a $$n$$, que es justamente lo que se quería demostrar.
+Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si $$a$$ no es primo, como $$a>1$$, entonces por el Teorema Fundamental de la Aritmética a tiene un factor primo que lo divide y por transitividad también divide a $$n$$, que es justamente lo que se quería demostrar.
 
-$$\blacksquare$$
+ <p align="right">
+    $$\blacksquare$$
+</p>
 
 Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si $$n$$ no tiene un factor primo $$k$$ menor o igual a $$\sqrt{n}$$, entonces $$n$$ es un número primo.
 
