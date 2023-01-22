@@ -33,7 +33,7 @@ Veamos que $$a \leq \sqrt{n}$$ (lo que queremos demostrar), de lo contrario $$\s
 
 Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si $$a$$ no es primo, como $$a>1$$, entonces por el Teorema Fundamental de la Aritmética a tiene un factor primo que lo divide y por transitividad también divide a $$n$$, que es justamente lo que se quería demostrar.
 
-<p style="text-align:right;">$$\blacksquare$$</p>
+<p style="text-align:right;">$$\quad \blacksquare$$</p>
 
 Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si $$n$$ no tiene un factor primo $$k$$ menor o igual a $$\sqrt{n}$$, entonces $$n$$ es un número primo.
 
