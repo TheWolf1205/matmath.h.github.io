@@ -31,7 +31,7 @@ Sea $$n$$ un compuesto (positivo), entonces existen a y $$b \in \mathbb{Z}$$ tal
 
 Veamos que $$a \leq \sqrt{n}$$ (lo que queremos demostrar), de lo contrario $$\sqrt{n}<a \leq b$$ así $$n=a \cdot b \geq a \cdot a>\sqrt{n} \cdot \sqrt{n}=n$$, es decir que $n>n$, **CONTRADICCIÓN**, entonces queda demostrado que $n$ tiene un factor $$a \leq \sqrt{n}$$, pero aún tenemos que verificar si es primo.
 
-Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si $a$ no es primo, como $$a>1$$, entonces por el TFA a tiene un factor primo que lo divide y por transitividad también divide a $$n$$, que es justamente lo que se quería demostrar.
+Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si $a$ no es primo, como $$a>1$$, entonces por el Teorema Fundamental de la Aritmética a tiene un factor primo que lo divide y por transitividad también divide a $$n$$, que es justamente lo que se quería demostrar.
 
 $$\blacksquare$$
 
