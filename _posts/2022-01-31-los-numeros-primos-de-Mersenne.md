@@ -12,8 +12,8 @@ categories:
   - Teoría de Números
   - Álgebra Computacional
 tags:  
-  - Numeros de Mersenne
-  - Numeros Primos
+  - Números de Mersenne
+  - Números Primos
 ---
 
 <center> <img src="/assets/images/los-numeros-primos-de-mersenne/graph.png" width="600" height="350"> </center>

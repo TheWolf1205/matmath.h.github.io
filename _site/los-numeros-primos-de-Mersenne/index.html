@@ -9,23 +9,29 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Post por año - MatMath.h</title>
-<meta name="description" content="Divulgación matemática">
+<!-- begin _includes/seo.html --><title>Los números primos de Mersenne - MatMath.h</title>
+<meta name="description" content="El 7 de diciembre de 2018 fue descubierto el que actualmente es el número primo más grande conocido, con más de 24 millones de cifras este gigantezco número es un primo de Mersenne">
 
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="MatMath.h">
-<meta property="og:title" content="Post por año">
-<meta property="og:url" content="http://localhost:4000/year-archive/">
+<meta property="og:title" content="Los números primos de Mersenne">
+<meta property="og:url" content="http://localhost:4000/los-numeros-primos-de-Mersenne/">
+
+
+  <meta property="og:description" content="El 7 de diciembre de 2018 fue descubierto el que actualmente es el número primo más grande conocido, con más de 24 millones de cifras este gigantezco número es un primo de Mersenne">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/los-numeros-primos-de-mersenne/portada.png">
 
 
 
 
 
-
-
+  <meta property="article:published_time" content="2022-01-31T00:00:00-05:00">
 
 
 
@@ -36,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/year-archive/">
+<link rel="canonical" href="http://localhost:4000/los-numeros-primos-de-Mersenne/">
 
 
 
@@ -100,7 +106,7 @@
 
   </head>
 
-  <body class="layout--posts">
+  <body class="layout--single wide">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -141,7 +147,13 @@
     
 
     <div class="initial-content">
-      
+      <script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+
+
+
 
 
   
@@ -162,7 +174,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Post por año</li>
+        <li class="current">Los números primos de Mersenne</li>
       
     
   </ol>
@@ -292,141 +304,159 @@
   </div>
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title">Post por año</h1>
-    
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Los números primos de Mersenne">
+    <meta itemprop="description" content="El 7 de diciembre de 2018 fue descubierto el que actualmente es el número primo más grande conocido, con más de 24 millones de cifras este gigantezco número es un primo de Mersenne">
+    <meta itemprop="datePublished" content="January 31, 2022">
     
 
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Los números primos de Mersenne
+</h1>
+          
+        </header>
+      
 
-<ul class="taxonomy__index">
-  
-  
-    <li>
-      <a href="#2022">
-        <strong>2022</strong> <span class="taxonomy__count">3</span>
-      </a>
-    </li>
-  
+      <section class="page__content" itemprop="text">
+        
+        <p class="page__meta">
+          
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-01-31T00:00:00-05:00">January 31, 2022 </time>&emsp;
+          
+          
+        </p>
+        <center> <img src="/assets/images/los-numeros-primos-de-mersenne/graph.png" width="600" height="350" /> </center>
+<p><br /></p>
+
+<h2 id="teorema">Teorema</h2>
+
+<p>Sea \(n \in \mathbb{Z}\), si \(2^n-1\) es primo, entonces \(n\) es primo.</p>
+
+<h2 id="demostración">Demostración:</h2>
+
+<p>Supongamos que \(n&gt;1\) es un número compuesto, luego por el Teorema Fundamental de la Aritmética \(n=p \cdot q\), con \(p, q \in \mathbb{Z}\) y \(p, q&gt;1\), sabemos que.</p>
+
+\[a^m-b^m=(a-b)\left(a^{m-1}+a^{m-2} b+\ldots+a b^{m-2}+b^{m-1}\right)\]
+
+<p>Tomando \(a=2^p\) y \(m=q\) tenemos lo siguiente:</p>
+
+\[\begin{aligned}
+\left(2^p\right)^q-1 &amp; =\left(2^p\right)^q-1^q \\
+&amp; =\left(2^p-1\right)\left(\left(2^p\right)^{q-1}+\left(2^p\right)^{q-2}+\ldots+2^p+1\right)
+\end{aligned}\]
+
+<p>Y por la propiedad clausurativa en los enteros en cada caso, podemos garantizar que \(2^{p \cdot q}-1\) es compuesto, por tanto no es primo, lo cual es una contradicción, luego, es claro que \(n\) debe ser primo.</p>
+
+\[\blacksquare\]
+
+<h2 id="nota">Nota</h2>
+
+<p>El recíproco es falso, que \(n\) sea primo, no implica que \(2^n-1\) sea primo, en caso de que lo sea se dice que es un primo de Mersenne.</p>
+
+<h2 id="ejemplos">Ejemplos</h2>
+
+<ul>
+  <li>\(2^2-1=3\) es un número primo (Mersenne)</li>
+  <li>\(2^3-1=7\) es un número primo (Mersenne)</li>
+  <li>\(2^5-1=31\) es un número primo (Mersenne)</li>
+  <li>\(2^7-1=127\) es un número primo (Mersenne)</li>
+  <li>\(2^{11}-1=2047\) no es un número primo</li>
 </ul>
 
+<p>El primo de más de 24 millones de cifras mencionado al inicio es \(2^{82589933}-1\) denotado por \(M_{82589933}\)</p>
 
+<p>Fue encontrado por Patrick Laroche, a traves de la GIMPS (Great Internet Mersenne Prime Search) y fue recompensado con 3000 dólares</p>
 
-  <section id="2022" class="taxonomy__section">
-    <h2 class="archive__subtitle">2022</h2>
-    <div class="entries-list">
-      
+<p>El primo de Mersenne \(M_{57885161}\) tiene 17425170 cifras. Harían falta 13000 páginas para mostrar el número entero, con una letra de \(12 \mathrm{pt}\) y sin espacios.</p>
+
+<p>Actualmente la EFF (Electronic Frontier Foundation) tiene una recompensa de \(150.000\) dólares para quien encuentre un primo de Mersenne de 100 millones de dígitos o más.</p>
+
+<p>A día de hoy se conocen solo 51 primos de Mersenne y nadie ha demostrado aún que sean infinitos, por lo que al encontrar uno no sabremos si estamos ante el último de ellos.</p>
+
         
+      </section>
 
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/los-numeros-perfectos/" rel="permalink">Los números perfectos.
-</a>
+      <footer class="page__meta">
         
-      
-    </h2>
-
-    <p class="page__meta">
-      
-        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-02-10T00:00:00-05:00">February 10, 2022 </time>&emsp;
-      
-      
-    </p>
-
-    <p class="archive__item-excerpt" itemprop="description"><img src="/assets/images/los-numeros-perfectos/portada.png" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">Euler demostró además que todo número perfecto par es justamente de la forma (2^(p-1))•(2^p - 1), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que 10^300.
-</p>
-    <i class="fas fa-tags"></i>
-    
-      <a href="/tags/#Números de Mersenne" class="page__meta btn" rel="tag">Números de Mersenne</a>
-    
-      <a href="/tags/#Números perfectos" class="page__meta btn" rel="tag">Números perfectos</a>
-    
-  </article>
-</div>
-
-      
         
+  
 
 
+  
+  
+  
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
     
-    <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/los-numeros-primos-de-Mersenne/" rel="permalink">Los números primos de Mersenne
-</a>
+      
+      <a href="/tags/#n%C3%BAmeros-de-mersenne" class="page__taxonomy-item" rel="tag">Números de Mersenne</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#n%C3%BAmeros-primos" class="page__taxonomy-item" rel="tag">Números Primos</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#teor%C3%ADa-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría de Números</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#%C3%A1lgebra-computacional" class="page__taxonomy-item" rel="tag">Álgebra Computacional</a>
+    
+    </span>
+  </p>
+
+
+
         
-      
-    </h2>
-
-    <p class="page__meta">
-      
-        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-01-31T00:00:00-05:00">January 31, 2022 </time>&emsp;
-      
-      
-    </p>
-
-    <p class="archive__item-excerpt" itemprop="description"><img src="/assets/images/los-numeros-primos-de-mersenne/portada.png" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">El 7 de diciembre de 2018 fue descubierto el que actualmente es el número primo más grande conocido, con más de 24 millones de cifras este gigantezco número es un primo de Mersenne
-</p>
-    <i class="fas fa-tags"></i>
-    
-      <a href="/tags/#Números de Mersenne" class="page__meta btn" rel="tag">Números de Mersenne</a>
-    
-      <a href="/tags/#Números Primos" class="page__meta btn" rel="tag">Números Primos</a>
-    
-  </article>
-</div>
-
-      
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-01-31T00:00:00-05:00">January 31, 2022</time></p>
         
+      </footer>
 
+      
 
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+  <nav class="pagination">
     
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/division-por-tentativa/" rel="permalink">División por tentativa
-</a>
-        
-      
-    </h2>
+      <a href="/division-por-tentativa/" class="pagination--pager" title="División por tentativa
+">Previous</a>
+    
+    
+      <a href="/los-numeros-perfectos/" class="pagination--pager" title="Los números perfectos.
+">Next</a>
+    
+  </nav>
 
-    <p class="page__meta">
-      
-        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-01-24T00:00:00-05:00">January 24, 2022 </time>&emsp;
-      
-      
-    </p>
-
-    <p class="archive__item-excerpt" itemprop="description"><img src="/assets/images/division-por-tentativa/euler.png" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es un numero primo y le mando una carta a Daniel Bernoulli informandole de su prueba, ¿Cómo fue que lo hizo con las limitaciones de su epoca para realizar cálculos?
-</p>
-    <i class="fas fa-tags"></i>
-    
-      <a href="/tags/#Números de Mersenne" class="page__meta btn" rel="tag">Números de Mersenne</a>
-    
-      <a href="/tags/#Números Primos" class="page__meta btn" rel="tag">Números Primos</a>
-    
-      <a href="/tags/#Euler" class="page__meta btn" rel="tag">Euler</a>
-    
-  </article>
-</div>
-
-      
     </div>
-    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
-  </section>
 
+    
+  </article>
 
-  </div>
+  
 </div>
+
     </div>
 
     

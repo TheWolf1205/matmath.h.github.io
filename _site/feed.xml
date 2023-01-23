@@ -1,4 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-21T20:28:38-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MatMath.h</title><subtitle>Divulgación matemática</subtitle><author><name>MatMath.h</name></author><entry><title type="html">División por tentativa</title><link href="http://localhost:4000/division-por-tentativa/" rel="alternate" type="text/html" title="División por tentativa" /><published>2022-01-24T00:00:00-05:00</published><updated>2022-01-24T00:00:00-05:00</updated><id>http://localhost:4000/division-por-tentativa</id><content type="html" xml:base="http://localhost:4000/division-por-tentativa/">&lt;center&gt; &lt;img src=&quot;/assets/images/division-por-tentativa/euler.jpeg&quot; /&gt; &lt;/center&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-23T00:38:57-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MatMath.h</title><subtitle>Divulgación matemática</subtitle><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><entry><title type="html">Los números perfectos.</title><link href="http://localhost:4000/los-numeros-perfectos/" rel="alternate" type="text/html" title="Los números perfectos." /><published>2022-02-10T00:00:00-05:00</published><updated>2022-02-10T00:00:00-05:00</updated><id>http://localhost:4000/los-numeros-perfectos</id><content type="html" xml:base="http://localhost:4000/los-numeros-perfectos/">&lt;center&gt; &lt;img src=&quot;/assets/images/los-numeros-perfectos/graph.png&quot; width=&quot;450&quot; height=&quot;250&quot; /&gt; &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Se conocen actualmente 51 números perfectos y 51 primos de Mersenne, ¿es esto coincidencia?&lt;/p&gt;
+
+&lt;p&gt;Respuesta corta: no&lt;/p&gt;
+
+&lt;p&gt;Respuesta larga: noooooooooooooooooo&lt;/p&gt;
+
+&lt;p&gt;Veamos la relación entre estos dos interesantes conjuntos de números.&lt;/p&gt;
+
+&lt;h2 id=&quot;definición&quot;&gt;Definición&lt;/h2&gt;
+
+&lt;p&gt;Sea \(n\) un entero positivo, decimos que \(n\) es un número perfecto si es igual a la suma de sus divisores (positivos) propios, es decir todos menos el propio número.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejemplo&quot;&gt;Ejemplo&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;6 es divisible entre 1, también entre 2 y entre 3, por tanto 6 es un número perfecto ya que 1+2+3=6&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Los cuatro primeros números perfectos son 6, 28, 496 y 8128, el quinto ya da un salto enorme ya que es 33550336.&lt;/p&gt;
+
+&lt;p&gt;Con esto nos hacemos la idea de que son números muy especiales y escasos, de hecho a día de hoy no se sabe si son infinitos, sin embargo el siguiente teorema nos da una manera de construirlos que además los relaciona con los primos de Mersenne (que tampoco se sabe si son infinitos).&lt;/p&gt;
+
+&lt;h2 id=&quot;teorema&quot;&gt;Teorema&lt;/h2&gt;
+
+&lt;p&gt;Sea \(n \in \mathbb{Z}\), si \(2^n-1\) es un primo de Mersenne, entonces \(\left(2^{n-1}\right) \cdot\left(2^n-1\right)\) es un número perfecto.&lt;/p&gt;
+
+&lt;p&gt;Podemos ver a partir de este teorema lo siguiente:&lt;/p&gt;
+
+&lt;p&gt;\(3=2^2-1\), es decir un primo de Mersenne, entonces \(\left(2^1\right) \cdot\left(2^2-1\right)=2 \cdot 3=6\), que sabemos que es un número perfecto.&lt;/p&gt;
+
+&lt;p&gt;Análogamente podemos ver que si $n=3,2^3-1=7$, por lo tanto por el teorema anterior:&lt;/p&gt;
+
+&lt;p&gt;\(\left(2^2\right) \cdot\left(2^3-1\right)=4 \cdot 7=28\) y 28 es un número perfecto
+Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos generar a partir de él un número perfecto.&lt;/p&gt;
+
+&lt;p&gt;Es increible como Euclides hace más de 2300 años logró demostrar esta relación, a partir de esto podemos ver una vez más que su legado trasciende mucho más allá de la geometría.&lt;/p&gt;
+
+&lt;p&gt;Algunos datos adicionales a considerar sobre los números perfectos es que todos los que se conocen son pares y no sabemos si existe uno impar, o si son infinitos, pero sabemos que si los primos de Mersenne lo son, esto implicaría que los números perfectos también y esto es justamente por el teorema que los relaciona.&lt;/p&gt;
+
+&lt;h2 id=&quot;demostración&quot;&gt;Demostración:&lt;/h2&gt;
+
+&lt;p&gt;Supongamos que \(2^n-1\) es primo, veamos que \(\left(2^{n-1}\right) \cdot\left(2^n-1\right)=N\) es un número perfecto.&lt;/p&gt;
+
+&lt;p&gt;Queremos ver que \(N\) es la suma de sus divisores menos él mismo, luego tenemos que por definición de \(\mathrm{N}\), la suma de sus divisores el producto de la suma de los divisores de \(2^{n-1}\) y \(2^n-1\).&lt;/p&gt;
+
+&lt;p&gt;Los divisores de \(2^{n-1}\) son \(1,2,4,8, \ldots, 2^{n-1}\), y tenemos que \(1+2+\ldots+2^{n-1}=2^n-1\).&lt;/p&gt;
+
+&lt;p&gt;Y como \(2^n-1\) es primo sus divisores son 1 y \(2^n-1\), por lo tanto la suma de sus divisores es \(2^n\).&lt;/p&gt;
+
+&lt;p&gt;Luego al hacer el producto de la suma de los divisores de \(2^{n-1}\) y \(2^n-1\) y restar el propio \(N\) (por definición de número perfecto) tenemos que:&lt;/p&gt;
+
+\[\begin{aligned}
+\left(2^n\right) \cdot\left(2^n-1\right)-N &amp;amp; =\left(2^n\right) \cdot\left(2^n-1\right)-\left(2^{n-1}\right) \cdot\left(2^n-1\right) \\
+&amp;amp; =\left(2^n-1\right) \cdot\left(2^{n-1}\right) \\
+&amp;amp; =N
+\end{aligned}\]
+
+&lt;p&gt;Luego es claro que \(\mathrm{N}\) es un número perfecto ya que la suma de sus divisores menos él mismo es justamente \(\mathrm{N}\).&lt;/p&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de Números" /><category term="Números de Mersenne" /><category term="Números perfectos" /><summary type="html">Euler demostró además que todo número perfecto par es justamente de la forma (2^(p-1))•(2^p - 1), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que 10^300.</summary></entry><entry><title type="html">Los números primos de Mersenne</title><link href="http://localhost:4000/los-numeros-primos-de-Mersenne/" rel="alternate" type="text/html" title="Los números primos de Mersenne" /><published>2022-01-31T00:00:00-05:00</published><updated>2022-01-31T00:00:00-05:00</updated><id>http://localhost:4000/los-numeros-primos-de-Mersenne</id><content type="html" xml:base="http://localhost:4000/los-numeros-primos-de-Mersenne/">&lt;center&gt; &lt;img src=&quot;/assets/images/los-numeros-primos-de-mersenne/graph.png&quot; width=&quot;600&quot; height=&quot;350&quot; /&gt; &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;teorema&quot;&gt;Teorema&lt;/h2&gt;
+
+&lt;p&gt;Sea \(n \in \mathbb{Z}\), si \(2^n-1\) es primo, entonces \(n\) es primo.&lt;/p&gt;
+
+&lt;h2 id=&quot;demostración&quot;&gt;Demostración:&lt;/h2&gt;
+
+&lt;p&gt;Supongamos que \(n&amp;gt;1\) es un número compuesto, luego por el Teorema Fundamental de la Aritmética \(n=p \cdot q\), con \(p, q \in \mathbb{Z}\) y \(p, q&amp;gt;1\), sabemos que.&lt;/p&gt;
+
+\[a^m-b^m=(a-b)\left(a^{m-1}+a^{m-2} b+\ldots+a b^{m-2}+b^{m-1}\right)\]
+
+&lt;p&gt;Tomando \(a=2^p\) y \(m=q\) tenemos lo siguiente:&lt;/p&gt;
+
+\[\begin{aligned}
+\left(2^p\right)^q-1 &amp;amp; =\left(2^p\right)^q-1^q \\
+&amp;amp; =\left(2^p-1\right)\left(\left(2^p\right)^{q-1}+\left(2^p\right)^{q-2}+\ldots+2^p+1\right)
+\end{aligned}\]
+
+&lt;p&gt;Y por la propiedad clausurativa en los enteros en cada caso, podemos garantizar que \(2^{p \cdot q}-1\) es compuesto, por tanto no es primo, lo cual es una contradicción, luego, es claro que \(n\) debe ser primo.&lt;/p&gt;
+
+\[\blacksquare\]
+
+&lt;h2 id=&quot;nota&quot;&gt;Nota&lt;/h2&gt;
+
+&lt;p&gt;El recíproco es falso, que \(n\) sea primo, no implica que \(2^n-1\) sea primo, en caso de que lo sea se dice que es un primo de Mersenne.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejemplos&quot;&gt;Ejemplos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\(2^2-1=3\) es un número primo (Mersenne)&lt;/li&gt;
+  &lt;li&gt;\(2^3-1=7\) es un número primo (Mersenne)&lt;/li&gt;
+  &lt;li&gt;\(2^5-1=31\) es un número primo (Mersenne)&lt;/li&gt;
+  &lt;li&gt;\(2^7-1=127\) es un número primo (Mersenne)&lt;/li&gt;
+  &lt;li&gt;\(2^{11}-1=2047\) no es un número primo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El primo de más de 24 millones de cifras mencionado al inicio es \(2^{82589933}-1\) denotado por \(M_{82589933}\)&lt;/p&gt;
+
+&lt;p&gt;Fue encontrado por Patrick Laroche, a traves de la GIMPS (Great Internet Mersenne Prime Search) y fue recompensado con 3000 dólares&lt;/p&gt;
+
+&lt;p&gt;El primo de Mersenne \(M_{57885161}\) tiene 17425170 cifras. Harían falta 13000 páginas para mostrar el número entero, con una letra de \(12 \mathrm{pt}\) y sin espacios.&lt;/p&gt;
+
+&lt;p&gt;Actualmente la EFF (Electronic Frontier Foundation) tiene una recompensa de \(150.000\) dólares para quien encuentre un primo de Mersenne de 100 millones de dígitos o más.&lt;/p&gt;
+
+&lt;p&gt;A día de hoy se conocen solo 51 primos de Mersenne y nadie ha demostrado aún que sean infinitos, por lo que al encontrar uno no sabremos si estamos ante el último de ellos.&lt;/p&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de Números" /><category term="Álgebra Computacional" /><category term="Números de Mersenne" /><category term="Números Primos" /><summary type="html">El 7 de diciembre de 2018 fue descubierto el que actualmente es el número primo más grande conocido, con más de 24 millones de cifras este gigantezco número es un primo de Mersenne</summary></entry><entry><title type="html">División por tentativa</title><link href="http://localhost:4000/division-por-tentativa/" rel="alternate" type="text/html" title="División por tentativa" /><published>2022-01-24T00:00:00-05:00</published><updated>2022-01-24T00:00:00-05:00</updated><id>http://localhost:4000/division-por-tentativa</id><content type="html" xml:base="http://localhost:4000/division-por-tentativa/">&lt;center&gt; &lt;img src=&quot;/assets/images/division-por-tentativa/euler.png&quot; width=&quot;30%&quot; heigth=&quot;30%&quot; /&gt; &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Un número primo \(n\) es un entero que solo es divisible por \(2\) números distintos, siendo estos \(1\) y \(n\), entonces, si queremos verificar si un número \(n\) es primo, debemos comprobar que no tiene algún factor primo \(k\) tal que \(1&amp;lt;k&amp;lt;n\), lo cual puede ser una tarea tediosa y larga. Así, a continuación presentaremos un teorema que nos ayudará a ahorrar tiempo a la hora de verificar si un número \(n\) es primo, siendo este el mismo que usó &lt;strong&gt;Euler&lt;/strong&gt; en su demostración.&lt;/p&gt;
@@ -8,22 +114,105 @@
 
 &lt;h2 id=&quot;demostración&quot;&gt;Demostración&lt;/h2&gt;
 
-&lt;p&gt;#Aquí se escribe la demo&lt;/p&gt;
+&lt;p&gt;Sea \(n\) un compuesto (positivo), entonces existen a y \(b \in \mathbb{Z}\) tales que \(n=a b\), con \(1&amp;lt;a, b&amp;lt;n\). Por tricotomía podemos suponer que \(a \leq b\), sin pérdida de generalidad.&lt;/p&gt;
+
+&lt;p&gt;Veamos que \(a \leq \sqrt{n}\) (lo que queremos demostrar), de lo contrario \(\sqrt{n}&amp;lt;a \leq b\) así \(n=a \cdot b \geq a \cdot a&amp;gt;\sqrt{n} \cdot \sqrt{n}=n\), es decir que \(n&amp;gt;n\), &lt;strong&gt;CONTRADICCIÓN&lt;/strong&gt;, entonces queda demostrado que \(n\) tiene un factor \(a \leq \sqrt{n}\), pero aún tenemos que verificar si es primo.&lt;/p&gt;
+
+&lt;p&gt;Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si \(a\) no es primo, como \(a&amp;gt;1\), entonces por el Teorema Fundamental de la Aritmética a tiene un factor primo que lo divide y por transitividad también divide a \(n\), que es justamente lo que se quería demostrar.&lt;/p&gt;
+
+&lt;p style=&quot;text-align:right;&quot;&gt;$$\quad \blacksquare$$&lt;/p&gt;
 
 &lt;p&gt;Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si \(n\) no tiene un factor primo \(k\) menor o igual a \(\sqrt{n}\), entonces \(n\) es un número primo.&lt;/p&gt;
 
 &lt;p&gt;Algo interesante que podemos hacer es construir un programa que verifique la primalidad de un número dividiendolo entre los \(n\) números menores que él y verificando el resultado, claramente este algoritmo no será muy eficiente, pero lo bueno es que es sencillo de programar y nos puede arrojar una gran diferencia de tiempo empleado si usamos o no el teorema anterior.&lt;/p&gt;
 
-&lt;p&gt;#Insertr imagenes con tiempo de cálculo de los códigos XD&lt;/p&gt;
+&lt;h2 id=&quot;códigos&quot;&gt;Códigos&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Usando el teorema.&lt;/p&gt;
 
-&lt;p&gt;La imagen de la izquierda muestra el tiempo empleado por el programa para verificar la primalidad de \(2.147.483.647\) usando el teorema y la de la derecha no la utiliza.&lt;/p&gt;
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;timeit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_timer&lt;/span&gt;
 
-&lt;p&gt;#Algoritmo XD&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;verificar_si_es_primo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;inicio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_timer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Es primo&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No es primo&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No es primo&quot;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_timer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; y se ha tardado &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inicio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; segundos en verificar, habiendo realizado &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; divisiones.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bienvenido a la verificadora de numeros primos&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Por favor digite el número al cuál quiere verificar si es primo: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;verificar_si_es_primo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Probando hasta que encuentre un divisor o \(n\).&lt;/p&gt;
+
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;timeit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_timer&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;verificar_si_es_primo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;inicio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_timer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Es primo&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No es primo&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No es primo&quot;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Es primo&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_timer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;respuesta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; y se ha tardado &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inicio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; segundos en verificar, habiendo realizado &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; divisiones.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bienvenido a la verificadora de numeros primos&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Por favor digite el número al cuál quiere verificar si es primo: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;verificar_si_es_primo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;resultados&quot;&gt;Resultados&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Usando el teorema.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt; &lt;img src=&quot;/assets/images/division-por-tentativa/resultado_raiz.png&quot; weidth=&quot;100%&quot; heigth=&quot;100%&quot; /&gt; &lt;/center&gt;
+&lt;ul&gt;
+  &lt;li&gt;Probando hasta que encuentre un divisor o \(n\).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt; &lt;img src=&quot;/assets/images/division-por-tentativa/resultado_fuerza_bruta.png&quot; weidth=&quot;100%&quot; heigth=&quot;100%&quot; /&gt; &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note que claramente el método aquí se puede mejorar, pues conociendo todos los números primos menores a \(\sqrt{n}\) se descartan muchos casos de división en ambos casos, no obstante esta condición es demasiado fuerte, pues listar todos los números primos menores que \(\sqrt{n}\) o \(n\) si nos concentramos en el segundo caso, implica que debimos de haber corrido algún algoritmo previo o tabla en la que se encuentren estos mismos, por lo cual en un principio nuestro programa directamente prueba con todos los números menores. Por otro lado, es claro que usando el teorema visto anteriormente logramos una complejidad de computo mucho menor que directamente probando con todos los números menores a \(n\).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Euler&lt;/strong&gt; Utilizó este resultado para verificar que el número \(2.147.483.647\) es primo y mejoró el método de &lt;strong&gt;Cataldi&lt;/strong&gt;, por lo que solo tuvo que verificar \(372\) divisiones.&lt;/p&gt;
 
-&lt;p&gt;Curiosamente \(2.147.483.647 = 2^{(2^{5}-1)}-1\) lo que lo convierte en un primo doble de &lt;strong&gt;Mersenne&lt;/strong&gt;, además a continuación mencionaremos otro par de curiosidades sobre este número.&lt;/p&gt;
+&lt;h2 id=&quot;curiosidades&quot;&gt;Curiosidades&lt;/h2&gt;
 
-&lt;p&gt;Durante diciembre de &lt;strong&gt;2014&lt;/strong&gt; cuando el vídeo que hizo famoso a &lt;strong&gt;PSY, “Gangnam Style”&lt;/strong&gt;, llegó a las \(2.147.483.647\) views y el sistema de \(32-bit\) de la web de vídeos no pudo continuar contándolas porque simplemente había llegado a su máximo.&lt;/p&gt;
-
-&lt;p&gt;El 4 de junio de &lt;strong&gt;1996&lt;/strong&gt; despegó el primer vuelo del cohete &lt;strong&gt;Ariane 5&lt;/strong&gt; manejado por la Agencia Espacial Europea. Dentro de él no había una tripulación pero sí estaba cargado con cuatro satélites científicos muy costosos. El vuelo explotó apenas 39 segundos después de despegar, perdiendo alrededor de &lt;strong&gt;370 millones de dólares&lt;/strong&gt;. Después de un poco de investigación se dieron cuenta que el problema no era más que un bug de software que involucraba el número \(2.147.483.647\). Aparentemente, Ariane 5 necesitaba una aceleración horizontal mayor que los modelos previos porque su trayecto era distinto, y esto hizo que todos los computadores que controlaban el auto-piloto se confundieran y que comenzara una secuencia para auto-destruirse.&lt;/p&gt;</content><author><name>MatMath.h</name></author><category term="Teoría de Números" /><category term="Álgebra Computacional" /><category term="Numeros de Mersenne" /><category term="Numeros Primos" /><category term="Euler" /><summary type="html">Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es un numero primo y le mando una carta a Daniel Bernoulli informandole de su prueba, ¿Cómo fue que lo hizo con las limitaciones de su epoca para realizar cálculos?</summary></entry></feed>
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Note que \(2.147.483.647 = 2^{(2^{5}-1)}-1\) lo que lo convierte en un primo doble de &lt;strong&gt;Mersenne&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Durante diciembre de &lt;strong&gt;2014&lt;/strong&gt; cuando el vídeo que hizo famoso a &lt;strong&gt;PSY, “Gangnam Style”&lt;/strong&gt;, llegó a las \(2.147.483.647\) views y el sistema de \(32-bit\) de la web de vídeos no pudo continuar contándolas porque simplemente había llegado a su máximo.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;El 4 de junio de &lt;strong&gt;1996&lt;/strong&gt; despegó el primer vuelo del cohete &lt;strong&gt;Ariane 5&lt;/strong&gt; manejado por la Agencia Espacial Europea. Dentro de él no había una tripulación pero sí estaba cargado con cuatro satélites científicos muy costosos. El vuelo explotó apenas 39 segundos después de despegar, perdiendo alrededor de &lt;strong&gt;370 millones de dólares&lt;/strong&gt;. Después de un poco de investigación se dieron cuenta que el problema no era más que un bug de software que involucraba el número \(2.147.483.647\). Aparentemente, Ariane 5 necesitaba una aceleración horizontal mayor que los modelos previos porque su trayecto era distinto, y esto hizo que todos los computadores que controlaban el auto-piloto se confundieran y que comenzara una secuencia para auto-destruirse.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de Números" /><category term="Álgebra Computacional" /><category term="Números de Mersenne" /><category term="Números Primos" /><category term="Euler" /><summary type="html">Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es un numero primo y le mando una carta a Daniel Bernoulli informandole de su prueba, ¿Cómo fue que lo hizo con las limitaciones de su epoca para realizar cálculos?</summary></entry></feed>

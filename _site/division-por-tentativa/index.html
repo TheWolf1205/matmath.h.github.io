@@ -25,7 +25,7 @@
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/division-por-tentativa/euler.jpeg">
+  <meta property="og:image" content="http://localhost:4000/assets/images/division-por-tentativa/euler.png">
 
 
 
@@ -168,7 +168,7 @@
     
       
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Inicio</span></a>
           <meta itemprop="position" content="1" />
         </li>
         <span class="sep">/</span>
@@ -196,18 +196,21 @@
       
 
       
-        <img src="/assets/images/avatar.png" alt="MatMath.h" itemprop="image">
+        
+        <a href="/matmathh.github.io">
+          <img src="/assets/images/avatar.jpg" alt="MatMath.h" itemprop="image">
+        </a>
       
     </div>
   
 
   <div class="author__content">
     
-      <h3 class="author__name" itemprop="name">MatMath.h</h3>
+      <a href="/matmathh.github.io"><h3 class="author__name" itemprop="name">MatMath.h</h3></a>
     
     
       <p class="author__bio" itemprop="description">
-        Nosotros somos estudiantes de matemáticas 🦉.<br>Post divulgativos de matemáticas, particularmente de teoría de números, álgebra y temas relacionados.
+        Somos estudiantes de matemáticas 🦉.<br>Post divulgativos de matemáticas, particularmente de teoría de números, álgebra y temas relacionados.
       </p>
     
   </div>
@@ -225,6 +228,13 @@
 
       
 
+      
+        <li>
+          <a href="mailto:matm4th.h@gmail.com">
+            <meta itemprop="email" content="matm4th.h@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
       
 
       
@@ -317,7 +327,7 @@
           
           
         </p>
-        <center> <img src="/assets/images/division-por-tentativa/euler.jpeg" /> </center>
+        <center> <img src="/assets/images/division-por-tentativa/euler.png" width="30%" heigth="30%" /> </center>
 <p><br /></p>
 
 <p>Un número primo \(n\) es un entero que solo es divisible por \(2\) números distintos, siendo estos \(1\) y \(n\), entonces, si queremos verificar si un número \(n\) es primo, debemos comprobar que no tiene algún factor primo \(k\) tal que \(1&lt;k&lt;n\), lo cual puede ser una tarea tediosa y larga. Así, a continuación presentaremos un teorema que nos ayudará a ahorrar tiempo a la hora de verificar si un número \(n\) es primo, siendo este el mismo que usó <strong>Euler</strong> en su demostración.</p>
@@ -327,25 +337,108 @@
 
 <h2 id="demostración">Demostración</h2>
 
-<p>#Aquí se escribe la demo</p>
+<p>Sea \(n\) un compuesto (positivo), entonces existen a y \(b \in \mathbb{Z}\) tales que \(n=a b\), con \(1&lt;a, b&lt;n\). Por tricotomía podemos suponer que \(a \leq b\), sin pérdida de generalidad.</p>
+
+<p>Veamos que \(a \leq \sqrt{n}\) (lo que queremos demostrar), de lo contrario \(\sqrt{n}&lt;a \leq b\) así \(n=a \cdot b \geq a \cdot a&gt;\sqrt{n} \cdot \sqrt{n}=n\), es decir que \(n&gt;n\), <strong>CONTRADICCIÓN</strong>, entonces queda demostrado que \(n\) tiene un factor \(a \leq \sqrt{n}\), pero aún tenemos que verificar si es primo.</p>
+
+<p>Ahora si a es primo pues ya acabamos, así que consideremos el otro caso, si \(a\) no es primo, como \(a&gt;1\), entonces por el Teorema Fundamental de la Aritmética a tiene un factor primo que lo divide y por transitividad también divide a \(n\), que es justamente lo que se quería demostrar.</p>
+
+<p style="text-align:right;">$$\quad \blacksquare$$</p>
 
 <p>Este teorema es muy utíl, ya que su contrarecíproco nos asegura que si \(n\) no tiene un factor primo \(k\) menor o igual a \(\sqrt{n}\), entonces \(n\) es un número primo.</p>
 
 <p>Algo interesante que podemos hacer es construir un programa que verifique la primalidad de un número dividiendolo entre los \(n\) números menores que él y verificando el resultado, claramente este algoritmo no será muy eficiente, pero lo bueno es que es sencillo de programar y nos puede arrojar una gran diferencia de tiempo empleado si usamos o no el teorema anterior.</p>
 
-<p>#Insertr imagenes con tiempo de cálculo de los códigos XD</p>
+<h2 id="códigos">Códigos</h2>
+<ul>
+  <li>
+    <p>Usando el teorema.</p>
 
-<p>La imagen de la izquierda muestra el tiempo empleado por el programa para verificar la primalidad de \(2.147.483.647\) usando el teorema y la de la derecha no la utiliza.</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">timeit</span> <span class="kn">import</span> <span class="n">default_timer</span>
 
-<p>#Algoritmo XD</p>
+<span class="k">def</span> <span class="nf">verificar_si_es_primo</span><span class="p">(</span><span class="n">numero</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">str</span><span class="p">:</span>
+  <span class="n">inicio</span> <span class="o">=</span> <span class="n">default_timer</span><span class="p">()</span>
+  <span class="n">respuesta</span> <span class="o">=</span> <span class="s">"Es primo"</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">numero</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">numero</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">numero</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+    <span class="n">respuesta</span> <span class="o">=</span> <span class="s">"No es primo"</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+  <span class="n">contador</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">numero</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="p">((</span><span class="n">numero</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+      <span class="n">respuesta</span> <span class="o">=</span> <span class="s">"No es primo"</span>
+      <span class="n">x</span> <span class="o">=</span> <span class="n">numero</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="n">final</span> <span class="o">=</span> <span class="n">default_timer</span><span class="p">()</span>
+  <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">respuesta</span> <span class="o">+</span> <span class="s">" y se ha tardado "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">final</span> <span class="o">-</span> <span class="n">inicio</span><span class="p">)</span> <span class="o">+</span> <span class="s">" segundos en verificar, habiendo realizado "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span> <span class="o">+</span> <span class="s">" divisiones."</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"Bienvenido a la verificadora de numeros primos"</span><span class="p">)</span>
+<span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Por favor digite el número al cuál quiere verificar si es primo: "</span><span class="p">))</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">verificar_si_es_primo</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Probando hasta que encuentre un divisor o \(n\).</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">timeit</span> <span class="kn">import</span> <span class="n">default_timer</span>
+
+<span class="k">def</span> <span class="nf">verificar_si_es_primo</span><span class="p">(</span><span class="n">numero</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">str</span><span class="p">:</span>
+  <span class="n">inicio</span> <span class="o">=</span> <span class="n">default_timer</span><span class="p">()</span>
+  <span class="n">respuesta</span> <span class="o">=</span> <span class="s">"Es primo"</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">numero</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">numero</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">numero</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+    <span class="n">respuesta</span> <span class="o">=</span> <span class="s">"No es primo"</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+  <span class="n">contador</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">numero</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">((</span><span class="n">numero</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+      <span class="n">respuesta</span> <span class="o">=</span> <span class="s">"No es primo"</span>
+      <span class="n">x</span> <span class="o">=</span> <span class="n">numero</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="p">(</span><span class="n">numero</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)):</span>
+    <span class="n">respuesta</span> <span class="o">=</span> <span class="s">"Es primo"</span>
+  <span class="n">final</span> <span class="o">=</span> <span class="n">default_timer</span><span class="p">()</span>
+  <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">respuesta</span> <span class="o">+</span> <span class="s">" y se ha tardado "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">final</span> <span class="o">-</span> <span class="n">inicio</span><span class="p">)</span> <span class="o">+</span> <span class="s">" segundos en verificar, habiendo realizado "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span> <span class="o">+</span> <span class="s">" divisiones."</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"Bienvenido a la verificadora de numeros primos"</span><span class="p">)</span>
+<span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Por favor digite el número al cuál quiere verificar si es primo: "</span><span class="p">))</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">verificar_si_es_primo</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="resultados">Resultados</h2>
+<ul>
+  <li>Usando el teorema.</li>
+</ul>
+<center> <img src="/assets/images/division-por-tentativa/resultado_raiz.png" weidth="100%" heigth="100%" /> </center>
+<ul>
+  <li>Probando hasta que encuentre un divisor o \(n\).</li>
+</ul>
+<center> <img src="/assets/images/division-por-tentativa/resultado_fuerza_bruta.png" weidth="100%" heigth="100%" /> </center>
+<p><br /></p>
+
+<p>Note que claramente el método aquí se puede mejorar, pues conociendo todos los números primos menores a \(\sqrt{n}\) se descartan muchos casos de división en ambos casos, no obstante esta condición es demasiado fuerte, pues listar todos los números primos menores que \(\sqrt{n}\) o \(n\) si nos concentramos en el segundo caso, implica que debimos de haber corrido algún algoritmo previo o tabla en la que se encuentren estos mismos, por lo cual en un principio nuestro programa directamente prueba con todos los números menores. Por otro lado, es claro que usando el teorema visto anteriormente logramos una complejidad de computo mucho menor que directamente probando con todos los números menores a \(n\).</p>
 
 <p><strong>Euler</strong> Utilizó este resultado para verificar que el número \(2.147.483.647\) es primo y mejoró el método de <strong>Cataldi</strong>, por lo que solo tuvo que verificar \(372\) divisiones.</p>
 
-<p>Curiosamente \(2.147.483.647 = 2^{(2^{5}-1)}-1\) lo que lo convierte en un primo doble de <strong>Mersenne</strong>, además a continuación mencionaremos otro par de curiosidades sobre este número.</p>
+<h2 id="curiosidades">Curiosidades</h2>
 
-<p>Durante diciembre de <strong>2014</strong> cuando el vídeo que hizo famoso a <strong>PSY, “Gangnam Style”</strong>, llegó a las \(2.147.483.647\) views y el sistema de \(32-bit\) de la web de vídeos no pudo continuar contándolas porque simplemente había llegado a su máximo.</p>
-
-<p>El 4 de junio de <strong>1996</strong> despegó el primer vuelo del cohete <strong>Ariane 5</strong> manejado por la Agencia Espacial Europea. Dentro de él no había una tripulación pero sí estaba cargado con cuatro satélites científicos muy costosos. El vuelo explotó apenas 39 segundos después de despegar, perdiendo alrededor de <strong>370 millones de dólares</strong>. Después de un poco de investigación se dieron cuenta que el problema no era más que un bug de software que involucraba el número \(2.147.483.647\). Aparentemente, Ariane 5 necesitaba una aceleración horizontal mayor que los modelos previos porque su trayecto era distinto, y esto hizo que todos los computadores que controlaban el auto-piloto se confundieran y que comenzara una secuencia para auto-destruirse.</p>
+<ul>
+  <li>
+    <p>Note que \(2.147.483.647 = 2^{(2^{5}-1)}-1\) lo que lo convierte en un primo doble de <strong>Mersenne</strong>.</p>
+  </li>
+  <li>
+    <p>Durante diciembre de <strong>2014</strong> cuando el vídeo que hizo famoso a <strong>PSY, “Gangnam Style”</strong>, llegó a las \(2.147.483.647\) views y el sistema de \(32-bit\) de la web de vídeos no pudo continuar contándolas porque simplemente había llegado a su máximo.</p>
+  </li>
+  <li>
+    <p>El 4 de junio de <strong>1996</strong> despegó el primer vuelo del cohete <strong>Ariane 5</strong> manejado por la Agencia Espacial Europea. Dentro de él no había una tripulación pero sí estaba cargado con cuatro satélites científicos muy costosos. El vuelo explotó apenas 39 segundos después de despegar, perdiendo alrededor de <strong>370 millones de dólares</strong>. Después de un poco de investigación se dieron cuenta que el problema no era más que un bug de software que involucraba el número \(2.147.483.647\). Aparentemente, Ariane 5 necesitaba una aceleración horizontal mayor que los modelos previos porque su trayecto era distinto, y esto hizo que todos los computadores que controlaban el auto-piloto se confundieran y que comenzara una secuencia para auto-destruirse.</p>
+  </li>
+</ul>
 
         
       </section>
@@ -370,11 +463,11 @@
     
       
       
-      <a href="/tags/#numeros-de-mersenne" class="page__taxonomy-item" rel="tag">Numeros de Mersenne</a><span class="sep">, </span>
+      <a href="/tags/#n%C3%BAmeros-de-mersenne" class="page__taxonomy-item" rel="tag">Números de Mersenne</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#numeros-primos" class="page__taxonomy-item" rel="tag">Numeros Primos</a>
+      <a href="/tags/#n%C3%BAmeros-primos" class="page__taxonomy-item" rel="tag">Números Primos</a>
     
     </span>
   </p>
@@ -414,6 +507,16 @@
       
 
       
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/los-numeros-primos-de-Mersenne/" class="pagination--pager" title="Los números primos de Mersenne
+">Next</a>
+    
+  </nav>
+
     </div>
 
     

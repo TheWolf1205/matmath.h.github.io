@@ -1,0 +1,505 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Los números perfectos. - MatMath.h</title>
+<meta name="description" content="Euler demostró además que todo número perfecto par es justamente de la forma (2^(p-1))•(2^p - 1), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que 10^300.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="MatMath.h">
+<meta property="og:title" content="Los números perfectos.">
+<meta property="og:url" content="http://localhost:4000/los-numeros-perfectos/">
+
+
+  <meta property="og:description" content="Euler demostró además que todo número perfecto par es justamente de la forma (2^(p-1))•(2^p - 1), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que 10^300.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/los-numeros-perfectos/portada.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2022-02-10T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/los-numeros-perfectos/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "MatMath.h",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MatMath.h Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/masthead.png" alt=""></a>
+                
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Inicio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Post</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categorias</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >Acerca de</a>
+            </li><li class="masthead__menu-item">
+              <a href="/buscador/" >Buscador</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    
+
+    <div class="initial-content">
+      <script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Inicio</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Los números perfectos.</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        
+        <a href="/matmathh.github.io">
+          <img src="/assets/images/avatar.jpg" alt="MatMath.h" itemprop="image">
+        </a>
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <a href="/matmathh.github.io"><h3 class="author__name" itemprop="name">MatMath.h</h3></a>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Somos estudiantes de matemáticas 🦉.<br>Post divulgativos de matemáticas, particularmente de teoría de números, álgebra y temas relacionados.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Colombia</span>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:matm4th.h@gmail.com">
+            <meta itemprop="email" content="matm4th.h@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://instagram.com/matmath.h" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Los números perfectos.">
+    <meta itemprop="description" content="Euler demostró además que todo número perfecto par es justamente de la forma (2^(p-1))•(2^p - 1), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que 10^300.">
+    <meta itemprop="datePublished" content="February 10, 2022">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Los números perfectos.
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p class="page__meta">
+          
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-02-10T00:00:00-05:00">February 10, 2022 </time>&emsp;
+          
+          
+        </p>
+        <center> <img src="/assets/images/los-numeros-perfectos/graph.png" width="450" height="250" /> </center>
+<p><br /></p>
+
+<p>Se conocen actualmente 51 números perfectos y 51 primos de Mersenne, ¿es esto coincidencia?</p>
+
+<p>Respuesta corta: no</p>
+
+<p>Respuesta larga: noooooooooooooooooo</p>
+
+<p>Veamos la relación entre estos dos interesantes conjuntos de números.</p>
+
+<h2 id="definición">Definición</h2>
+
+<p>Sea \(n\) un entero positivo, decimos que \(n\) es un número perfecto si es igual a la suma de sus divisores (positivos) propios, es decir todos menos el propio número.</p>
+
+<h2 id="ejemplo">Ejemplo</h2>
+
+<ul>
+  <li>6 es divisible entre 1, también entre 2 y entre 3, por tanto 6 es un número perfecto ya que 1+2+3=6</li>
+</ul>
+
+<p>Los cuatro primeros números perfectos son 6, 28, 496 y 8128, el quinto ya da un salto enorme ya que es 33550336.</p>
+
+<p>Con esto nos hacemos la idea de que son números muy especiales y escasos, de hecho a día de hoy no se sabe si son infinitos, sin embargo el siguiente teorema nos da una manera de construirlos que además los relaciona con los primos de Mersenne (que tampoco se sabe si son infinitos).</p>
+
+<h2 id="teorema">Teorema</h2>
+
+<p>Sea \(n \in \mathbb{Z}\), si \(2^n-1\) es un primo de Mersenne, entonces \(\left(2^{n-1}\right) \cdot\left(2^n-1\right)\) es un número perfecto.</p>
+
+<p>Podemos ver a partir de este teorema lo siguiente:</p>
+
+<p>\(3=2^2-1\), es decir un primo de Mersenne, entonces \(\left(2^1\right) \cdot\left(2^2-1\right)=2 \cdot 3=6\), que sabemos que es un número perfecto.</p>
+
+<p>Análogamente podemos ver que si $n=3,2^3-1=7$, por lo tanto por el teorema anterior:</p>
+
+<p>\(\left(2^2\right) \cdot\left(2^3-1\right)=4 \cdot 7=28\) y 28 es un número perfecto
+Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos generar a partir de él un número perfecto.</p>
+
+<p>Es increible como Euclides hace más de 2300 años logró demostrar esta relación, a partir de esto podemos ver una vez más que su legado trasciende mucho más allá de la geometría.</p>
+
+<p>Algunos datos adicionales a considerar sobre los números perfectos es que todos los que se conocen son pares y no sabemos si existe uno impar, o si son infinitos, pero sabemos que si los primos de Mersenne lo son, esto implicaría que los números perfectos también y esto es justamente por el teorema que los relaciona.</p>
+
+<h2 id="demostración">Demostración:</h2>
+
+<p>Supongamos que \(2^n-1\) es primo, veamos que \(\left(2^{n-1}\right) \cdot\left(2^n-1\right)=N\) es un número perfecto.</p>
+
+<p>Queremos ver que \(N\) es la suma de sus divisores menos él mismo, luego tenemos que por definición de \(\mathrm{N}\), la suma de sus divisores el producto de la suma de los divisores de \(2^{n-1}\) y \(2^n-1\).</p>
+
+<p>Los divisores de \(2^{n-1}\) son \(1,2,4,8, \ldots, 2^{n-1}\), y tenemos que \(1+2+\ldots+2^{n-1}=2^n-1\).</p>
+
+<p>Y como \(2^n-1\) es primo sus divisores son 1 y \(2^n-1\), por lo tanto la suma de sus divisores es \(2^n\).</p>
+
+<p>Luego al hacer el producto de la suma de los divisores de \(2^{n-1}\) y \(2^n-1\) y restar el propio \(N\) (por definición de número perfecto) tenemos que:</p>
+
+\[\begin{aligned}
+\left(2^n\right) \cdot\left(2^n-1\right)-N &amp; =\left(2^n\right) \cdot\left(2^n-1\right)-\left(2^{n-1}\right) \cdot\left(2^n-1\right) \\
+&amp; =\left(2^n-1\right) \cdot\left(2^{n-1}\right) \\
+&amp; =N
+\end{aligned}\]
+
+<p>Luego es claro que \(\mathrm{N}\) es un número perfecto ya que la suma de sus divisores menos él mismo es justamente \(\mathrm{N}\).</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#n%C3%BAmeros-de-mersenne" class="page__taxonomy-item" rel="tag">Números de Mersenne</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#n%C3%BAmeros-perfectos" class="page__taxonomy-item" rel="tag">Números perfectos</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#teor%C3%ADa-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría de Números</a>
+    
+    </span>
+  </p>
+
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-02-10T00:00:00-05:00">February 10, 2022</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/los-numeros-primos-de-Mersenne/" class="pagination--pager" title="Los números primos de Mersenne
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 MatMath.h</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

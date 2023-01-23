@@ -20,11 +20,11 @@ title                    : "MatMath.h"
 title_separator          : "-"
 name                     : "MatMath.h"
 description              : "Divulgación matemática"
-url                      : "https://snowscan.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://matmathh.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "slemire/slemire.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "matmathh/matmathh.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 logo                     : "/assets/images/masthead.png"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "favicon.ico" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -107,7 +107,7 @@ author:
   location         : "Colombia"
   email            : matm4th.h@gmail.com
   uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
+  home             : matmathh.github.io # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
