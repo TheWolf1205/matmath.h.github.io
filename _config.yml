@@ -103,9 +103,9 @@ analytics:
 author:
   name             : "MatMath.h"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "Somos estudiantes de matemáticas 🦉.<br>Post divulgativos de matemáticas, particularmente de teoría de números, álgebra y temas relacionados."
+  bio              : "Somos estudiantes de matemáticas <link href='https://emoji-css.afeld.me/emoji.css' rel='stylesheet'><i class='em em-owl' aria-role='presentation' aria-label='BIRD'></i>.<br>Post divulgativos de matemáticas, particularmente de teoría de números, álgebra y temas relacionados."
   location         : "Colombia"
-  email            : matm4th.h@gmail.com
+  email            : "matm4th.h@gmail.com"
   uri              :
   home             : matmathh.github.io # null (default), "absolute or relative url to link to author home"
   bitbucket        :

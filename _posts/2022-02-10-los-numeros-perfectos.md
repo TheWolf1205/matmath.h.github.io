@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Los números perfectos.
-excerpt: "Euler demostró además que todo número perfecto par es justamente de la forma (2^(p-1))•(2^p - 1), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que 10^300."
+excerpt: "Euler demostró además que todo número perfecto par es justamente de la forma $$2^{p-1}•(2^{p} - 1)$$, luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que $$10^{300}$$."
 date: 2022-02-10
 classes: wide
 header:
