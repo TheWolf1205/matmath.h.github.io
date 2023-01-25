@@ -14,40 +14,40 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Los números perfectos. - MatMath.h</title>
-<meta name="description" content="Euler demostró además que todo número perfecto par es justamente de la forma \(2^{p-1}•(2^{p} - 1)\), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que \(10^{300}\).">
+<!-- begin _includes/seo.html --><title>La criba de Eratóstenes. - MatMath.h</title>
+<meta name="description" content="Eratóstenes de Cirene, matemático griego, desarrollo alrededor de los años 200 a.C un algoritmo que nos permite identificar los números primos menores a un \(n\) dado. Veremos como funciona este algoritmo, daremos un par de detaller del mismo, y por otro lado expondremos una relación entre este algoritmo y el teorema de Dirichlet.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="MatMath.h">
-<meta property="og:title" content="Los números perfectos.">
-<meta property="og:url" content="http://localhost:4000/los-numeros-perfectos/">
+<meta property="og:title" content="La criba de Eratóstenes.">
+<meta property="og:url" content="http://localhost:4000/la-criba-de-eratostenes/">
 
 
-  <meta property="og:description" content="Euler demostró además que todo número perfecto par es justamente de la forma \(2^{p-1}•(2^{p} - 1)\), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que \(10^{300}\).">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/los-numeros-perfectos/portada.png">
+  <meta property="og:description" content="Eratóstenes de Cirene, matemático griego, desarrollo alrededor de los años 200 a.C un algoritmo que nos permite identificar los números primos menores a un \(n\) dado. Veremos como funciona este algoritmo, daremos un par de detaller del mismo, y por otro lado expondremos una relación entre este algoritmo y el teorema de Dirichlet.">
 
 
 
-
-
-  <meta property="article:published_time" content="2022-02-10T00:00:00-05:00">
+  <meta property="og:image" content="http://localhost:4000/assets/images/la-criba-de-eratostenes/criba.gif">
 
 
 
 
 
-  
+  <meta property="article:published_time" content="2022-02-17T00:00:00-05:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/los-numeros-perfectos/">
+
+<link rel="canonical" href="http://localhost:4000/la-criba-de-eratostenes/">
 
 
 
@@ -177,7 +177,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Los números perfectos.</li>
+        <li class="current">La criba de Eratóstenes.</li>
       
     
   </ol>
@@ -308,15 +308,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Los números perfectos.">
-    <meta itemprop="description" content="Euler demostró además que todo número perfecto par es justamente de la forma \(2^{p-1}•(2^{p} - 1)\), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que \(10^{300}\).">
-    <meta itemprop="datePublished" content="February 10, 2022">
+    <meta itemprop="headline" content="La criba de Eratóstenes.">
+    <meta itemprop="description" content="Eratóstenes de Cirene, matemático griego, desarrollo alrededor de los años 200 a.C un algoritmo que nos permite identificar los números primos menores a un \(n\) dado. Veremos como funciona este algoritmo, daremos un par de detaller del mismo, y por otro lado expondremos una relación entre este algoritmo y el teorema de Dirichlet.">
+    <meta itemprop="datePublished" content="February 17, 2022">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Los números perfectos.
+          <h1 id="page-title" class="page__title" itemprop="headline">La criba de Eratóstenes.
 </h1>
           
         </header>
@@ -326,71 +326,61 @@
         
         <p class="page__meta">
           
-            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-02-10T00:00:00-05:00">February 10, 2022 </time>&emsp;
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-02-17T00:00:00-05:00">February 17, 2022 </time>&emsp;
           
           
         </p>
-        <center> <img src="/assets/images/los-numeros-perfectos/graph.png" width="450" height="250" /> </center>
-<p><br /></p>
+        <center> <img src="/assets/images/la-criba-de-eratostenes/criba.gif" weidth="30%" heigth="30%" /> </center>
 
-<p>Se conocen actualmente 51 números perfectos y 51 primos de Mersenne, ¿es esto coincidencia?</p>
+<h2 id="introducción">Introducción</h2>
 
-<p>Respuesta corta: no</p>
+<p>Vamos a conocer la criba de <strong>Eratóstenes</strong>, uno de los algoritmos más conocidos para obtener y listar números primos. Además veremos su relación con el teorema de <strong>Dirichlet</strong>.</p>
 
-<p>Respuesta larga: noooooooooooooooooo</p>
+<h2 id="pseudocódigo">Pseudocódigo</h2>
 
-<p>Veamos la relación entre estos dos interesantes conjuntos de números.</p>
+<p>En un futuro presentaremos a qué nos referimos con esto de <strong>Complejidad</strong> e introduciremos la notación \(O\) grande.</p>
 
-<h2 id="definición">Definición</h2>
+<h2 id="la-criba-de-eratóstenes-complejidad-onloglogn">La criba de Eratóstenes (Complejidad \(O(n\log{\log{n}})\))</h2>
+<p><strong>Entrada:</strong>  \(n\in\mathbb{N}\).</p>
 
-<p>Sea \(n\) un entero positivo, decimos que \(n\) es un número perfecto si es igual a la suma de sus divisores (positivos) propios, es decir todos menos el propio número.</p>
+<p><strong>Algoritmo:</strong></p>
+<ul>
+  <li>Escriba todos los números naturales de \(2\) hasta \(n\).</li>
+  <li>Tache todos los múltiplos de \(2\) hasta \(n\) a excepción de \(2\).</li>
+  <li>A continuación busque el siguiente número que no se encuentre tachado, en este caso el \(3\), y tache todos los múltiplos de \(3\) hasta \(n\) a excepción de \(3\), luego repita este mismo procedimiento hasta que el último número tachado sea menor o igual a \(\sqrt{n}\) (la razón de esto la vimos en el post de división por tentativa #Probar si se puede dejar el hipervinculo).</li>
+</ul>
+
+<p><strong>Salida:</strong> Todos los números que no estén tachados son números primos.</p>
 
 <h2 id="ejemplo">Ejemplo</h2>
 
-<ul>
-  <li>6 es divisible entre 1, también entre 2 y entre 3, por tanto 6 es un número perfecto ya que 1+2+3=6</li>
-</ul>
+<p>Supongamos que queremos encontrar los números primos menores que \(50\), debemos entonces aplicar el algoritmo con \(n=50\), gráficamente el resultado debería de ser el siguiente:</p>
 
-<p>Los cuatro primeros números perfectos son 6, 28, 496 y 8128, el quinto ya da un salto enorme ya que es 33550336.</p>
+<h1 id="insertar-imágen">Insertar imágen</h1>
 
-<p>Con esto nos hacemos la idea de que son números muy especiales y escasos, de hecho a día de hoy no se sabe si son infinitos, sin embargo el siguiente teorema nos da una manera de construirlos que además los relaciona con los primos de Mersenne (que tampoco se sabe si son infinitos).</p>
+<p>Si verificamos el procedimiento por pasos podremos notar que el último número del cuál tomaremos múltiplos para tachar es el \(7\), esto es justamente porque \(7\leq \sqrt{50}\), en otras palabras, \(7^{2}=49 \leq 50\) y el \(50\) queda tachado al ser múltiplo de \(2\).</p>
 
-<h2 id="teorema">Teorema</h2>
+<p>Además, si somos curiosos y observamos con detenimiento la gráfica notaremos que a excepción de \(2\) y \(3\) todos los números primos se encuentran en la primera y quinta columna, en nuestro caso, sabemos que los números de la primera columna son de la forma \(6k+1\) y los números de la quinta columna son de la forma \(6k+5\).</p>
 
-<p>Sea \(n \in \mathbb{Z}\), si \(2^n-1\) es un primo de Mersenne, entonces \(\left(2^{n-1}\right) \cdot\left(2^n-1\right)\) es un número perfecto.</p>
+<p>¡Nuevamente las matemáticas nos van a demostrar que las coincidencias no existen! Veamos porqué ocurre esto.</p>
 
-<p>Podemos ver a partir de este teorema lo siguiente:</p>
+<h2 id="teorema-de-dirichlet">Teorema de Dirichlet</h2>
 
-<p>\(3=2^2-1\), es decir un primo de Mersenne, entonces \(\left(2^1\right) \cdot\left(2^2-1\right)=2 \cdot 3=6\), que sabemos que es un número perfecto.</p>
+<p>Si \(mcd(a,d)=1\) (Máximo común divisor de \(a\) y \(d\) es igual a \(1\)) con \(a,d\in\mathbb{Z}^{+}\), entonces hay un número infinito de primos de la forma \(a+dk\) con \(k\in\mathbb{Z}^{+}\).</p>
 
-<p>Análogamente podemos ver que si $n=3,2^3-1=7$, por lo tanto por el teorema anterior:</p>
+<p>En nuestro caso, como \(mcd(6,1)=1\), entonces tenemos que existen infinitos números primos de la forma \(6+k\). De la misma forma como \(mcd(6,5)=1\), entonces tenemos que existen infinitos números primos de la forma \(6+5k\).</p>
 
-<p>\(\left(2^2\right) \cdot\left(2^3-1\right)=4 \cdot 7=28\) y 28 es un número perfecto
-Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos generar a partir de él un número perfecto.</p>
+<p>Veamos de manera rápida porqué esto no ocurre para las demás columnas:</p>
 
-<p>Es increible como Euclides hace más de 2300 años logró demostrar esta relación, a partir de esto podemos ver una vez más que su legado trasciende mucho más allá de la geometría.</p>
+<p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+2k\), entonces \(p=2(3+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
 
-<p>Algunos datos adicionales a considerar sobre los números perfectos es que todos los que se conocen son pares y no sabemos si existe uno impar, o si son infinitos, pero sabemos que si los primos de Mersenne lo son, esto implicaría que los números perfectos también y esto es justamente por el teorema que los relaciona.</p>
+<p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+3k\), entonces \(p=3(2+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
 
-<h2 id="demostración">Demostración:</h2>
+<p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+4k\), entonces \(p=2(3+2k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
 
-<p>Supongamos que \(2^n-1\) es primo, veamos que \(\left(2^{n-1}\right) \cdot\left(2^n-1\right)=N\) es un número perfecto.</p>
+<p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+6k\), entonces \(p=6(1+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
 
-<p>Queremos ver que \(N\) es la suma de sus divisores menos él mismo, luego tenemos que por definición de \(\mathrm{N}\), la suma de sus divisores el producto de la suma de los divisores de \(2^{n-1}\) y \(2^n-1\).</p>
-
-<p>Los divisores de \(2^{n-1}\) son \(1,2,4,8, \ldots, 2^{n-1}\), y tenemos que \(1+2+\ldots+2^{n-1}=2^n-1\).</p>
-
-<p>Y como \(2^n-1\) es primo sus divisores son 1 y \(2^n-1\), por lo tanto la suma de sus divisores es \(2^n\).</p>
-
-<p>Luego al hacer el producto de la suma de los divisores de \(2^{n-1}\) y \(2^n-1\) y restar el propio \(N\) (por definición de número perfecto) tenemos que:</p>
-
-\[\begin{aligned}
-\left(2^n\right) \cdot\left(2^n-1\right)-N &amp; =\left(2^n\right) \cdot\left(2^n-1\right)-\left(2^{n-1}\right) \cdot\left(2^n-1\right) \\
-&amp; =\left(2^n-1\right) \cdot\left(2^{n-1}\right) \\
-&amp; =N
-\end{aligned}\]
-
-<p>Luego es claro que \(\mathrm{N}\) es un número perfecto ya que la suma de sus divisores menos él mismo es justamente \(\mathrm{N}\).</p>
+<p>Esto es equivalente a demostrar que todo número primo mayor o igual que \(5\) es de la forma \(6+k\) o de la forma \(6+5k\), siendo esta la misma razón por la cuál los números primos aparecen en estas columnas. Por otro lado, este resultado se puede probar adaptando una demostración de <strong>Euclides</strong>, pero hemos visto como el teorema de <strong>Dirichlet</strong> generaliza esta situación.</p>
 
         
       </section>
@@ -411,11 +401,23 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
     
       
       
-      <a href="/tags/#n%C3%BAmeros-de-mersenne" class="page__taxonomy-item" rel="tag">Números de Mersenne</a><span class="sep">, </span>
+      <a href="/tags/#algoritmo" class="page__taxonomy-item" rel="tag">Algoritmo</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#n%C3%BAmeros-perfectos" class="page__taxonomy-item" rel="tag">Números perfectos</a>
+      <a href="/tags/#dirichlet" class="page__taxonomy-item" rel="tag">Dirichlet</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#erat%C3%B3stenes" class="page__taxonomy-item" rel="tag">Eratóstenes</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#euler" class="page__taxonomy-item" rel="tag">Euler</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#n%C3%BAmeros-primos" class="page__taxonomy-item" rel="tag">Números Primos</a>
     
     </span>
   </p>
@@ -436,7 +438,11 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
     
       
       
-      <a href="/categories/#teor%C3%ADa-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría de Números</a>
+      <a href="/categories/#teor%C3%ADa-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría de Números</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#%C3%A1lgebra-computacional" class="page__taxonomy-item" rel="tag">Álgebra Computacional</a>
     
     </span>
   </p>
@@ -444,7 +450,7 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-02-10T00:00:00-05:00">February 10, 2022</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-02-17T00:00:00-05:00">February 17, 2022</time></p>
         
       </footer>
 
@@ -453,12 +459,11 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
       
   <nav class="pagination">
     
-      <a href="/los-numeros-primos-de-Mersenne/" class="pagination--pager" title="Los números primos de Mersenne
+      <a href="/los-numeros-perfectos/" class="pagination--pager" title="Los números perfectos.
 ">Anterior</a>
     
     
-      <a href="/la-criba-de-eratostenes/" class="pagination--pager" title="La criba de Eratóstenes.
-">Siguiente</a>
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
     
   </nav>
 

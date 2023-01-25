@@ -15,6 +15,7 @@ tags:
   - Números de Mersenne
   - Números Primos
   - Euler
+  - Test de primalidad
 ---
 
 <center> <img src="/assets/images/division-por-tentativa/euler.png" width="30%" heigth="30%"> </center>
