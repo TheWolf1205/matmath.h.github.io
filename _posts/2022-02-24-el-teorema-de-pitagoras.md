@@ -19,8 +19,3 @@ tags:
 
 La mayor parte de las demostraciopnes conocidad de este teorema consiste en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso
 
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \draw (0,0) circle (1in);
-  \end{tikzpicture}
-</script>
