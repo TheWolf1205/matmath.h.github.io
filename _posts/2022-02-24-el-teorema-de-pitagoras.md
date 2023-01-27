@@ -17,7 +17,7 @@ tags:
 
 <center> <img src="/assets/images/la-criba-de-eratostenes/criba.gif" weidth="30%" heigth="30%"> </center>
 
-La mayor parte de las demostraciopnes conocidad de este teorema consiste en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguinete caso
+La mayor parte de las demostraciopnes conocidad de este teorema consiste en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso
 
 <script type="text/tikz">
   \begin{tikzpicture}
