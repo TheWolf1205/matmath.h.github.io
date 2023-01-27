@@ -44,7 +44,7 @@ La criba de Eratóstenes (Complejidad $$O(n\log{\log{n}})$$)
 
 Supongamos que queremos encontrar los números primos menores que $$50$$, debemos entonces aplicar el algoritmo con $$n=50$$, gráficamente el resultado debería de ser el siguiente:
 
-$$\begin{array}{cccccc} & 2 & 3 & \not4 & 5 & \not 6 \\ 7 & \not 8 & \not9 & \not10 & 11 & \not12 \\ 13 & \not14 & \not15 & \not16 & 17 & \not18 \\ 19 & \not20 & \not21 & \not22 & 23 & \not24 \\ \not25 & \not26 & \not27 & \not28 & 29 &  \not30 \\ 31 & \not32 &  \not33 & \not34 & \not35 & \not36 \\ 37 & \not38 &  not39 & \not40 & 41 & \not42 \\ 43 & \not44 & \not45 & \not46 & 47 & \not48 \\ \not49 & \not50 & & & & \end{array}$$
+$$\begin{array}{cccccc} & 2 & 3 & \not4 & 5 & \not 6 \\ 7 & \not 8 & \not9 & \not10 & 11 & \not12 \\ 13 & \not14 & \not15 & \not16 & 17 & \not18 \\ 19 & \not20 & \not21 & \not22 & 23 & \not24 \\ \not25 & \not26 & \not27 & \not28 & 29 &  \not30 \\ 31 & \not32 &  \not33 & \not34 & \not35 & \not36 \\ 37 & \not38 &  \not39 & \not40 & 41 & \not42 \\ 43 & \not44 & \not45 & \not46 & 47 & \not48 \\ \not49 & \not50 & & & & \end{array}$$
 
 Si verificamos el procedimiento por pasos podremos notar que el último número del cuál tomaremos múltiplos para tachar es el $$7$$, esto es justamente porque $$7\leq \sqrt{50}$$, en otras palabras, $$7^{2}=49 \leq 50$$ y el $$50$$ queda tachado al ser múltiplo de $$2$$.
 
