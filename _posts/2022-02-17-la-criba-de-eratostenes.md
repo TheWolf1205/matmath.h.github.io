@@ -44,7 +44,7 @@ La criba de Eratóstenes (Complejidad $$O(n\log{\log{n}})$$)
 
 Supongamos que queremos encontrar los números primos menores que $$50$$, debemos entonces aplicar el algoritmo con $$n=50$$, gráficamente el resultado debería de ser el siguiente:
 
-# Insertar imágen
+$$\begin{array}{cccccc} & 2 & 3 & \not4 & 5 & \not 6 \\ 7 & \not 8 & \not9 & \not10 & 11 & \not12 \\ 13 & \not14 & \not15 & \not16 & 17 & \not18 \\ 19 & \not20 & \not21 & \not22 & 23 & \not24 \\ \not25 & \not26 & \not27 & \not28 & 29 &  \not30 \\ 31 & \not32 &  \not33 & \not34 & \not35 & \not36 \\ 37 & \not38 &  not39 & \not40 & 41 & \not42 \\ 43 & \not44 & \not45 & \not46 & 47 & \not48 \\ \not49 & \not50 & & & & \end{array}$$
 
 Si verificamos el procedimiento por pasos podremos notar que el último número del cuál tomaremos múltiplos para tachar es el $$7$$, esto es justamente porque $$7\leq \sqrt{50}$$, en otras palabras, $$7^{2}=49 \leq 50$$ y el $$50$$ queda tachado al ser múltiplo de $$2$$.
 
@@ -60,12 +60,12 @@ En nuestro caso, como $$mcd(6,1)=1$$, entonces tenemos que existen infinitos nú
 
 Veamos de manera rápida porqué esto no ocurre para las demás columnas:
 
-Suponga $$p\in\mathbb{N}$$ como un número primo, luego si $$n=6+2k$$, entonces $$p=2(3+k)$$, **CONTRADICCIÓN**, ya que por hipótesis $$p$$ es un número primo.
+* Suponga $$p\in\mathbb{N}$$ como un número primo, luego si $$n=6+2k$$, entonces $$p=2(3+k)$$, **CONTRADICCIÓN**, ya que por hipótesis $$p$$ es un número primo.
 
-Suponga $$p\in\mathbb{N}$$ como un número primo, luego si $$n=6+3k$$, entonces $$p=3(2+k)$$, **CONTRADICCIÓN**, ya que por hipótesis $$p$$ es un número primo.
+* Suponga $$p\in\mathbb{N}$$ como un número primo, luego si $$n=6+3k$$, entonces $$p=3(2+k)$$, **CONTRADICCIÓN**, ya que por hipótesis $$p$$ es un número primo.
 
-Suponga $$p\in\mathbb{N}$$ como un número primo, luego si $$n=6+4k$$, entonces $$p=2(3+2k)$$, **CONTRADICCIÓN**, ya que por hipótesis $$p$$ es un número primo.
+* Suponga $$p\in\mathbb{N}$$ como un número primo, luego si $$n=6+4k$$, entonces $$p=2(3+2k)$$, **CONTRADICCIÓN**, ya que por hipótesis $$p$$ es un número primo.
 
-Suponga $$p\in\mathbb{N}$$ como un número primo, luego si $$n=6+6k$$, entonces $$p=6(1+k)$$, **CONTRADICCIÓN**, ya que por hipótesis $$p$$ es un número primo.
+* Suponga $$p\in\mathbb{N}$$ como un número primo, luego si $$n=6+6k$$, entonces $$p=6(1+k)$$, **CONTRADICCIÓN**, ya que por hipótesis $$p$$ es un número primo.
 
 Esto es equivalente a demostrar que todo número primo mayor o igual que $$5$$ es de la forma $$6+k$$ o de la forma $$6+5k$$, siendo esta la misma razón por la cuál los números primos aparecen en estas columnas. Por otro lado, este resultado se puede probar adaptando una demostración de **Euclides**, pero hemos visto como el teorema de **Dirichlet** generaliza esta situación.
