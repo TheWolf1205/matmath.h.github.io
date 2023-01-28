@@ -63,3 +63,42 @@ La mayor parte de las demostraciones conocidas de este teorema consisten en calc
 
 \end{tikzpicture}
 </script> </center>
+
+## Demostración del presidente soplamondá
+
+<center><script type="text/tikz">
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,423); %set diagram left start at 0, and has height of 423
+
+%Shape: Right Triangle [id:dp7177952443822921] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (158.57,93.29) -- (290.79,281.29) -- (158.57,281.29) -- cycle ;
+%Shape: Right Triangle [id:dp3425406003573437] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (505.87,152.46) -- (506.6,281.29) -- (290.79,281.29) -- cycle ;
+%Straight Lines [id:da9979673577761621] 
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ]   (158.57,93.29) -- (505.85,152.46) ;
+%Shape: Rectangle [id:dp4714976041799841] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (286.31,274.31) -- (293.48,270.02) -- (297.95,277) -- (290.79,281.29) -- cycle ;
+
+% Text Node
+\draw (143,183) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
+% Text Node
+\draw (418,282) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
+% Text Node
+\draw (210,284) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
+% Text Node
+\draw (513,210) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
+% Text Node
+\draw (235,186) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+% Text Node
+\draw (389,195) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+
+
+\end{tikzpicture}
+
+</script>
+</center>
