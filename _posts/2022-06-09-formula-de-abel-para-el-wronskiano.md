@@ -5,7 +5,7 @@ excerpt: "Abel fue un matemático Noruego que ha inspirado a muchos matemáticos
 date: 2022-05-04 
 classes: wide
 header:
-  teaser: assets/images/formula-de-abel-para-el-wronskiano/niels.jpg
+  teaser: /assets/images/formula-de-abel-para-el-wronskiano/niels.jpg
   teaser_home_page: true
   icon: 
 categories:
