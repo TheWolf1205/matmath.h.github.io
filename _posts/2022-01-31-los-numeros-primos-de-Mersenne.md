@@ -66,8 +66,3 @@ Actualmente la EFF (Electronic Frontier Foundation) tiene una recompensa de $$15
 
 A día de hoy se conocen solo 51 primos de Mersenne y nadie ha demostrado aún que sean infinitos, por lo que al encontrar uno no sabremos si estamos ante el último de ellos.
 
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \draw (0,0) circle (1in);
-  \end{tikzpicture}
-</script>
