@@ -5,7 +5,7 @@ excerpt: "Al estudiar la función zeta de Riemann es natural preguntarnos su rel
 date: 2022-04-11 
 classes: wide
 header:
-  teaser: assets\images\el-producto-de-euler/riemannzeta.png
+  teaser: assets/images/el-producto-de-euler/riemannzeta.png
   teaser_home_page: true
   icon: 
 categories:

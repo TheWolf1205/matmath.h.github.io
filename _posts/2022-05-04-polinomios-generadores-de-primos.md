@@ -5,7 +5,7 @@ excerpt: "Al estudiar la distribución de los números primos es natural pregunt
 date: 2022-05-04 
 classes: wide
 header:
-  teaser: assets\images\polinomios-generadoes-de-primos/uY1WW.png
+  teaser: assets/images/polinomios-generadoes-de-primos/uY1WW.png
   teaser_home_page: true
   icon: 
 categories:
