@@ -5,7 +5,7 @@ excerpt: "Leonhard Euler demostró aproximadamente en 1772 que 2.147.483.647 es 
 date: 2022-01-24
 classes: wide
 header:
-  teaser: /assets/images/division-por-tentativa/euler.png
+  teaser: /assets/images/division-por-tentativa/euler.jpg
   teaser_home_page: true
   icon: 
 categories:
@@ -18,7 +18,7 @@ tags:
   - Test de primalidad
 ---
 
-<center> <img src="/assets/images/division-por-tentativa/euler.png" width="40%" heigth="40%"> </center>
+<center> <img src="/assets/images/division-por-tentativa/euler.jpg" width="40%" heigth="40%"> </center>
 <br>
 
 Un número primo $$n$$ es un entero que solo es divisible por $$2$$ números distintos, siendo estos $$1$$ y $$n$$, entonces, si queremos verificar si un número $$n$$ es primo, debemos comprobar que no tiene algún factor primo $$k$$ tal que $$1<k<n$$, lo cual puede ser una tarea tediosa y larga. Así, a continuación presentaremos un teorema que nos ayudará a ahorrar tiempo a la hora de verificar si un número $$n$$ es primo, siendo este el mismo que usó **Euler** en su demostración.
