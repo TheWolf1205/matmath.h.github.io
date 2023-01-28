@@ -29,35 +29,35 @@ basado
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,221); %set diagram left start at 0, and has height of 221
 
-%Shape: Square [id:dp8670474238257233] 
-\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (229.07,45) -- (351.5,45) -- (351.5,167.43) -- (229.07,167.43) -- cycle ;
-%Shape: Square [id:dp08207234382767448] 
-\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (281.88,45.38) -- (351.12,97.81) -- (298.69,167.04) -- (229.46,114.62) -- cycle ;
+%Shape: Rectangle [id:dp8670474238257233] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (218.7,33.88) -- (389.99,33.88) -- (389.99,193.52) -- (218.7,193.52) -- cycle ;
+%Shape: Rectangle [id:dp08207234382767448] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (292.58,34.38) -- (389.45,102.71) -- (316.11,193.02) -- (219.25,124.69) -- cycle ;
 
 % Text Node
-\draw (248.74,26.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {a};
+\draw (248.22,12.32) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {a};
 % Text Node
-\draw (214.74,130.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {a};
+\draw (200.65,147.93) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {a};
 % Text Node
-\draw (321.14,167.8) node [anchor=north west][inner sep=0.75pt]   [align=left] {a};
+\draw (349.52,196.43) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {a};
 % Text Node
-\draw (354.34,59.8) node [anchor=north west][inner sep=0.75pt]   [align=left] {a};
+\draw (395.97,55.61) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {a};
 % Text Node
-\draw (314.74,26.2) node [anchor=north west][inner sep=0.75pt]   [align=left] {b};
+\draw (340.56,11.8) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {b};
 % Text Node
-\draw (214.34,63.8) node [anchor=north west][inner sep=0.75pt]   [align=left] {b};
+\draw (200.09,60.83) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {b};
 % Text Node
-\draw (355.54,128.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {b};
+\draw (397.65,145.32) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {b};
 % Text Node
-\draw (255.14,169) node [anchor=north west][inner sep=0.75pt]   [align=left] {b};
+\draw (257.17,198) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {b};
 % Text Node
-\draw (257.94,75.8) node [anchor=north west][inner sep=0.75pt]   [align=left] {c};
+\draw (261.09,76.47) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {c};
 % Text Node
-\draw (308.34,70.2) node [anchor=north west][inner sep=0.75pt]   [align=left] {c};
+\draw (331.61,69.17) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {c};
 % Text Node
-\draw (264.34,125) node [anchor=north west][inner sep=0.75pt]   [align=left] {c};
+\draw (270.05,140.63) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {c};
 % Text Node
-\draw (316.74,115.4) node [anchor=north west][inner sep=0.75pt]   [align=left] {c};
+\draw (343.36,128.11) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {c};
 
 
 \end{tikzpicture}
