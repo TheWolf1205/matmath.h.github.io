@@ -18,7 +18,7 @@ tags:
   - Números Primos
 ---
 
-<center><img src="/assets/images/el-producto-de-euler/riemann_anim.png" width="75%" heigth="75%"></center>
+<center><img src="/assets/images/el-producto-de-euler/riemann_anim.png" width="80%" heigth="80%"></center>
 
 Este es quizás uno de los resultados más impresionantes de **Euler**, este teorema relaciona la teoría de números, que estudia los números enteros, con el análisis matemático, en su momento, mostró la relación entre estas dos ramas de la matemática y dio paso a que posteriormente matemáticos como **Dirichlet** abrieran puertas y dieran inicio a la teoría analítica de números.
 
