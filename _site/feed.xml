@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-27T21:04:18-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MatMath.h</title><subtitle>Divulgación matemática</subtitle><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><entry><title type="html">El producto de Euler.</title><link href="http://localhost:4000/el-producto-de-euler/" rel="alternate" type="text/html" title="El producto de Euler." /><published>2022-04-11T00:00:00-05:00</published><updated>2022-04-11T00:00:00-05:00</updated><id>http://localhost:4000/el-producto-de-euler</id><content type="html" xml:base="http://localhost:4000/el-producto-de-euler/">&lt;p&gt;#Aquí quizás podemos poner la gráfica de la función Zeta e igualmente en la de la descripción&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-28T00:44:53-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MatMath.h</title><subtitle>Divulgación matemática</subtitle><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><entry><title type="html">Polinomios generadores de primos.</title><link href="http://localhost:4000/polinomios-generadores-de-primos/" rel="alternate" type="text/html" title="Polinomios generadores de primos." /><published>2022-05-04T00:00:00-05:00</published><updated>2022-05-04T00:00:00-05:00</updated><id>http://localhost:4000/polinomios-generadores-de-primos</id><content type="html" xml:base="http://localhost:4000/polinomios-generadores-de-primos/">&lt;p&gt;Los números primos han sido objeto de estudio de los matemáticos por siglos, hoy veremos varias de las fórmulas que generan números primos, centrándonos particularmente en el caso de los polinomios y veremos por qué es imposible que un polinomio no constante, de una variable evaluado en los enteros nos de siempre un número primo.&lt;/p&gt;
+
+&lt;p&gt;Quizás el polinomio generador de primos más popular es el siguiente:&lt;/p&gt;
+
+\[n^2-n+41\]
+
+&lt;p&gt;Este polinomio fue dado por &lt;strong&gt;Euler&lt;/strong&gt; en \(1772\) y nos genera \(40\) primos diferentes evaluándolo entre \(0\) y \(40\), sobre este polinomio podemos encontrar muchas variantes, una de las mejores se encuentra en el libro &lt;em&gt;An introduction to theory of numbers - G.H Hardy y E.M Wright&lt;/em&gt;&lt;/p&gt;
+
+\[n^2-79n+1601=(n-40)^2+(n-40)+41\]
+
+&lt;p&gt;Este polinomio ya nos genera primos entre \(0\) y \(79\), a continuación veremos una lista de unos cuantos polinomios generadores de primos:&lt;/p&gt;
+
+\[\begin{align*}
+n^4-97n^3+3294n^2-45458n+213589&amp;amp; &amp;amp;&amp;amp;\rightarrow 49 \\
+36n^2-810n+2753&amp;amp; &amp;amp;&amp;amp;\rightarrow 45 \\
+2n^2+29&amp;amp; &amp;amp;&amp;amp;\rightarrow 29 \\
+n^2+n+17&amp;amp; &amp;amp;&amp;amp;\rightarrow 16 \\
+\end{align*}\]
+
+&lt;p&gt;Estos polinomios nos generan \(49,45,29\) y \(16\) números primos, en cada caso.&lt;/p&gt;
+
+&lt;p&gt;Pero los polinomios no son la única forma de obtener números primos, por ejemplo tenemos la siguiente expresión:&lt;/p&gt;
+
+\[a(n)= \rfloor \dfrac{Res(n!,n+1)}{n}\lfloor (n-1) + 2\]
+
+&lt;p&gt;Donde \(Res(n!,n+1)\) denota el resto de la división entera entre \(n!\) y \(n+1\), esta expresión genera números primos para todo entero positivo \(n\), el problema es que tiene un gran costo computacional porque implica el cálculo de un factorial. Siendo así, buscar polinomios o expresiones diferentes que nos generen primos es una gran solución para disminuir la complejidad del cálculo. Por otro lado, es imposible que un polinomio con coeficientes enteros, de una variable y entrada en los enteros nos genere siempre números primos, ya que:&lt;/p&gt;
+
+&lt;h2 id=&quot;teorema&quot;&gt;Teorema&lt;/h2&gt;
+
+&lt;p&gt;Sea \(p(x)=c_nX^n+c_{n-1}x^{n-1}+\cdots+c_1x+c_0\) un polinomio de coeficientes enteros, entonces \(p(n)\) es compuesto para infinitos valores del entero \(n\).&lt;/p&gt;
+
+&lt;h2 id=&quot;demostración&quot;&gt;Demostración&lt;/h2&gt;
+
+&lt;p&gt;Supongamos que existe un entero \(n_{0} \geq 1\) tal que \(p(n_{0})=q\) con \(q\)&lt;/p&gt;
+
+\[p(n_0+qh)=p(n_0)+Cq=q+Cq=q(1+C)\]
+
+&lt;p&gt;Donde \(C\) es un entero, por tanto \(p(n_0+qh)\) es compuesto para todo \(h\) tal que \(n_0+qh \geq n_1\), como hay infinitos valores de \(h\) que cumplen la condición, entonces queda demostrada la afirmación.&lt;/p&gt;
+
+\[\blacksquare\]</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="X" /><category term="X" /><summary type="html">Pendiente jejeje :3.</summary></entry><entry><title type="html">El producto de Euler.</title><link href="http://localhost:4000/el-producto-de-euler/" rel="alternate" type="text/html" title="El producto de Euler." /><published>2022-04-11T00:00:00-05:00</published><updated>2022-04-11T00:00:00-05:00</updated><id>http://localhost:4000/el-producto-de-euler</id><content type="html" xml:base="http://localhost:4000/el-producto-de-euler/">&lt;p&gt;#Aquí quizás podemos poner la gráfica de la función Zeta e igualmente en la de la descripción&lt;/p&gt;
 
 &lt;p&gt;Este es quizás uno de los resultados más impresionantes de &lt;strong&gt;Euler&lt;/strong&gt;, este teorema relaciona la teoría de números, que estudia los números enteros, con el análisis matemático, en su momento, mostró la relación entre estas dos ramas de la matemática y dio paso a que posteriormente matemáticos como &lt;strong&gt;Dirichlet&lt;/strong&gt; abrieran puertas y dieran inicio a la teoría analítica de números.&lt;/p&gt;
 
@@ -38,17 +77,53 @@
 
 &lt;p&gt;Y esta fue la prueba que dio &lt;strong&gt;Euler&lt;/strong&gt;, que durante su vida se encontró muchas veces con resultados de este estilo, a veces resolviendo problemas terminaba abriendo paso a nuevas ramas de las matemáticas sin siquiera darse cuenta, como por ejemplo la topología y la teoría de grafos en el problema de los puentes de &lt;strong&gt;Königsberg&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Sin lugar a dudas fue un matemático increible.&lt;/p&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de números" /><category term="Análisis" /><category term="Teoría analítica de números" /><category term="Euler" /><category term="Zeta de Riemman" /><category term="Números Primos" /><summary type="html">Pendiente jejeje :3.</summary></entry><entry><title type="html">El teorema de pitágoras.</title><link href="http://localhost:4000/el-teorema-de-pitagoras/" rel="alternate" type="text/html" title="El teorema de pitágoras." /><published>2022-02-24T00:00:00-05:00</published><updated>2022-02-24T00:00:00-05:00</updated><id>http://localhost:4000/el-teorema-de-pitagoras</id><content type="html" xml:base="http://localhost:4000/el-teorema-de-pitagoras/">&lt;center&gt; &lt;img src=&quot;/assets/images/la-criba-de-eratostenes/criba.gif&quot; weidth=&quot;30%&quot; heigth=&quot;30%&quot; /&gt; &lt;/center&gt;
+&lt;p&gt;Sin lugar a dudas fue un matemático increible.&lt;/p&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de números" /><category term="Análisis" /><category term="Teoría analítica de números" /><category term="Euler" /><category term="Zeta de Riemman" /><category term="Números Primos" /><summary type="html">Pendiente jejeje :3.</summary></entry><entry><title type="html">El teorema de pitágoras.</title><link href="http://localhost:4000/el-teorema-de-pitagoras/" rel="alternate" type="text/html" title="El teorema de pitágoras." /><published>2022-02-24T00:00:00-05:00</published><updated>2022-02-24T00:00:00-05:00</updated><id>http://localhost:4000/el-teorema-de-pitagoras</id><content type="html" xml:base="http://localhost:4000/el-teorema-de-pitagoras/">&lt;center&gt; &lt;img src=&quot;/assets/images/el-teorema-de-pitagoras/portada.png&quot; weidth=&quot;10%&quot; heigth=&quot;10%&quot; /&gt; &lt;/center&gt;
 
-&lt;p&gt;La mayor parte de las demostraciopnes conocidad de este teorema consiste en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso&lt;/p&gt;
+&lt;p&gt;La mayor parte de las demostraciones conocidas de este teorema consisten en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso:&lt;/p&gt;
 
-&lt;p&gt;basado&lt;/p&gt;
+&lt;h2 id=&quot;demostración-usual&quot;&gt;Demostración usual:&lt;/h2&gt;
 
-&lt;script type=&quot;text/tikz&quot;&gt;
-  \begin{tikzpicture}
-    \draw (0,0) circle (1in);
-  \end{tikzpicture}
-&lt;/script&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de Números" /><category term="Geometría" /><category term="Pitágoras" /><summary type="html">El teorema de pitágoras es uno de los más conocidos de toda la matemática, además tiene una gran cantidad de pruebas, hoy veremos dos de ellas, una de ellas propuesta por un presidente de los EE.UU.</summary></entry><entry><title type="html">La criba de Eratóstenes.</title><link href="http://localhost:4000/la-criba-de-eratostenes/" rel="alternate" type="text/html" title="La criba de Eratóstenes." /><published>2022-02-17T00:00:00-05:00</published><updated>2022-02-17T00:00:00-05:00</updated><id>http://localhost:4000/la-criba-de-eratostenes</id><content type="html" xml:base="http://localhost:4000/la-criba-de-eratostenes/">&lt;center&gt; &lt;img src=&quot;/assets/images/la-criba-de-eratostenes/criba.gif&quot; weidth=&quot;30%&quot; heigth=&quot;30%&quot; /&gt; &lt;/center&gt;
+&lt;center&gt; &lt;script type=&quot;text/tikz&quot;&gt;
+ 
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,221); %set diagram left start at 0, and has height of 221
+
+%Shape: Rectangle [id:dp8670474238257233] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (218.7,33.88) -- (389.99,33.88) -- (389.99,193.52) -- (218.7,193.52) -- cycle ;
+%Shape: Rectangle [id:dp08207234382767448] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (292.58,34.38) -- (389.45,102.71) -- (316.11,193.02) -- (219.25,124.69) -- cycle ;
+
+% Text Node
+\draw (248.22,12.32) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
+% Text Node
+\draw (200.65,147.93) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
+% Text Node
+\draw (349.52,196.43) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
+% Text Node
+\draw (395.97,55.61) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
+% Text Node
+\draw (340.56,11.8) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
+% Text Node
+\draw (200.09,60.83) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
+% Text Node
+\draw (397.65,145.32) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
+% Text Node
+\draw (257.17,198) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
+% Text Node
+\draw (261.09,76.47) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+% Text Node
+\draw (331.61,69.17) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+% Text Node
+\draw (270.05,140.63) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+% Text Node
+\draw (343.36,128.11) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+
+
+\end{tikzpicture}
+&lt;/script&gt; &lt;/center&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de Números" /><category term="Geometría" /><category term="Pitágoras" /><summary type="html">El teorema de pitágoras es uno de los más conocidos de toda la matemática, además tiene una gran cantidad de pruebas, hoy veremos dos de ellas, una de ellas propuesta por un presidente de los EE.UU.</summary></entry><entry><title type="html">La criba de Eratóstenes.</title><link href="http://localhost:4000/la-criba-de-eratostenes/" rel="alternate" type="text/html" title="La criba de Eratóstenes." /><published>2022-02-17T00:00:00-05:00</published><updated>2022-02-17T00:00:00-05:00</updated><id>http://localhost:4000/la-criba-de-eratostenes</id><content type="html" xml:base="http://localhost:4000/la-criba-de-eratostenes/">&lt;center&gt; &lt;img src=&quot;/assets/images/la-criba-de-eratostenes/criba.gif&quot; weidth=&quot;30%&quot; heigth=&quot;30%&quot; /&gt; &lt;/center&gt;
 
 &lt;h2 id=&quot;introducción&quot;&gt;Introducción&lt;/h2&gt;
 
@@ -211,13 +286,7 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
 
 &lt;p&gt;Actualmente la EFF (Electronic Frontier Foundation) tiene una recompensa de \(150.000\) dólares para quien encuentre un primo de Mersenne de 100 millones de dígitos o más.&lt;/p&gt;
 
-&lt;p&gt;A día de hoy se conocen solo 51 primos de Mersenne y nadie ha demostrado aún que sean infinitos, por lo que al encontrar uno no sabremos si estamos ante el último de ellos.&lt;/p&gt;
-
-&lt;script type=&quot;text/tikz&quot;&gt;
-  \begin{tikzpicture}
-    \draw (0,0) circle (1in);
-  \end{tikzpicture}
-&lt;/script&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de Números" /><category term="Álgebra Computacional" /><category term="Números de Mersenne" /><category term="Números Primos" /><summary type="html">El 7 de diciembre de 2018 fue descubierto el que actualmente es el número primo más grande conocido, con más de 24 millones de cifras este gigantezco número es un primo de Mersenne</summary></entry><entry><title type="html">División por tentativa</title><link href="http://localhost:4000/division-por-tentativa/" rel="alternate" type="text/html" title="División por tentativa" /><published>2022-01-24T00:00:00-05:00</published><updated>2022-01-24T00:00:00-05:00</updated><id>http://localhost:4000/division-por-tentativa</id><content type="html" xml:base="http://localhost:4000/division-por-tentativa/">&lt;center&gt; &lt;img src=&quot;/assets/images/division-por-tentativa/euler.png&quot; width=&quot;30%&quot; heigth=&quot;30%&quot; /&gt; &lt;/center&gt;
+&lt;p&gt;A día de hoy se conocen solo 51 primos de Mersenne y nadie ha demostrado aún que sean infinitos, por lo que al encontrar uno no sabremos si estamos ante el último de ellos.&lt;/p&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="Teoría de Números" /><category term="Álgebra Computacional" /><category term="Números de Mersenne" /><category term="Números Primos" /><summary type="html">El 7 de diciembre de 2018 fue descubierto el que actualmente es el número primo más grande conocido, con más de 24 millones de cifras este gigantezco número es un primo de Mersenne</summary></entry><entry><title type="html">División por tentativa</title><link href="http://localhost:4000/division-por-tentativa/" rel="alternate" type="text/html" title="División por tentativa" /><published>2022-01-24T00:00:00-05:00</published><updated>2022-01-24T00:00:00-05:00</updated><id>http://localhost:4000/division-por-tentativa</id><content type="html" xml:base="http://localhost:4000/division-por-tentativa/">&lt;center&gt; &lt;img src=&quot;/assets/images/division-por-tentativa/euler.jpg&quot; width=&quot;40%&quot; heigth=&quot;40%&quot; /&gt; &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Un número primo \(n\) es un entero que solo es divisible por \(2\) números distintos, siendo estos \(1\) y \(n\), entonces, si queremos verificar si un número \(n\) es primo, debemos comprobar que no tiene algún factor primo \(k\) tal que \(1&amp;lt;k&amp;lt;n\), lo cual puede ser una tarea tediosa y larga. Así, a continuación presentaremos un teorema que nos ayudará a ahorrar tiempo a la hora de verificar si un número \(n\) es primo, siendo este el mismo que usó &lt;strong&gt;Euler&lt;/strong&gt; en su demostración.&lt;/p&gt;

@@ -17,40 +17,40 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>El teorema de pitágoras. - MatMath.h</title>
-<meta name="description" content="El teorema de pitágoras es uno de los más conocidos de toda la matemática, además tiene una gran cantidad de pruebas, hoy veremos dos de ellas, una de ellas propuesta por un presidente de los EE.UU.">
+<!-- begin _includes/seo.html --><title>Polinomios generadores de primos. - MatMath.h</title>
+<meta name="description" content="Pendiente jejeje :3.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="MatMath.h">
-<meta property="og:title" content="El teorema de pitágoras.">
-<meta property="og:url" content="http://localhost:4000/el-teorema-de-pitagoras/">
+<meta property="og:title" content="Polinomios generadores de primos.">
+<meta property="og:url" content="http://localhost:4000/polinomios-generadores-de-primos/">
 
 
-  <meta property="og:description" content="El teorema de pitágoras es uno de los más conocidos de toda la matemática, además tiene una gran cantidad de pruebas, hoy veremos dos de ellas, una de ellas propuesta por un presidente de los EE.UU.">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/el-teorema-de-pitagoras/portada.png">
+  <meta property="og:description" content="Pendiente jejeje :3.">
 
 
 
-
-
-  <meta property="article:published_time" content="2022-02-24T00:00:00-05:00">
+  <meta property="og:image" content="http://localhost:4000/assets/images/la-criba-de-eratostenes/criba.gif">
 
 
 
 
 
-  
+  <meta property="article:published_time" content="2022-05-04T00:00:00-05:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/el-teorema-de-pitagoras/">
+
+<link rel="canonical" href="http://localhost:4000/polinomios-generadores-de-primos/">
 
 
 
@@ -183,7 +183,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">El teorema de pitágoras.</li>
+        <li class="current">Polinomios generadores de primos.</li>
       
     
   </ol>
@@ -315,15 +315,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="El teorema de pitágoras.">
-    <meta itemprop="description" content="El teorema de pitágoras es uno de los más conocidos de toda la matemática, además tiene una gran cantidad de pruebas, hoy veremos dos de ellas, una de ellas propuesta por un presidente de los EE.UU.">
-    <meta itemprop="datePublished" content="February 24, 2022">
+    <meta itemprop="headline" content="Polinomios generadores de primos.">
+    <meta itemprop="description" content="Pendiente jejeje :3.">
+    <meta itemprop="datePublished" content="May 04, 2022">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">El teorema de pitágoras.
+          <h1 id="page-title" class="page__title" itemprop="headline">Polinomios generadores de primos.
 </h1>
           
         </header>
@@ -333,57 +333,51 @@
         
         <p class="page__meta">
           
-            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-02-24T00:00:00-05:00">February 24, 2022 </time>&emsp;
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-05-04T00:00:00-05:00">May 04, 2022 </time>&emsp;
           
           
         </p>
-        <center> <img src="/assets/images/el-teorema-de-pitagoras/portada.png" weidth="10%" heigth="10%" /> </center>
+        <p>Los números primos han sido objeto de estudio de los matemáticos por siglos, hoy veremos varias de las fórmulas que generan números primos, centrándonos particularmente en el caso de los polinomios y veremos por qué es imposible que un polinomio no constante, de una variable evaluado en los enteros nos de siempre un número primo.</p>
 
-<p>La mayor parte de las demostraciones conocidas de este teorema consisten en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso:</p>
+<p>Quizás el polinomio generador de primos más popular es el siguiente:</p>
 
-<h2 id="demostración-usual">Demostración usual:</h2>
+\[n^2-n+41\]
 
-<center> <script type="text/tikz">
- 
+<p>Este polinomio fue dado por <strong>Euler</strong> en \(1772\) y nos genera \(40\) primos diferentes evaluándolo entre \(0\) y \(40\), sobre este polinomio podemos encontrar muchas variantes, una de las mejores se encuentra en el libro <em>An introduction to theory of numbers - G.H Hardy y E.M Wright</em></p>
 
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\[n^2-79n+1601=(n-40)^2+(n-40)+41\]
 
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,221); %set diagram left start at 0, and has height of 221
+<p>Este polinomio ya nos genera primos entre \(0\) y \(79\), a continuación veremos una lista de unos cuantos polinomios generadores de primos:</p>
 
-%Shape: Rectangle [id:dp8670474238257233] 
-\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (218.7,33.88) -- (389.99,33.88) -- (389.99,193.52) -- (218.7,193.52) -- cycle ;
-%Shape: Rectangle [id:dp08207234382767448] 
-\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (292.58,34.38) -- (389.45,102.71) -- (316.11,193.02) -- (219.25,124.69) -- cycle ;
+\[\begin{align*}
+n^4-97n^3+3294n^2-45458n+213589&amp; &amp;&amp;\rightarrow 49 \\
+36n^2-810n+2753&amp; &amp;&amp;\rightarrow 45 \\
+2n^2+29&amp; &amp;&amp;\rightarrow 29 \\
+n^2+n+17&amp; &amp;&amp;\rightarrow 16 \\
+\end{align*}\]
 
-% Text Node
-\draw (248.22,12.32) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
-% Text Node
-\draw (200.65,147.93) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
-% Text Node
-\draw (349.52,196.43) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
-% Text Node
-\draw (395.97,55.61) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
-% Text Node
-\draw (340.56,11.8) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
-% Text Node
-\draw (200.09,60.83) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
-% Text Node
-\draw (397.65,145.32) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
-% Text Node
-\draw (257.17,198) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
-% Text Node
-\draw (261.09,76.47) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
-% Text Node
-\draw (331.61,69.17) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
-% Text Node
-\draw (270.05,140.63) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
-% Text Node
-\draw (343.36,128.11) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+<p>Estos polinomios nos generan \(49,45,29\) y \(16\) números primos, en cada caso.</p>
 
+<p>Pero los polinomios no son la única forma de obtener números primos, por ejemplo tenemos la siguiente expresión:</p>
 
-\end{tikzpicture}
-</script> </center>
+\[a(n)= \rfloor \dfrac{Res(n!,n+1)}{n}\lfloor (n-1) + 2\]
+
+<p>Donde \(Res(n!,n+1)\) denota el resto de la división entera entre \(n!\) y \(n+1\), esta expresión genera números primos para todo entero positivo \(n\), el problema es que tiene un gran costo computacional porque implica el cálculo de un factorial. Siendo así, buscar polinomios o expresiones diferentes que nos generen primos es una gran solución para disminuir la complejidad del cálculo. Por otro lado, es imposible que un polinomio con coeficientes enteros, de una variable y entrada en los enteros nos genere siempre números primos, ya que:</p>
+
+<h2 id="teorema">Teorema</h2>
+
+<p>Sea \(p(x)=c_nX^n+c_{n-1}x^{n-1}+\cdots+c_1x+c_0\) un polinomio de coeficientes enteros, entonces \(p(n)\) es compuesto para infinitos valores del entero \(n\).</p>
+
+<h2 id="demostración">Demostración</h2>
+
+<p>Supongamos que existe un entero \(n_{0} \geq 1\) tal que \(p(n_{0})=q\) con \(q\)</p>
+
+\[p(n_0+qh)=p(n_0)+Cq=q+Cq=q(1+C)\]
+
+<p>Donde \(C\) es un entero, por tanto \(p(n_0+qh)\) es compuesto para todo \(h\) tal que \(n_0+qh \geq n_1\), como hay infinitos valores de \(h\) que cumplen la condición, entonces queda demostrada la afirmación.</p>
+
+\[\blacksquare\]
+
 
         
       </section>
@@ -404,7 +398,7 @@
     
       
       
-      <a href="/tags/#pit%C3%A1goras" class="page__taxonomy-item" rel="tag">Pitágoras</a>
+      <a href="/tags/#x" class="page__taxonomy-item" rel="tag">X</a>
     
     </span>
   </p>
@@ -425,11 +419,7 @@
     
       
       
-      <a href="/categories/#geometr%C3%ADa" class="page__taxonomy-item" rel="tag">Geometría</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/categories/#teor%C3%ADa-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría de Números</a>
+      <a href="/categories/#x" class="page__taxonomy-item" rel="tag">X</a>
     
     </span>
   </p>
@@ -437,7 +427,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-02-24T00:00:00-05:00">February 24, 2022</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-05-04T00:00:00-05:00">May 04, 2022</time></p>
         
       </footer>
 
@@ -446,12 +436,11 @@
       
   <nav class="pagination">
     
-      <a href="/la-criba-de-eratostenes/" class="pagination--pager" title="La criba de Eratóstenes.
+      <a href="/el-producto-de-euler/" class="pagination--pager" title="El producto de Euler.
 ">Anterior</a>
     
     
-      <a href="/el-producto-de-euler/" class="pagination--pager" title="El producto de Euler.
-">Siguiente</a>
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
     
   </nav>
 
