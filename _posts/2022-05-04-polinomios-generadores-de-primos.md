@@ -49,7 +49,7 @@ Sea $$p(x)=c_nX^n+c_{n-1}x^{n-1}+\cdots+c_1x+c_0$$ un polinomio de coeficientes 
 
 ## Demostración
 
-Supongamos que existe un entero $$n_{0} \geq 1$$ tal que $$p(n_{0})=q$$ con $$q$$
+Supongamos que existe un entero $$n_0 \geq 1$$ tal que $$p(n_0)=q$$ con $$q$$ un número primo, como $$\lim_{n\rightarrow \infty} \lvert p(n) \rvert = \infty$$, entonces existe $$n_{1}$$ se tiene que $$\lvert p(n)\rvert>q$$, luego, sea $$h$$ un entero tal que $$n_{0}+qh \geq n_{1}$$, luego:
 
 $$p(n_0+qh)=p(n_0)+Cq=q+Cq=q(1+C)$$
 
@@ -57,7 +57,18 @@ Donde $$C$$ es un entero, por tanto $$p(n_0+qh)$$ es compuesto para todo $$h$$ t
 
 $$\blacksquare$$
 
+Lo que hemos probado es que cualquier polinomio con estas condiciones, siempre generará una infinita cantidad de números compuestos, por lo tanto es imposible que nos genere solamente números primos.
 
+El primero en demostrar esto fue **Golbach** en $$1772$$, **Legendre** también demostró la imposibilidad de una función algebraica racional que siempre genere números primos. <br> Pero esto ocurre para polinomio de una variable, en caso de tener más, sí es posible, veamos el siguiente teorema:
 
+## Teorema (Jones, Sato, Wada y Wiens, 1976)
 
+El conjunto de los números primos coincide con la imagen del siguiente polinomio evaluado en los enteros positivos:
 
+# Aquí va un polinomio feo XD
+
+Este polinomio es de grado 25 y tiene nada menos que 26 variables, nuevamente la complejidad computacional necesaria para saber cuales valores deben tomar las variables para generar un primo dado, es bastante grande, por ello la factorización de enteros sigue siendo usada en criptografía, ya que obtener un algoritmo eficiente cuando de números primos se habla es algo muy, pero muy difícil.
+
+## Comentarios
+
+Sobre el polinomio del teorema hay un paper en el que se estudia el valor de las variables para generar el primo 2 y es muy interesante, además deja a la vista precisamente el problema de la complejidad del cálculo, a continuación dejaremos el <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.8284&rep=rep1&type=pdf"> Link </a> por si les interesa.

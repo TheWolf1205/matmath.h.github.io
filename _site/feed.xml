@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-28T00:55:23-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MatMath.h</title><subtitle>Divulgación matemática</subtitle><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><entry><title type="html">Polinomios generadores de primos.</title><link href="http://localhost:4000/polinomios-generadores-de-primos/" rel="alternate" type="text/html" title="Polinomios generadores de primos." /><published>2022-05-04T00:00:00-05:00</published><updated>2022-05-04T00:00:00-05:00</updated><id>http://localhost:4000/polinomios-generadores-de-primos</id><content type="html" xml:base="http://localhost:4000/polinomios-generadores-de-primos/">&lt;p&gt;Los números primos han sido objeto de estudio de los matemáticos por siglos, hoy veremos varias de las fórmulas que generan números primos, centrándonos particularmente en el caso de los polinomios y veremos por qué es imposible que un polinomio no constante, de una variable evaluado en los enteros nos de siempre un número primo.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-28T02:00:06-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MatMath.h</title><subtitle>Divulgación matemática</subtitle><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><entry><title type="html">Polinomios generadores de primos.</title><link href="http://localhost:4000/polinomios-generadores-de-primos/" rel="alternate" type="text/html" title="Polinomios generadores de primos." /><published>2022-05-04T00:00:00-05:00</published><updated>2022-05-04T00:00:00-05:00</updated><id>http://localhost:4000/polinomios-generadores-de-primos</id><content type="html" xml:base="http://localhost:4000/polinomios-generadores-de-primos/">&lt;p&gt;Los números primos han sido objeto de estudio de los matemáticos por siglos, hoy veremos varias de las fórmulas que generan números primos, centrándonos particularmente en el caso de los polinomios y veremos por qué es imposible que un polinomio no constante, de una variable evaluado en los enteros nos de siempre un número primo.&lt;/p&gt;
 
 &lt;p&gt;Quizás el polinomio generador de primos más popular es el siguiente:&lt;/p&gt;
 
@@ -31,13 +31,29 @@ n^2+n+17&amp;amp; &amp;amp;&amp;amp;\rightarrow 16 \\
 
 &lt;h2 id=&quot;demostración&quot;&gt;Demostración&lt;/h2&gt;
 
-&lt;p&gt;Supongamos que existe un entero \(n_{0} \geq 1\) tal que \(p(n_{0})=q\) con \(q\)&lt;/p&gt;
+&lt;p&gt;Supongamos que existe un entero \(n_0 \geq 1\) tal que \(p(n_0)=q\) con \(q\) un número primo, como \(\lim_{n\rightarrow \infty} \lvert p(n) \rvert = \infty\), entonces existe \(n_{1}\) se tiene que \(\lvert p(n)\rvert&amp;gt;q\), luego, sea \(h\) un entero tal que \(n_{0}+qh \geq n_{1}\), luego:&lt;/p&gt;
 
 \[p(n_0+qh)=p(n_0)+Cq=q+Cq=q(1+C)\]
 
 &lt;p&gt;Donde \(C\) es un entero, por tanto \(p(n_0+qh)\) es compuesto para todo \(h\) tal que \(n_0+qh \geq n_1\), como hay infinitos valores de \(h\) que cumplen la condición, entonces queda demostrada la afirmación.&lt;/p&gt;
 
-\[\blacksquare\]</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="X" /><category term="X" /><summary type="html">Pendiente jejeje :3.</summary></entry><entry><title type="html">El producto de Euler.</title><link href="http://localhost:4000/el-producto-de-euler/" rel="alternate" type="text/html" title="El producto de Euler." /><published>2022-04-11T00:00:00-05:00</published><updated>2022-04-11T00:00:00-05:00</updated><id>http://localhost:4000/el-producto-de-euler</id><content type="html" xml:base="http://localhost:4000/el-producto-de-euler/">&lt;p&gt;#Aquí quizás podemos poner la gráfica de la función Zeta e igualmente en la de la descripción&lt;/p&gt;
+\[\blacksquare\]
+
+&lt;p&gt;Lo que hemos probado es que cualquier polinomio con estas condiciones, siempre generará una infinita cantidad de números compuestos, por lo tanto es imposible que nos genere solamente números primos.&lt;/p&gt;
+
+&lt;p&gt;El primero en demostrar esto fue &lt;strong&gt;Golbach&lt;/strong&gt; en \(1772\), &lt;strong&gt;Legendre&lt;/strong&gt; también demostró la imposibilidad de una función algebraica racional que siempre genere números primos. &lt;br /&gt; Pero esto ocurre para polinomio de una variable, en caso de tener más, sí es posible, veamos el siguiente teorema:&lt;/p&gt;
+
+&lt;h2 id=&quot;teorema-jones-sato-wada-y-wiens-1976&quot;&gt;Teorema (Jones, Sato, Wada y Wiens, 1976)&lt;/h2&gt;
+
+&lt;p&gt;El conjunto de los números primos coincide con la imagen del siguiente polinomio evaluado en los enteros positivos:&lt;/p&gt;
+
+&lt;h1 id=&quot;aquí-va-un-polinomio-feo-xd&quot;&gt;Aquí va un polinomio feo XD&lt;/h1&gt;
+
+&lt;p&gt;Este polinomio es de grado 25 y tiene nada menos que 26 variables, nuevamente la complejidad computacional necesaria para saber cuales valores deben tomar las variables para generar un primo dado, es bastante grande, por ello la factorización de enteros sigue siendo usada en criptografía, ya que obtener un algoritmo eficiente cuando de números primos se habla es algo muy, pero muy difícil.&lt;/p&gt;
+
+&lt;h2 id=&quot;comentarios&quot;&gt;Comentarios&lt;/h2&gt;
+
+&lt;p&gt;Sobre el polinomio del teorema hay un paper en el que se estudia el valor de las variables para generar el primo 2 y es muy interesante, además deja a la vista precisamente el problema de la complejidad del cálculo, a continuación dejaremos el &lt;a href=&quot;https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.8284&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt; Link &lt;/a&gt; por si les interesa.&lt;/p&gt;</content><author><name>MatMath.h</name><email>matm4th.h@gmail.com</email></author><category term="X" /><category term="X" /><summary type="html">Pendiente jejeje :3.</summary></entry><entry><title type="html">El producto de Euler.</title><link href="http://localhost:4000/el-producto-de-euler/" rel="alternate" type="text/html" title="El producto de Euler." /><published>2022-04-11T00:00:00-05:00</published><updated>2022-04-11T00:00:00-05:00</updated><id>http://localhost:4000/el-producto-de-euler</id><content type="html" xml:base="http://localhost:4000/el-producto-de-euler/">&lt;p&gt;#Aquí quizás podemos poner la gráfica de la función Zeta e igualmente en la de la descripción&lt;/p&gt;
 
 &lt;p&gt;Este es quizás uno de los resultados más impresionantes de &lt;strong&gt;Euler&lt;/strong&gt;, este teorema relaciona la teoría de números, que estudia los números enteros, con el análisis matemático, en su momento, mostró la relación entre estas dos ramas de la matemática y dio paso a que posteriormente matemáticos como &lt;strong&gt;Dirichlet&lt;/strong&gt; abrieran puertas y dieran inicio a la teoría analítica de números.&lt;/p&gt;
 
