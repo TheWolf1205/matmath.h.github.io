@@ -64,7 +64,30 @@ La mayor parte de las demostraciones conocidas de este teorema consisten en calc
 \end{tikzpicture}
 </script> </center>
 
-## Demostración del presidente soplamondá
+## Demostración del presidente
+
+En este caso lo que queremos es calcular el área del cuadrado grande de dos maneras diferentes, una de ellas es ver que es un cuadrado de lado $$(a+b)$$ y por lo tanto su area es $$(a+b)^2=a^2+2 a b+b^2$$.
+
+La otra manera es calcular el área del cuadrado interior, la cual es $$c^2$$ y sumarle el área de los 4 triángulos interiores, cuya área es $$\frac{a b}{2}$$, por tanto el área total sería $$c^2+4\left(\frac{a b}{2}\right)=c^2+2 a b$$.
+
+Luego, como estas son dos formas de calcular la misma área, podemos igualarlas de la siguiente manera
+
+$$
+c^2+2 a b=a^2+2 a b+b^2
+$$
+
+Luego podemos restar $2 a b$ ambos lados de la igualdad y nos queda finalmente que
+
+$$
+c^2=a^2+b^2
+$$
+
+Y este es justamente el teorema de pitágoras que conocemos y usamos tantas veces en geometría para medir distancias.
+
+$$\blacksquare$$
+
+Ahora veamos la demostración que dió a este teorema el presidente de los EE.UU James Abram Garfield, nuevamente consiste en calcular el área del siguiente trapecio de dos maneras diferentes.
+
 
 <center><script type="text/tikz">
 
@@ -102,3 +125,33 @@ La mayor parte de las demostraciones conocidas de este teorema consisten en calc
 
 </script>
 </center>
+
+Usando la fórmula para calcular el área de un trapecio podemos ver que el área del mismo es $$\frac{(a+b)^2}{2}$$.
+
+Otra forma de calcular esta área es calcular el área de los 3 triángulos y sumarla, el área de cada uno de los triángulos grises es justamente $$\frac{a b}{2}$$, y la del triángulo blanco es $$\frac{c^2}{2}$$ luego el área del trapecio sería:
+
+$$
+\frac{a b}{2}+\frac{a b}{2}+\frac{c^2}{2}=a b+\frac{c^2}{2}
+$$
+
+Al igualar estas dos formar de calcular el área nos queda lo siguiente:
+
+$$
+\frac{(a+b)^2}{2}=a b+\frac{c^2}{2}
+$$
+
+Ahora podemos multiplicar por 2 a ambos lados y nos que:
+
+$$
+(a+b)^2=a^2+2 a b+b^2=2 a b+c^2
+$$
+
+Y restando $2 a b$ a ambos lados nos queda finalmente el teorema de pitágoras.
+
+$$
+a^2+b^2=c^2
+$$
+
+$$\blacksquare$$
+
+La fama del teorema de pitágoras se debe a que tiene una gran importancia en la geometría y es de uso recurrente para medir distancias, pero su impacto va más allá, este teorema inspiró a Fermat a plantear varios problemas en teoría de números, tales como el último teorema de Fermat, que duró más de 300 años sin resolverse.
