@@ -23,7 +23,7 @@ var store = [{
         "excerpt":"    La mayor parte de las demostraciones conocidas de este teorema consisten en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso:   Demostración usual:      ","categories": ["Teoría de Números","Geometría"],
         "tags": ["Pitágoras"],
         "url": "http://localhost:4000/el-teorema-de-pitagoras/",
-        "teaser":"http://localhost:4000/assets/images/el-teorema-de-pitagoras/portada.png"},{
+        "teaser":"http://localhost:4000/assets/images/el-teorema-de-pitagoras/portada.jpg"},{
         "title": "El producto de Euler.",
         "excerpt":"#Aquí quizás podemos poner la gráfica de la función Zeta e igualmente en la de la descripción Este es quizás uno de los resultados más impresionantes de Euler, este teorema relaciona la teoría de números, que estudia los números enteros, con el análisis matemático, en su momento, mostró la relación...","categories": ["Teoría de números","Análisis","Teoría analítica de números"],
         "tags": ["Euler","Zeta de Riemman","Números Primos"],
