@@ -15,7 +15,7 @@ tags:
   - Pitágoras
 ---
 
-<center> <img src="/assets/images/el-teorema-de-pitagoras/portada.jpg" weidth="10%" heigth="10%"> </center>
+<center> <img src="/assets/images/el-teorema-de-pitagoras/portada.jpg" width="30%" heigth="30%"> </center>
 
 La mayor parte de las demostraciones conocidas de este teorema consisten en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso:
 
@@ -99,29 +99,30 @@ Ahora veamos la demostración que dió a este teorema el presidente de los EE.UU
 %uncomment if require: \path (0,423); %set diagram left start at 0, and has height of 423
 
 %Shape: Right Triangle [id:dp7177952443822921] 
-\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (158.57,93.29) -- (290.79,281.29) -- (158.57,281.29) -- cycle ;
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (156.43,93.29) -- (271.53,270.73) -- (156.43,270.73) -- cycle ;
 %Shape: Right Triangle [id:dp3425406003573437] 
-\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (505.87,152.46) -- (506.6,281.29) -- (290.79,281.29) -- cycle ;
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (458.79,149.14) -- (459.42,270.74) -- (271.55,270.74) -- cycle ;
 %Straight Lines [id:da9979673577761621] 
-\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ]   (158.57,93.29) -- (505.85,152.46) ;
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ]   (156.43,93.29) -- (458.77,149.13) ;
 %Shape: Rectangle [id:dp4714976041799841] 
-\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (286.31,274.31) -- (293.48,270.02) -- (297.95,277) -- (290.79,281.29) -- cycle ;
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (267.64,264.15) -- (273.88,260.1) -- (277.77,266.69) -- (271.53,270.74) -- cycle ;
 
 % Text Node
-\draw (143,183) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
+\draw (142.22,177.52) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {a};
 % Text Node
-\draw (418,282) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {a};
+\draw (381.64,270.96) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {a};
 % Text Node
-\draw (210,284) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
+\draw (200.55,272.85) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {b};
 % Text Node
-\draw (513,210) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {b};
+\draw (464.35,203) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {b};
 % Text Node
-\draw (235,186) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+\draw (222.32,180.35) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {c};
 % Text Node
-\draw (389,195) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.5,yscale=1.5] [align=left] {c};
+\draw (356.39,188.84) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {c};
 
 
 \end{tikzpicture}
+
 
 </script>
 </center>

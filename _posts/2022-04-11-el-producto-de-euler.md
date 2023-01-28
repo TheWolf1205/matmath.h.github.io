@@ -1,15 +1,15 @@
 ---
 layout: single
 title: El producto de Euler.
-excerpt: "Pendiente jejeje :3."
+excerpt: "Al estudiar la función zeta de Riemann es natural preguntarnos su relación con los números primos y esta es quizás unas de las primeras que podemos encontrar, el producto de Euler además es uno de los primeros teoremas que relacionan el análisis con la teoría de números."
 date: 2022-04-11 
 classes: wide
 header:
-  teaser: /assets/images/la-criba-de-eratostenes/criba.gif
+  teaser: assets\images\el-producto-de-euler/riemannzeta.png
   teaser_home_page: true
   icon: 
 categories:
-  - Teoría de números
+  - Teoría de Números
   - Análisis
   - Teoría analítica de números
 tags:  
@@ -18,7 +18,7 @@ tags:
   - Números Primos
 ---
 
-#Aquí quizás podemos poner la gráfica de la función Zeta e igualmente en la de la descripción
+<center><img src="/assets/images/el-producto-de-euler/riemann_anim.png" width="60%" heigth="60%"></center>
 
 Este es quizás uno de los resultados más impresionantes de **Euler**, este teorema relaciona la teoría de números, que estudia los números enteros, con el análisis matemático, en su momento, mostró la relación entre estas dos ramas de la matemática y dio paso a que posteriormente matemáticos como **Dirichlet** abrieran puertas y dieran inicio a la teoría analítica de números.
 

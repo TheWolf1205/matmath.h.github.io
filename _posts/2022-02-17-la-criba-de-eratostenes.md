@@ -19,7 +19,7 @@ tags:
   - Algoritmo
 ---
 
-<center> <img src="/assets/images/la-criba-de-eratostenes/criba.gif" weidth="30%" heigth="30%"> </center>
+<center> <img src="/assets/images/la-criba-de-eratostenes/criba.gif" width="30%" heigth="30%"> </center>
 
 ## Introducción
 
