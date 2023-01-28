@@ -20,7 +20,7 @@ var store = [{
         "url": "http://localhost:4000/la-criba-de-eratostenes/",
         "teaser":"http://localhost:4000/assets/images/la-criba-de-eratostenes/criba.gif"},{
         "title": "El teorema de pitágoras.",
-        "excerpt":"    La mayor parte de las demostraciones conocidas de este teorema consisten en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso:   Demostración usual:      ","categories": ["Teoría de Números","Geometría"],
+        "excerpt":"    La mayor parte de las demostraciones conocidas de este teorema consisten en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso:   Demostración usual:       Demostración del presidente soplamondá     ","categories": ["Teoría de Números","Geometría"],
         "tags": ["Pitágoras"],
         "url": "http://localhost:4000/el-teorema-de-pitagoras/",
         "teaser":"http://localhost:4000/assets/images/el-teorema-de-pitagoras/portada.jpg"},{
