@@ -3,6 +3,9 @@
   type="text/javascript">
 </script>
 
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
 <!doctype html>
 <!--
   Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
@@ -155,6 +158,9 @@
   type="text/javascript">
 </script>
 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
 
 
 
@@ -356,7 +362,7 @@
 
 <p>Supongamos que queremos encontrar los números primos menores que \(50\), debemos entonces aplicar el algoritmo con \(n=50\), gráficamente el resultado debería de ser el siguiente:</p>
 
-<h1 id="insertar-imágen">Insertar imágen</h1>
+\[\begin{array}{cccccc} &amp; 2 &amp; 3 &amp; \not4 &amp; 5 &amp; \not 6 \\ 7 &amp; \not 8 &amp; \not9 &amp; \not10 &amp; 11 &amp; \not12 \\ 13 &amp; \not14 &amp; \not15 &amp; \not16 &amp; 17 &amp; \not18 \\ 19 &amp; \not20 &amp; \not21 &amp; \not22 &amp; 23 &amp; \not24 \\ \not25 &amp; \not26 &amp; \not27 &amp; \not28 &amp; 29 &amp;  \not30 \\ 31 &amp; \not32 &amp;  \not33 &amp; \not34 &amp; \not35 &amp; \not36 \\ 37 &amp; \not38 &amp;  \not39 &amp; \not40 &amp; 41 &amp; \not42 \\ 43 &amp; \not44 &amp; \not45 &amp; \not46 &amp; 47 &amp; \not48 \\ \not49 &amp; \not50 &amp; &amp; &amp; &amp; \end{array}\]
 
 <p>Si verificamos el procedimiento por pasos podremos notar que el último número del cuál tomaremos múltiplos para tachar es el \(7\), esto es justamente porque \(7\leq \sqrt{50}\), en otras palabras, \(7^{2}=49 \leq 50\) y el \(50\) queda tachado al ser múltiplo de \(2\).</p>
 
@@ -372,15 +378,22 @@
 
 <p>Veamos de manera rápida porqué esto no ocurre para las demás columnas:</p>
 
-<p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+2k\), entonces \(p=2(3+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
+<ul>
+  <li>
+    <p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+2k\), entonces \(p=2(3+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
+  </li>
+  <li>
+    <p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+3k\), entonces \(p=3(2+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
+  </li>
+  <li>
+    <p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+4k\), entonces \(p=2(3+2k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
+  </li>
+  <li>
+    <p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+6k\), entonces \(p=6(1+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
+  </li>
+</ul>
 
-<p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+3k\), entonces \(p=3(2+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
-
-<p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+4k\), entonces \(p=2(3+2k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
-
-<p>Suponga \(p\in\mathbb{N}\) como un número primo, luego si \(n=6+6k\), entonces \(p=6(1+k)\), <strong>CONTRADICCIÓN</strong>, ya que por hipótesis \(p\) es un número primo.</p>
-
-<p>Esto es equivalente a demostrar que todo número primo mayor o igual que \(5\) es de la forma \(6+k\) o de la forma \(6+5k\), siendo esta la misma razón por la cuál los números primos aparecen en estas columnas. Por otro lado, este resultado se puede probar adaptando una demostración de <strong>Euclides</strong>, pero hemos visto como el teorema de <strong>Dirichlet</strong> generaliza esta situación.</p>
+<p>Esto es equivalente a demostrar que todo número primo mayor o igual que \(5\) es de la forma \(6k+1\) o de la forma \(6k+5\), siendo esta la misma razón por la cuál los números primos aparecen en estas columnas. Por otro lado, este resultado se puede probar adaptando una demostración de <strong>Euclides</strong>, pero hemos visto como el teorema de <strong>Dirichlet</strong> generaliza esta situación.</p>
 
         
       </section>
@@ -463,7 +476,8 @@
 ">Anterior</a>
     
     
-      <a href="#" class="pagination--pager disabled">Siguiente</a>
+      <a href="/el-teorema-de-pitagoras/" class="pagination--pager" title="El teorema de pitágoras.
+">Siguiente</a>
     
   </nav>
 

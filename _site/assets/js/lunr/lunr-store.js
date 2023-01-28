@@ -18,4 +18,14 @@ var store = [{
         "excerpt":"Introducción Vamos a conocer la criba de Eratóstenes, uno de los algoritmos más conocidos para obtener y listar números primos. Además veremos su relación con el teorema de Dirichlet. Pseudocódigo En un futuro presentaremos a qué nos referimos con esto de Complejidad e introduciremos la notación \\(O\\) grande. La criba...","categories": ["Teoría de Números","Álgebra Computacional"],
         "tags": ["Números Primos","Euler","Eratóstenes","Dirichlet","Algoritmo"],
         "url": "http://localhost:4000/la-criba-de-eratostenes/",
+        "teaser":"http://localhost:4000/assets/images/la-criba-de-eratostenes/criba.gif"},{
+        "title": "El teorema de pitágoras.",
+        "excerpt":"    La mayor parte de las demostraciopnes conocidad de este teorema consiste en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso   basado     ","categories": ["Teoría de Números","Geometría"],
+        "tags": ["Pitágoras"],
+        "url": "http://localhost:4000/el-teorema-de-pitagoras/",
+        "teaser":"http://localhost:4000/assets/images/la-criba-de-eratostenes/criba.gif"},{
+        "title": "El producto de Euler.",
+        "excerpt":"#Aquí quizás podemos poner la gráfica de la función Zeta e igualmente en la de la descripción Este es quizás uno de los resultados más impresionantes de Euler, este teorema relaciona la teoría de números, que estudia los números enteros, con el análisis matemático, en su momento, mostró la relación...","categories": ["Teoría de números","Análisis","Teoría analítica de números"],
+        "tags": ["Euler","Zeta de Riemman","Números Primos"],
+        "url": "http://localhost:4000/el-producto-de-euler/",
         "teaser":"http://localhost:4000/assets/images/la-criba-de-eratostenes/criba.gif"}]

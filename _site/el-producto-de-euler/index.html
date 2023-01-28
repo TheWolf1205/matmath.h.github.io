@@ -17,40 +17,40 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Los números perfectos. - MatMath.h</title>
-<meta name="description" content="Euler demostró además que todo número perfecto par es justamente de la forma \(2^{p-1}•(2^{p} - 1)\), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que \(10^{300}\).">
+<!-- begin _includes/seo.html --><title>El producto de Euler. - MatMath.h</title>
+<meta name="description" content="Pendiente jejeje :3.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="MatMath.h">
-<meta property="og:title" content="Los números perfectos.">
-<meta property="og:url" content="http://localhost:4000/los-numeros-perfectos/">
+<meta property="og:title" content="El producto de Euler.">
+<meta property="og:url" content="http://localhost:4000/el-producto-de-euler/">
 
 
-  <meta property="og:description" content="Euler demostró además que todo número perfecto par es justamente de la forma \(2^{p-1}•(2^{p} - 1)\), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que \(10^{300}\).">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/los-numeros-perfectos/portada.png">
+  <meta property="og:description" content="Pendiente jejeje :3.">
 
 
 
-
-
-  <meta property="article:published_time" content="2022-02-10T00:00:00-05:00">
+  <meta property="og:image" content="http://localhost:4000/assets/images/la-criba-de-eratostenes/criba.gif">
 
 
 
 
 
-  
+  <meta property="article:published_time" content="2022-04-11T00:00:00-05:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/los-numeros-perfectos/">
+
+<link rel="canonical" href="http://localhost:4000/el-producto-de-euler/">
 
 
 
@@ -183,7 +183,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Los números perfectos.</li>
+        <li class="current">El producto de Euler.</li>
       
     
   </ol>
@@ -314,15 +314,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Los números perfectos.">
-    <meta itemprop="description" content="Euler demostró además que todo número perfecto par es justamente de la forma \(2^{p-1}•(2^{p} - 1)\), luego la relación entre estos dos conjuntos de números enteros es justamente biyectiva, aún no podemos descartar la existencia de un números perfecto impar pero sabemos que si existe debe ser mayor que \(10^{300}\).">
-    <meta itemprop="datePublished" content="February 10, 2022">
+    <meta itemprop="headline" content="El producto de Euler.">
+    <meta itemprop="description" content="Pendiente jejeje :3.">
+    <meta itemprop="datePublished" content="April 11, 2022">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Los números perfectos.
+          <h1 id="page-title" class="page__title" itemprop="headline">El producto de Euler.
 </h1>
           
         </header>
@@ -332,71 +332,51 @@
         
         <p class="page__meta">
           
-            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-02-10T00:00:00-05:00">February 10, 2022 </time>&emsp;
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-04-11T00:00:00-05:00">April 11, 2022 </time>&emsp;
           
           
         </p>
-        <center> <img src="/assets/images/los-numeros-perfectos/graph.png" width="450" height="250" /> </center>
-<p><br /></p>
+        <p>#Aquí quizás podemos poner la gráfica de la función Zeta e igualmente en la de la descripción</p>
 
-<p>Se conocen actualmente 51 números perfectos y 51 primos de Mersenne, ¿es esto coincidencia?</p>
+<p>Este es quizás uno de los resultados más impresionantes de <strong>Euler</strong>, este teorema relaciona la teoría de números, que estudia los números enteros, con el análisis matemático, en su momento, mostró la relación entre estas dos ramas de la matemática y dio paso a que posteriormente matemáticos como <strong>Dirichlet</strong> abrieran puertas y dieran inicio a la teoría analítica de números.</p>
 
-<p>Respuesta corta: no</p>
+\[\begin{align*}
+\zeta(s)&amp;=\prod_{p} \dfrac{1}{1-p^{-s}} &amp;&amp;\text{ para todo $s$ tal que $Re(s)&gt;1$}
+\end{align*}\]
 
-<p>Respuesta larga: noooooooooooooooooo</p>
+<p>Para entender este resultado primero debemos conocer la función \(\zeta\).</p>
 
-<p>Veamos la relación entre estos dos interesantes conjuntos de números.</p>
+\[\begin{align*}
+\zeta(s)&amp;=1+\dfrac{1}{2^s}+\dfrac{1}{3^s}+\dfrac{1}{4^s}+\dfrac{1}{5^s}+\dfrac{1}{6^s}+\cdots &amp;&amp;\text{ Donde $s$ es un número complejo}
+\end{align*}\]
 
-<h2 id="definición">Definición</h2>
+<p><strong>Euler</strong> se dio cuenta que si multiplicaba a ambos lados de la igualdad por \(\dfrac{1}{2^s}\) la función \(\zeta\) tomaba la siguiente forma:</p>
 
-<p>Sea \(n\) un entero positivo, decimos que \(n\) es un número perfecto si es igual a la suma de sus divisores (positivos) propios, es decir todos menos el propio número.</p>
+\[\dfrac{1}{2^s}\zeta(s)=\dfrac{1}{2^s}+\dfrac{1}{4^s}+\dfrac{1}{6^s}+\dfrac{1}{8^s}+\dfrac{1}{10^s}+\cdots\]
 
-<h2 id="ejemplo">Ejemplo</h2>
+<p>Y restando esta segunda serie a la primera, es decir a \(\zeta(s)\), podemos quitar todos los términos que son múltiplos de \(2\), luego factorizando \(\zeta(s)\) obtenemos lo siguiente:</p>
 
-<ul>
-  <li>6 es divisible entre 1, también entre 2 y entre 3, por tanto 6 es un número perfecto ya que 1+2+3=6</li>
-</ul>
+\[(1-\dfrac{1}{2^s}) \zeta(s)=1+\dfrac{1}{3^s}+\dfrac{1}{5^s}+\dfrac{1}{7^s}+\dfrac{1}{9^s}+\dfrac{1}{11^s}+\cdots\]
 
-<p>Los cuatro primeros números perfectos son 6, 28, 496 y 8128, el quinto ya da un salto enorme ya que es 33550336.</p>
+<p>Al hacer esto <strong>Euler</strong> se da cuenta que si hace este proceso para \(3,5,7,11,\cdots\) y en general para todos los números primos, puede eliminar todos sus múltiplos y obtiene la siguiente expresión:</p>
 
-<p>Con esto nos hacemos la idea de que son números muy especiales y escasos, de hecho a día de hoy no se sabe si son infinitos, sin embargo el siguiente teorema nos da una manera de construirlos que además los relaciona con los primos de Mersenne (que tampoco se sabe si son infinitos).</p>
+\[\cdots(1-\dfrac{1}{7^s})(1-\dfrac{1}{5^s})(1-\dfrac{1}{3^s})(1-\dfrac{1}{2^s})\zeta(s)=1\]
 
-<h2 id="teorema">Teorema</h2>
+<p>Por lo tanto:</p>
 
-<p>Sea \(n \in \mathbb{Z}\), si \(2^n-1\) es un primo de Mersenne, entonces \(\left(2^{n-1}\right) \cdot\left(2^n-1\right)\) es un número perfecto.</p>
+\[\zeta(s)=\dfrac{1}{(1-\dfrac{1}{7^s})(1-\dfrac{1}{5^s})(1-\dfrac{1}{3^s})(1-\dfrac{1}{2^s})\cdots}\]
 
-<p>Podemos ver a partir de este teorema lo siguiente:</p>
+<p>Luego podemos simplificar esta expresión con un producto obteniendo lo siguiente:</p>
 
-<p>\(3=2^2-1\), es decir un primo de Mersenne, entonces \(\left(2^1\right) \cdot\left(2^2-1\right)=2 \cdot 3=6\), que sabemos que es un número perfecto.</p>
+\[\begin{align*}
+\zeta(s)&amp;=\prod_{p}\dfrac{1}{1-p^{-s}} &amp;&amp; \text{Donde $p$ es un número primo.}
+\end{align*}\]
 
-<p>Análogamente podemos ver que si $n=3,2^3-1=7$, por lo tanto por el teorema anterior:</p>
+<p>Pero para que este resultado valga, es necesario que la parte real de \(s\) sea mayor que \(1\), esto se escribe como \(Re(s)&gt;1\).</p>
 
-<p>\(\left(2^2\right) \cdot\left(2^3-1\right)=4 \cdot 7=28\) y 28 es un número perfecto
-Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos generar a partir de él un número perfecto.</p>
+<p>Y esta fue la prueba que dio <strong>Euler</strong>, que durante su vida se encontró muchas veces con resultados de este estilo, a veces resolviendo problemas terminaba abriendo paso a nuevas ramas de las matemáticas sin siquiera darse cuenta, como por ejemplo la topología y la teoría de grafos en el problema de los puentes de <strong>Königsberg</strong>.</p>
 
-<p>Es increible como Euclides hace más de 2300 años logró demostrar esta relación, a partir de esto podemos ver una vez más que su legado trasciende mucho más allá de la geometría.</p>
-
-<p>Algunos datos adicionales a considerar sobre los números perfectos es que todos los que se conocen son pares y no sabemos si existe uno impar, o si son infinitos, pero sabemos que si los primos de Mersenne lo son, esto implicaría que los números perfectos también y esto es justamente por el teorema que los relaciona.</p>
-
-<h2 id="demostración">Demostración:</h2>
-
-<p>Supongamos que \(2^n-1\) es primo, veamos que \(\left(2^{n-1}\right) \cdot\left(2^n-1\right)=N\) es un número perfecto.</p>
-
-<p>Queremos ver que \(N\) es la suma de sus divisores menos él mismo, luego tenemos que por definición de \(\mathrm{N}\), la suma de sus divisores el producto de la suma de los divisores de \(2^{n-1}\) y \(2^n-1\).</p>
-
-<p>Los divisores de \(2^{n-1}\) son \(1,2,4,8, \ldots, 2^{n-1}\), y tenemos que \(1+2+\ldots+2^{n-1}=2^n-1\).</p>
-
-<p>Y como \(2^n-1\) es primo sus divisores son 1 y \(2^n-1\), por lo tanto la suma de sus divisores es \(2^n\).</p>
-
-<p>Luego al hacer el producto de la suma de los divisores de \(2^{n-1}\) y \(2^n-1\) y restar el propio \(N\) (por definición de número perfecto) tenemos que:</p>
-
-\[\begin{aligned}
-\left(2^n\right) \cdot\left(2^n-1\right)-N &amp; =\left(2^n\right) \cdot\left(2^n-1\right)-\left(2^{n-1}\right) \cdot\left(2^n-1\right) \\
-&amp; =\left(2^n-1\right) \cdot\left(2^{n-1}\right) \\
-&amp; =N
-\end{aligned}\]
-
-<p>Luego es claro que \(\mathrm{N}\) es un número perfecto ya que la suma de sus divisores menos él mismo es justamente \(\mathrm{N}\).</p>
+<p>Sin lugar a dudas fue un matemático increible.</p>
 
         
       </section>
@@ -417,11 +397,15 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
     
       
       
-      <a href="/tags/#n%C3%BAmeros-de-mersenne" class="page__taxonomy-item" rel="tag">Números de Mersenne</a><span class="sep">, </span>
+      <a href="/tags/#euler" class="page__taxonomy-item" rel="tag">Euler</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#n%C3%BAmeros-perfectos" class="page__taxonomy-item" rel="tag">Números perfectos</a>
+      <a href="/tags/#n%C3%BAmeros-primos" class="page__taxonomy-item" rel="tag">Números Primos</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#zeta-de-riemman" class="page__taxonomy-item" rel="tag">Zeta de Riemman</a>
     
     </span>
   </p>
@@ -442,7 +426,15 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
     
       
       
-      <a href="/categories/#teor%C3%ADa-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría de Números</a>
+      <a href="/categories/#an%C3%A1lisis" class="page__taxonomy-item" rel="tag">Análisis</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#teor%C3%ADa-anal%C3%ADtica-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría analítica de números</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#teor%C3%ADa-de-n%C3%BAmeros" class="page__taxonomy-item" rel="tag">Teoría de números</a>
     
     </span>
   </p>
@@ -450,7 +442,7 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-02-10T00:00:00-05:00">February 10, 2022</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Subido:</strong> <time datetime="2022-04-11T00:00:00-05:00">April 11, 2022</time></p>
         
       </footer>
 
@@ -459,12 +451,11 @@ Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos 
       
   <nav class="pagination">
     
-      <a href="/los-numeros-primos-de-Mersenne/" class="pagination--pager" title="Los números primos de Mersenne
+      <a href="/el-teorema-de-pitagoras/" class="pagination--pager" title="El teorema de pitágoras.
 ">Anterior</a>
     
     
-      <a href="/la-criba-de-eratostenes/" class="pagination--pager" title="La criba de Eratóstenes.
-">Siguiente</a>
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
     
   </nav>
 
