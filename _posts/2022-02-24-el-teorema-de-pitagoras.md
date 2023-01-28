@@ -5,7 +5,7 @@ excerpt: "El teorema de pitágoras es uno de los más conocidos de toda la matem
 date: 2022-02-24 
 classes: wide
 header:
-  teaser: /assets/images/el-teorema-de-pitagoras/portada.png
+  teaser: /assets/images/el-teorema-de-pitagoras/portada.jpg
   teaser_home_page: true
   icon: 
 categories:
@@ -15,7 +15,7 @@ tags:
   - Pitágoras
 ---
 
-<center> <img src="/assets/images/el-teorema-de-pitagoras/portada.png" weidth="10%" heigth="10%"> </center>
+<center> <img src="/assets/images/el-teorema-de-pitagoras/portada.jpg" weidth="10%" heigth="10%"> </center>
 
 La mayor parte de las demostraciones conocidas de este teorema consisten en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso:
 
