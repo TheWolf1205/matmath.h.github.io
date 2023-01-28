@@ -22,7 +22,43 @@ La mayor parte de las demostraciopnes conocidad de este teorema consiste en calc
 basado
 
 <script type="text/tikz">
-  \begin{tikzpicture}
-    \filldraw[color=white!0,fill=red!100] (0,0) circle (1in);
-  \end{tikzpicture}
+ 
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,221); %set diagram left start at 0, and has height of 221
+
+%Shape: Square [id:dp8670474238257233] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (229.07,45) -- (351.5,45) -- (351.5,167.43) -- (229.07,167.43) -- cycle ;
+%Shape: Square [id:dp08207234382767448] 
+\draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ] (281.88,45.38) -- (351.12,97.81) -- (298.69,167.04) -- (229.46,114.62) -- cycle ;
+
+% Text Node
+\draw (248.74,26.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {a};
+% Text Node
+\draw (214.74,130.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {a};
+% Text Node
+\draw (321.14,167.8) node [anchor=north west][inner sep=0.75pt]   [align=left] {a};
+% Text Node
+\draw (354.34,59.8) node [anchor=north west][inner sep=0.75pt]   [align=left] {a};
+% Text Node
+\draw (314.74,26.2) node [anchor=north west][inner sep=0.75pt]   [align=left] {b};
+% Text Node
+\draw (214.34,63.8) node [anchor=north west][inner sep=0.75pt]   [align=left] {b};
+% Text Node
+\draw (355.54,128.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {b};
+% Text Node
+\draw (255.14,169) node [anchor=north west][inner sep=0.75pt]   [align=left] {b};
+% Text Node
+\draw (257.94,75.8) node [anchor=north west][inner sep=0.75pt]   [align=left] {c};
+% Text Node
+\draw (308.34,70.2) node [anchor=north west][inner sep=0.75pt]   [align=left] {c};
+% Text Node
+\draw (264.34,125) node [anchor=north west][inner sep=0.75pt]   [align=left] {c};
+% Text Node
+\draw (316.74,115.4) node [anchor=north west][inner sep=0.75pt]   [align=left] {c};
+
+
+\end{tikzpicture}
 </script>
