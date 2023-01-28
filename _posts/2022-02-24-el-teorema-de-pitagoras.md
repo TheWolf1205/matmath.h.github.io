@@ -15,7 +15,7 @@ tags:
   - Pitágoras
 ---
 
-<center> <img src="/assets/images/el-teorema-de-pitagoras/portada.png" weidth="30%" heigth="30%"> </center>
+<center> <img src="/assets/images/el-teorema-de-pitagoras/portada.png" weidth="20%" heigth="20%"> </center>
 
 La mayor parte de las demostraciopnes conocidad de este teorema consiste en calcular un área de dos maneras diferentes para posteriormente igualarlas y manipular la expresión resultante, como ocurre en el siguiente caso
 
