@@ -22,7 +22,7 @@ La mayor parte de las demostraciopnes conocidad de este teorema consiste en calc
 basado
 
 
-<center> <<script type="text/tikz">
+<center> <script type="text/tikz">
  
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -62,4 +62,4 @@ basado
 
 
 \end{tikzpicture}
-</script>> </center>
+</script> </center>
