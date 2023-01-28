@@ -23,6 +23,6 @@ basado
 
 <script type="text/tikz">
   \begin{tikzpicture}
-    \filldraw[color=white!100,fill=red!0] (0,0) circle (1in);
+    \filldraw[color=white!0,fill=red!100] (0,0) circle (1in);
   \end{tikzpicture}
 </script>
