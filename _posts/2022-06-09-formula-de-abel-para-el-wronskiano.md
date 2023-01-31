@@ -166,9 +166,10 @@ $$
 
 Esto ya que la solución para la ecuación diferencial lineal $$\dfrac{d y}{d x}+y P(x)=Q(x)$$ es justamente:
 
+$$\begin{aligned}
+e^{-\displaystyle\int P(x) d x}\left(\displaystyle\int Q(x) \cdot e^{\displaystyle\int P(x) dx} dx+C\right)\end{aligned}
 $$
-e^{-\displaystyle\int P(x) d x}\left(\displaystyle\int Q(x) \cdot e \displaystyle\int P(x) d x d x+C\right)
-$$.
+
 
 $$\tag*{$\blacksquare$}$$
 
