@@ -161,7 +161,7 @@ Luego para todo $$t \in 1, W^{\prime}(t)=-a_1(t) W(t)$$.
 Luego como $$W^{\prime}(t)=-a_1(t) W(t)$$ es una ecuación diferencial lineal homogenea de primer orden, concluimos que:
 
 $$
-W(t)=C e^{-\int} a_1(t) d t
+W(t)=C e^{-\displaystyle\int} a_1(t) d t
 $$
 
 Esto ya que la solución para la ecuación diferencial lineal $$\dfrac{d y}{d x}+y P(x)=Q(x)$$ es justamente:
