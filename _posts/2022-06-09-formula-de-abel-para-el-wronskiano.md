@@ -86,7 +86,7 @@ $$
 x^{\prime \prime}+a_1(t) x^{\prime}+a_2(t) x=0
 $$
 
-una ecuación diferencial lineal homogénea de segundo orden, donde $$a_1(t) y  a_2(t)$$ son funciones reales continuas en un intervalo $$I$$. Sean $$x_1(t), x_2(t)$$ dos soluciones de la ecuación diferencial y sea
+una ecuación diferencial lineal homogénea de segundo orden, donde $$a_1(t)$$ y $$a_2(t)$$ son funciones reales continuas en un intervalo $$I$$. Sean $$x_1(t), x_2(t)$$ dos soluciones de la ecuación diferencial y sea
 
 $$
 W(t)=W\left[x_1(t), x_2(t)\right]
