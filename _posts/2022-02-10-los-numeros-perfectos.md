@@ -76,3 +76,5 @@ $$
 $$
 
 Luego es claro que $$\mathrm{N}$$ es un número perfecto ya que la suma de sus divisores menos él mismo es justamente $$\mathrm{N}$$.
+
+$$\tag*{$\blacksquare$}$$

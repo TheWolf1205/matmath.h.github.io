@@ -96,4 +96,7 @@ Puesto que $$y>0, a$$ y $$b$$ tienen el mismo signo y como $$s=a+b$$ entonces $$
 
 Finalmente $$(a, b)=1$$ pues si $$p$$ es un primo tal que $$p \mid a$$ y $$p \mid b$$ entonces $$p\mid x, p \mid y, p \mid z$$ lo que contradice que $$(x, y, z)=1$$
 
+
+$$\tag*{$\blacksquare$}$$
+
 Y estas ecuaciones diofanticas tienen muchas conexiones con el álgebra, de hecho la prueba de Andrew Wiles del último teorema de Fermat se basa en curvas elípticas, dejaremos un enlace a la parte 2 de este post aquí para quien le interese ver la continuación.

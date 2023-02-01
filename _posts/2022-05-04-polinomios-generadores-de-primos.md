@@ -55,7 +55,7 @@ $$p(n_0+qh)=p(n_0)+Cq=q+Cq=q(1+C)$$
 
 Donde $$C$$ es un entero, por tanto $$p(n_0+qh)$$ es compuesto para todo $$h$$ tal que $$n_0+qh \geq n_1$$, como hay infinitos valores de $$h$$ que cumplen la condición, entonces queda demostrada la afirmación.
 
-$$\blacksquare$$
+$$\tag*{$\blacksquare$}$$
 
 Lo que hemos probado es que cualquier polinomio con estas condiciones, siempre generará una infinita cantidad de números compuestos, por lo tanto es imposible que nos genere solamente números primos.
 

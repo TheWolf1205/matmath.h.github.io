@@ -40,7 +40,7 @@ $$
 
 Y por la propiedad clausurativa en los enteros en cada caso, podemos garantizar que $$2^{p \cdot q}-1$$ es compuesto, por tanto no es primo, lo cual es una contradicción, luego, es claro que $$n$$ debe ser primo.
 
-$$\blacksquare$$
+$$\tag*{$\blacksquare$}$$
 
 ## Nota
 

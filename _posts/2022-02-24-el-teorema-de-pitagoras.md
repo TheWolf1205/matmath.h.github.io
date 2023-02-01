@@ -64,8 +64,6 @@ La mayor parte de las demostraciones conocidas de este teorema consisten en calc
 \end{tikzpicture}
 </script> </center>
 
-## Demostración del presidente
-
 En este caso lo que queremos es calcular el área del cuadrado grande de dos maneras diferentes, una de ellas es ver que es un cuadrado de lado $$(a+b)$$ y por lo tanto su area es $$(a+b)^2=a^2+2 a b+b^2$$.
 
 La otra manera es calcular el área del cuadrado interior, la cual es $$c^2$$ y sumarle el área de los 4 triángulos interiores, cuya área es $$\frac{a b}{2}$$, por tanto el área total sería $$c^2+4\left(\frac{a b}{2}\right)=c^2+2 a b$$.
@@ -84,14 +82,14 @@ $$
 
 Y este es justamente el teorema de pitágoras que conocemos y usamos tantas veces en geometría para medir distancias.
 
-$$\blacksquare$$
+$$\tag*{$\blacksquare$}$$
+
+## Demostración del presidente
 
 Ahora veamos la demostración que dió a este teorema el presidente de los EE.UU James Abram Garfield, nuevamente consiste en calcular el área del siguiente trapecio de dos maneras diferentes.
 
 
 <center><script type="text/tikz">
-
-
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
@@ -123,7 +121,6 @@ Ahora veamos la demostración que dió a este teorema el presidente de los EE.UU
 
 \end{tikzpicture}
 
-
 </script>
 </center>
 
@@ -153,6 +150,6 @@ $$
 a^2+b^2=c^2
 $$
 
-$$\blacksquare$$
+$$\tag*{$\blacksquare$}$$
 
 La fama del teorema de pitágoras se debe a que tiene una gran importancia en la geometría y es de uso recurrente para medir distancias, pero su impacto va más allá, este teorema inspiró a Fermat a plantear varios problemas en teoría de números, tales como el último teorema de Fermat, que duró más de 300 años sin resolverse.
