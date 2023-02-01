@@ -13,6 +13,7 @@ categories:
   - Álgebra
 tags:  
   - Ecuaciones diofánticas
+  - Teoría de números
 ---
 
 Una ecuación de la forma $$p\left(x_1, x_2, \ldots, x_n\right)=0$$ donde $$p\left(x_1, x_2, \ldots, x_n\right)$$ es un polinomio con coeficientes enteros y con sus variables restringidas a tomar solo valores enteros se denomina una Ecuación Diofántica en honor al matemático griego Diofanto de Alejandría quien las estudió primera vez en su libro Arithmetica.
@@ -21,7 +22,7 @@ Hoy veremos una ecuación diofántica muy famosa propuesta por Fermat y estudiar
 
 ## Introducción:
 
-Fermat afirmaba haber demostrado que la ecuación $$x^n+y^n=z^n$$ no tiene solución en $$\mathbb{Z} \backslash 0$$ para todo $$n \geq 3$$, como podemos observar, se trata de una ecuación diofántica, esta demostración no es sencilla y nuestro objetivo va a ser demostrar todos los casos en los que $n$ es una potencia de 2 mayor que 2.
+Fermat afirmaba haber demostrado que la ecuación $$x^n+y^n=z^n$$ no tiene solución en $$\mathbb{Z} \backslash 0$$ para todo $$n \geq 3$$, como podemos observar, se trata de una ecuación diofántica, esta demostración no es sencilla y nuestro objetivo va a ser demostrar todos los casos en los que $$n$$ es una potencia de 2 mayor que 2.
 
 Para esto primero debemos entender muy bien exactamente cómo se comportan las soluciones de $$x^2+y^2=$$ $$z^2$$
 
@@ -76,7 +77,7 @@ $$
 a=\frac{s+r}{2}, \quad b=\frac{s-r}{2}
 $$
 
-Se puede verificar con cuenticas que $r=a-b$ y $s=a+b$. Por lo tanto,
+Se puede verificar con cuenticas que $$r=a-b$$ y $$s=a+b$$. Por lo tanto,
 
 $$
 z-y=(a-b)^2, \quad z+y=(a+b)^2
