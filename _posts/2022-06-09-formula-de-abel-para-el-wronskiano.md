@@ -2,7 +2,7 @@
 layout: single
 title: Formula de Abel para el Wronskiano
 excerpt: "Abel fue un matemático Noruego que ha inspirado a muchos matemáticos, sus aportes se centran principalmente en el álgebra, sin embargo hoy veremos uno de sus aportes a la rama del análisis.  " 
-date: 2022-05-04 
+date: 2022-06-09 
 classes: wide
 header:
   teaser: /assets/images/formula-de-abel-para-el-wronskiano/niels.jpg
@@ -161,7 +161,7 @@ Luego para todo $$t \in 1, W^{\prime}(t)=-a_1(t) W(t)$$.
 Luego como $$W^{\prime}(t)=-a_1(t) W(t)$$ es una ecuación diferencial lineal homogenea de primer orden, concluimos que:
 
 $$
-W(t)=C e^{-\displaystyle\int} a_1(t) d t
+W(t)=C e^{-\displaystyle\int a_1(t) d t}
 $$
 
 Esto ya que la solución para la ecuación diferencial lineal $$\dfrac{d y}{d x}+y P(x)=Q(x)$$ es justamente:
