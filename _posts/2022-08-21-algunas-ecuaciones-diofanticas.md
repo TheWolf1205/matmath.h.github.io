@@ -21,14 +21,15 @@ Hoy veremos una ecuación diofántica muy famosa propuesta por Fermat y estudiar
 
 ## Introducción:
 
-Fermat afirmaba haber demostrado que la ecuación $$x^n+y^n=z^n$$ no tiene solución en $$\mathbb{Z} \backslash 0$$ para todo $$n \geq 3$$, como podemos observar, se trata de una ecuación diofántica, esta demostración no es sencilla y nuestro objetivo va a ser demostrar todos los casos en los que $n$ es par a excepción del caso $$n=2$$ donde vale el teorema de pitágoras.
+Fermat afirmaba haber demostrado que la ecuación $$x^n+y^n=z^n$$ no tiene solución en $$\mathbb{Z} \backslash 0$$ para todo $$n \geq 3$$, como podemos observar, se trata de una ecuación diofántica, esta demostración no es sencilla y nuestro objetivo va a ser demostrar todos los casos en los que $n$ es una potencia de 2 mayor que 2.
 
 Para esto primero debemos entender muy bien exactamente cómo se comportan las soluciones de $$x^2+y^2=$$ $$z^2$$
 
-## Ternas pitagóricas
+## Ternas pitagóricas:
 
 Lo primero que tenemos es que si $$(x, y, z)$$ es una solución de $$x^n+y^n=z^n$$, entonces $$(k x, k y, k z)$$ también lo es para todo $$k \in \mathbb{Z}$$, esto se puede comprobar fácilmente haciendo cálculos, por tanto podemos siempre restringirnos a buscar soluciones donde $$(x, y, z)=$$ 1 , es decir donde $$x, y, z$$ son coprimos, estas soluciones se llamas primitivas, más aún, solo es necesario encontrar soluciones primitivas positivas.
 
+## Observaciones: 
 Note que si $$(x, y)=d>1$$ y $$p$$ es un primo tal que $$p|d, p| x$$ y $$p \mid y$$, entonces $$p\left|x^2, p\right| y^2$$, luego tenemos que $$p \mid\left(x^2+y^2\right)=z^2$$
 
 Y como $$p$$ es primo entonces $$p \mid z$$ y esto contradice que $$(x, y, z)=1$$, luego $$(x, z)=1$$, análogamente se verifica que $$(y, z)=1$$.
@@ -72,7 +73,7 @@ Luego $$(z-y)$$ y $$(z+y)$$ deben ser números impares y cuadrados perfectos, ya
 Supongamos entonces $$(z-y)=r^2 y(z+y)=s^2$$ donde $$r$$ y s son impares y positivos y definamos
 
 $$
-a=\frac{s+r}{2}, \quad b=\frac{s-r}{2} .
+a=\frac{s+r}{2}, \quad b=\frac{s-r}{2}
 $$
 
 Se puede verificar con cuenticas que $r=a-b$ y $s=a+b$. Por lo tanto,
@@ -91,8 +92,8 @@ $$
 \end{aligned}
 $$
 
-Puesto que $$y>0, a$$ y $$b$$ tienen el mismo signo y como $$s=a+b$$ entonces $$a$$ y $$b$$ resultan positivos. Como $$r=a-b>0$$ entonces $$a>b$$ y como $$s=a+b$$ es impar entonces a y $$b$$ tienen distinta paridad.
+Puesto que $$y>0, a$$ y $$b$$ tienen el mismo signo y como $$s=a+b$$ entonces $$a$$ y $$b$$ resultan positivos. Como $$r=a-b>0$$ entonces $$a>b$$ y como $$s=a+b$$ es impar entonces a y $$b$$ tienen distinta paridad
 
-Finalmente $$(a, b)=1$$ pues si $$p$$ es un primo tal que $$p \mid a$$ y $$p \mid b$$ entonces $$p|x, p| y, p \mid z$$ lo que contradice que $$(x, y, z)=1$$
+Finalmente $$(a, b)=1$$ pues si $$p$$ es un primo tal que $$p \mid a$$ y $$p \mid b$$ entonces $$p\mid x, p \mid y, p \mid z$$ lo que contradice que $$(x, y, z)=1$$
 
-Note que esta demostración es un poco artificial y tiene muchas cuentas detrás, lo bueno de esta prueba es que requiere de pocas herramientas, en esta prueba se usaron algunas propiedades del M.C.D y cuadrados perfectos de las que no hemos hablado antes ya que el tema no es tan atractivo por si solo, sin embargo quizás considere juntar todo de tal forma podamos ver estas propiedades sin que se torne aburrido.
+Y estas ecuaciones diofanticas tienen muchas conexiones con el álgebra, de hecho la prueba de Andrew Wiles del último teorema de Fermat se basa en curvas elípticas, dejaremos un enlace a la parte 2 de este post aquí para quien le interese ver la continuación.
