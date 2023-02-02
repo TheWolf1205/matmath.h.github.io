@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Congruencias
-excerpt: "Aquí veremos una introducción a la aritmética modular y su fundamentación con base a las congruencias, definiremos estos conceptos y veremos un par de resultadosS" 
+excerpt: "Aquí veremos una introducción a la aritmética modular y su fundamentación con base a las congruencias, definiremos estos conceptos y veremos un par de resultados" 
 date: 2022-09-11 
 classes: wide
 header:
