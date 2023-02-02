@@ -9,11 +9,11 @@ header:
   teaser_home_page: true
   icon: 
 categories:
-  - Teoría de números
+  - Teoría de Números
   - Álgebra
 tags:  
   - Ecuaciones diofánticas
-  - Teoría de números
+  - Teoría de Números
 ---
 
 Una ecuación de la forma $$p\left(x_1, x_2, \ldots, x_n\right)=0$$ donde $$p\left(x_1, x_2, \ldots, x_n\right)$$ es un polinomio con coeficientes enteros y con sus variables restringidas a tomar solo valores enteros se denomina una Ecuación Diofántica en honor al matemático griego Diofanto de Alejandría quien las estudió primera vez en su libro Arithmetica.

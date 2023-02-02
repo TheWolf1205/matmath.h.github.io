@@ -9,7 +9,7 @@ header:
   teaser_home_page: true
   icon: 
 categories:
-  - Teoría de números
+  - Teoría de Números
   - Álgebra
 tags:  
   - Ecuaciones diofánticas
@@ -19,7 +19,7 @@ tags:
 
 ## Definición:
 
-Sean $$a$$ y $$b$$ enteros cualesquiera y $$n$$ un entero positivo. Si $$n \mid(a-b)$$ (n divide a $$(a-b)$$ ), decimos que a y $$b$$ son congruentes módulo $n$ y lo denotamos por
+Sean $$a$$ y $$b$$ enteros cualesquiera y $$n$$ un entero positivo. Si $$n \mid(a-b)$$ (n divide a $$(a-b)$$ ), decimos que a y $$b$$ son congruentes módulo $$n$$ y lo denotamos por
 
 $$
 a \equiv b(\bmod n)
@@ -67,9 +67,102 @@ $$
 \end{aligned}
 $$
 
-Por tanto $$(c+a)-(b+d)=n \cdot(k+f)$$, luego por la propiedad clausurativa de la suma en los enteros, $$k+f \in$ $\mathbb{Z}$$, luego $$a+c \equiv b+d(\bmod n)$$
+Por tanto $$(c+a)-(b+d)=n \cdot(k+f)$$, luego por la propiedad clausurativa de la suma en los enteros, $$k+f \in$$ $$\mathbb{Z}$$, luego $$a+c \equiv b+d(\bmod n)$$
 
 $$\tag*{$\blacksquare$}$$
 
 De manera similar se hacen las demás pruebas del teorema.
 
+## Mínimo común múltiplo:
+
+Denotaremos $$[a, b]$$ el mínimo común múltiplo de $$a$$ y $$b$$
+
+Recordemos que el mínimo común múltiplo es el menor entero que es divisible entre a y b simultáneamente.
+
+## Teorema:
+
+Sean $$n_1, n_2$$ enteros positivos. Si para $$i=1,2$$ se tiene que $$a \equiv b\left(\bmod n_i\right)$$ entonces
+
+$$
+a \equiv b\left(\bmod \left[n_1, n_2\right]\right) \text {. }
+$$
+
+En particular, si $$\operatorname{mcd}\left(n_1, n_2\right)=1$$ entonces
+
+$$
+a \equiv b\left(\bmod n_1 n_2\right)
+$$
+
+## Demostración:
+
+Demostración Supongamos que
+
+$$
+a \equiv b\left(\bmod n_1\right) \text { y } a \equiv b\left(\bmod n_2\right)
+$$
+
+Entonces $$n_1 \mid(a-b)$$ y $$n_2 \mid(a-b)$$, luego:
+
+$$
+\left[n_1, n_2\right] \mid(a-b) .
+$$
+
+Por tanto, $$a \equiv b\left(\bmod \left[n_1, n_2\right]\right)$$.
+
+Ahora cuando $$\operatorname{mcd}\left(n_1, n_2\right)=1\left[n_1, n_2\right]=n_1 \cdot n_2$$
+
+Ahora veremos un resultado importante de congruencias con el que finalizaremos el post
+
+## Teorema pequeño de Fermat
+
+Sea $$p$$ un número primo, y $$a>0$$ tal que $$\operatorname{mcd}(a, p)=1$$, entonces
+
+$$
+a^{p-1} \equiv 1(\text { mód } p)
+$$
+
+Este resultado es equivalente al siguiente:
+
+$$
+a^p \equiv a(\operatorname{mód} p)
+$$
+
+Pero en este caso no es necesaria la hipótesis de $$\operatorname{mcd}(a,p)=1$$
+
+<a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://matcris5.files.wordpress.com/2011/08/teoria_de_los_numeros_para_principiantes1.pdf&ved=2ahUKEwiWm87mvY76AhUbomoFHXwZAfUQFnoECBQQAQ&usg=AOvVaw2Ba0ElvKPa_hrPttUvRwAX"> Link-a-la-demostración </a> página 118
+
+## Ejercicio de aplicación:
+
+Si $$p$$ y $$q$$ son primos diferentes, probar que
+
+$$
+p^q+q^p \equiv(p+q)(\text { mód } p q)
+$$
+
+## Demostración:
+
+Por el teorema pequeño de Fermat se tiene que:
+
+$$
+p^q \equiv p(\operatorname{mód} q), \quad q^p \equiv q(\text { mód } p)
+$$
+
+$$
+\operatorname{Como}(p, q)=1, \text { entonces } p^q+q^p \equiv p+q(\text { mód } p q)
+$$
+
+## Otro ejercicio:
+
+Pruebe que $$n^3-n$$ es divisible por 6
+
+## Demostración:
+
+Note que $$n^3-n=n(n-1)(n+1)$$, luego $$n^3-n \equiv 0( \bmod 2)$$ ya que es producto de dos enteros consecutivos y por consecuente par.
+
+Ahora por el teorema pequeño de Fermat $$n^3 \equiv n$$ (mód 3), entonces $$n^3-n \equiv 0$$ (mód 3 ), finalmente concluimos que $$n^3-n \equiv 0$$( mód 6)
+
+## Comentarios:
+
+* La razón por la que se le llama aritmética del reloj es porque sumar módulo 12 o 24 es lo mismo que sumar horas en un reloj y preguntarse qué hora será.
+
+En este punto más allá de ver la hora en un reloj o resolver problemas en teoría de números puede que no veamos aplicaciones de esto, pero en los siguientes post veremos como podemos aplicar esto para construir matemáticas muy potentes que nos ayuden con problemas cotidianos.
