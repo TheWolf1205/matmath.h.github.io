@@ -144,6 +144,6 @@ Las preguntas más interesantes a las que nos enfrentamos al estudiar la ley de 
 
 ## Links de interés
 
-  - <a href="https://matcris5.files.wordpress.com/2011/08/teoria_de_los_numeros_para_principiantes1.pdf"> https://matcris5.files.wordpress.com/2011/08/teoria_de_los_numeros_para_principiantes1.pdf </a>
+  - <a href="https://matcris5.files.wordpress.com/2011/08/teoria_de_los_numeros_para_principiantes1.pdf"> Teoría de números para principiantes </a>
   - <a href="https://es.m.wikipedia.org/wiki/Programa_de_Langlands"> https://es.m.wikipedia.org/wiki/Programa_de_Langlands </a>
   - <a href="https://www.famaf.unc.edu.ar/documents/942/CMat31-3.pdf"> https://www.famaf.unc.edu.ar/documents/942/CMat31-3.pdf </a>
