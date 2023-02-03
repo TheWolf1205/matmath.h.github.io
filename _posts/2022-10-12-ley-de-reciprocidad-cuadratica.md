@@ -17,6 +17,11 @@ tags:
 
 Al estudiar los residuos cuadráticos notamos que estos tienen la siguiente simetría.
 
+## Residuos cuadráticos módulo 7919
+
+<center> <img src="/assets/images/residuos-cuadraticos/Residuos.jpg" width="50%" heigth="50%"> </center>
+<br>
+
 Aquí veremos la razón de la simetría e introduciremos el criterio de **Euler** y la ley de reciprocidad cuadrática.
 
 ## Teorema
