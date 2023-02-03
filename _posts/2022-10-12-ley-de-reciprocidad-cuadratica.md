@@ -6,7 +6,7 @@ excerpt: "'La teoría de números moderna comenzó con el descubrimiento de la l
 date: 2022-10-12
 classes: wide
 header:
-  teaser: /assets/images/residuos-cuadraticos/legendre.jpg  
+  teaser: /assets/images/ley-de-reciprocidad-cuadratica/Gauss.jpg
   teaser_home_page: true
   icon: 
 categories:
@@ -75,7 +75,11 @@ Sea $$p$$ un primo impar y sean $$a$$ y $$b$$ enteros primos relativos con $$p$$
 
 5) Aplicando el teorema de Euler tenemos:
 
-$$(a\mid p)(b \mid p) \equiv a^{\dfrac{p-1}{2}}b^{\dfrac{p-1}{2}}=(ab)^{\dfrac{p-1}{2}} \equiv (ab \mid p) (mód p)$$
+$$\begin{aligned}
+  (a\mid p)(b \mid p) &\equiv a^{\dfrac{p-1}{2}}b^{\dfrac{p-1}{2}}\\
+  &=(ab)^{\dfrac{p-1}{2}}\\
+  &\equiv (ab \mid p) (mód p)
+\end{aligned}$$
 
 Y como $$(a \mid p)(b \mid p) = \pm 1, (ab \mid p)= \pm 1$$ y $$p>2$$ se sigue que $$(a \mid p)(b \mid p)=(ab \mid p)$$.
 
@@ -107,7 +111,10 @@ Sea $$p$$ y $$q$$ primos impares. Entonces:
 
 **Ejemplo:** Determinar si $$60$$ es un residuo cuadrático módulo $$239$$. Como $$60 = 2^2*3*5$$, entonces:
 
-$$(60 \mid 239) = (2 \mid 239)^2(3 \mid 239)(5 \mid 239)=(3 \mid 239)(5 \mid 239)$$
+$$\begin{aligned}
+  (60 \mid 239) &= (2 \mid 239)^2(3 \mid 239)(5 \mid 239)\\
+  &=(3 \mid 239)(5 \mid 239)
+\end{aligned}$$
 
 Pero:
 
@@ -122,8 +129,8 @@ y
 
 $$
 \begin{align*}
-(5 \mid 239)&=(239 \mid 5)(-1)^{\dfrac{238}{2}\dfrac{4}{2}}=(239 \mid 5) //
-$=(4 \mid 5)=(2 \mid 5)^2 = 1
+(5 \mid 239)&=(239 \mid 5)(-1)^{\dfrac{238}{2}\dfrac{4}{2}}=(239 \mid 5) \\
+&=(4 \mid 5)=(2 \mid 5)^2 = 1
 \end{align*}
 $$
 
