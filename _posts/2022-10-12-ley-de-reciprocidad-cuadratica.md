@@ -19,7 +19,7 @@ Al estudiar los residuos cuadráticos notamos que estos tienen la siguiente sime
 
 ## Residuos cuadráticos módulo 7919
 
-<center> <img src="/assets/images/residuos-cuadraticos/Residuos.svg" width="65%" heigth="65%"> </center>
+<center> <img src="/assets/images/residuos-cuadraticos/Residuos.svg$$" width="65%" heigth="65%"> </center>
 <br>
 
 Aquí veremos la razón de la simetría e introduciremos el criterio de **Euler** y la ley de reciprocidad cuadrática.
@@ -44,7 +44,7 @@ Y como entre esos primeros $$\dfrac{p-1}{2}$$ residuos no hay dos equiresiduales
 
 $$\tag*{$\blacksquare$}$$
 
-El pequeño teorema de **Fermat** nos dice que si $$mcd(a,p)=1$$, entonces $$a^{p-1}-1\equiv 0 (módp)$$, como:
+El pequeño teorema de **Fermat** nos dice que si $$mcd(a,p)=1$$, entonces $$a^{p-1}-1\equiv 0 (mód p)$$, como:
 
 $$a^{p-1}-1=(a^{\dfrac{p-1}{2}}-1)(a^{\dfrac{p-1}{2}}+1)$$
 
@@ -60,7 +60,7 @@ $$a^{\dfrac{p-1}{2}}\equiv (a\mid p) (mód p)$$
 
 ## Demostración
 
-Por colocar ....
+Por colocar ..
 ---
 
 ## Teorema (Algunas propiedades)
