@@ -11,7 +11,8 @@ header:
 categories:
   - Álgebra Computacional
 tags:  
-  - Algoritmo
+  - Algoritmos
+  - Notación O grande
 ---
 
 Hoy veremos una forma de analizar nuestros algoritmos en cualquier lenguaje de programación:
@@ -29,20 +30,20 @@ Hoy veremos una forma de analizar nuestros algoritmos en cualquier lenguaje de p
 %uncomment if require: \path (0,472); %set diagram left start at 0, and has height of 472
 
 %Shape: Axis 2D [id:dp11483536320529097] 
-\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][line width=1.5]  (13.57,389.79) -- (623.57,389.79)(74.57,16.29) -- (74.57,431.29) (616.57,384.79) -- (623.57,389.79) -- (616.57,394.79) (69.57,23.29) -- (74.57,16.29) -- (79.57,23.29)  ;
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][line width=1.5]  (13.57,234.56) -- (370.05,234.56)(49.22,16.29) -- (49.22,258.81) (363.05,229.56) -- (370.05,234.56) -- (363.05,239.56) (44.22,23.29) -- (49.22,16.29) -- (54.22,23.29)  ;
 %Shape: Grid [id:dp5849393120179278] 
-\draw  [draw opacity=0][dash pattern={on 1.69pt off 2.76pt}][line width=1.5]  (74.57,44.58) -- (607.26,44.58) -- (607.26,390.8) -- (74.57,390.8) -- cycle ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 1.69pt off 2.76pt}][line width=1.5]  (74.57,44.58) -- (74.57,390.8)(138.41,44.58) -- (138.41,390.8)(202.26,44.58) -- (202.26,390.8)(266.1,44.58) -- (266.1,390.8)(329.94,44.58) -- (329.94,390.8)(393.78,44.58) -- (393.78,390.8)(457.62,44.58) -- (457.62,390.8)(521.47,44.58) -- (521.47,390.8)(585.31,44.58) -- (585.31,390.8) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 1.69pt off 2.76pt}][line width=1.5]  (74.57,44.58) -- (607.26,44.58)(74.57,108.43) -- (607.26,108.43)(74.57,172.27) -- (607.26,172.27)(74.57,236.11) -- (607.26,236.11)(74.57,299.95) -- (607.26,299.95)(74.57,363.79) -- (607.26,363.79) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 1.69pt off 2.76pt}][line width=1.5]   ;
+\draw  [draw opacity=0][dash pattern={on 1.69pt off 2.76pt}][line width=1.5]  (49.22,32.82) -- (360.52,32.82) -- (360.52,235.15) -- (49.22,235.15) -- cycle ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 1.69pt off 2.76pt}][line width=1.5]  (49.22,32.82) -- (49.22,235.15)(86.53,32.82) -- (86.53,235.15)(123.84,32.82) -- (123.84,235.15)(161.14,32.82) -- (161.14,235.15)(198.45,32.82) -- (198.45,235.15)(235.76,32.82) -- (235.76,235.15)(273.07,32.82) -- (273.07,235.15)(310.38,32.82) -- (310.38,235.15)(347.69,32.82) -- (347.69,235.15) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 1.69pt off 2.76pt}][line width=1.5]  (49.22,32.82) -- (360.52,32.82)(49.22,70.13) -- (360.52,70.13)(49.22,107.44) -- (360.52,107.44)(49.22,144.75) -- (360.52,144.75)(49.22,182.06) -- (360.52,182.06)(49.22,219.37) -- (360.52,219.37) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 1.69pt off 2.76pt}][line width=1.5]   ;
 %Curve Lines [id:da31886486777884215] 
-\draw [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][line width=1.5]    (74.57,283.57) .. controls (98.87,265.31) and (115.68,141.04) .. (180.58,230.46) .. controls (245.48,319.89) and (248.01,311.93) .. (264.02,309.6) .. controls (280.04,307.27) and (295.97,262.73) .. (332.36,233.55) .. controls (368.74,204.37) and (385.61,130.1) .. (414.21,187.12) .. controls (442.81,244.13) and (478.79,142.48) .. (500.09,153.97) .. controls (521.39,165.47) and (582.82,152.36) .. (589.65,147.23) ;
+\draw [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][line width=1.5]    (49.22,172.48) .. controls (63.42,161.81) and (73.24,89.19) .. (111.17,141.45) .. controls (149.1,193.71) and (150.57,189.06) .. (159.93,187.69) .. controls (169.29,186.33) and (178.6,160.31) .. (199.87,143.26) .. controls (221.13,126.2) and (230.98,82.8) .. (247.7,116.12) .. controls (264.41,149.44) and (285.44,90.03) .. (297.89,96.75) .. controls (310.33,103.47) and (346.23,95.81) .. (350.23,92.81) ;
 %Curve Lines [id:da08176059116499501] 
-\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][line width=1.5]    (73.57,203.91) .. controls (97.87,185.65) and (114.68,61.38) .. (179.58,150.8) .. controls (244.48,240.22) and (267.45,195.97) .. (287.76,198.62) .. controls (308.08,201.28) and (316.51,331.01) .. (365.09,283.57) .. controls (413.67,236.13) and (381.46,172.9) .. (418.1,177.35) .. controls (454.73,181.81) and (475.72,236.43) .. (509.57,261.29) .. controls (543.42,286.14) and (596,299.97) .. (603.57,294.29) ;
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][line width=1.5]    (48.63,125.93) .. controls (62.83,115.26) and (72.66,42.64) .. (110.58,94.89) .. controls (148.51,147.15) and (161.93,121.29) .. (173.81,122.84) .. controls (185.68,124.39) and (190.61,200.21) .. (219,172.48) .. controls (247.39,144.76) and (228.56,107.81) .. (249.97,110.41) .. controls (271.38,113.01) and (283.65,144.94) .. (303.43,159.46) .. controls (323.21,173.99) and (353.94,182.07) .. (358.36,178.75) ;
 
 % Text Node
-\draw (449,397) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {$\displaystyle b$};
+\draw (265.95,235.24) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {$\displaystyle b$};
 % Text Node
-\draw (597,133) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {$\displaystyle c|g( x) |$};
+\draw (344.75,80.96) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {$\displaystyle c|g( x) |$};
 % Text Node
-\draw (612,301) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {$\displaystyle f( x)$};
+\draw (357.05,179.14) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ,xscale=1.3,yscale=1.3] [align=left] {$\displaystyle f( x)$};
 
 
 \end{tikzpicture}
@@ -90,9 +91,17 @@ con $$c=10^{10}+1$$
 
 Require: $$n \in \mathbb{Z}$$
 
-1: procedure ALGEJER2
+$$\text{1: procedure ALGEJER2}$$
 
-$\begin{array}{lc}2: & \text { for } i:=1 \text { to } n \text { do } \\ 3: & \text { for } j:=1 \text { to } i \text { do } \\ 4: & \text { for } k:=1 \text { to } j \text { do } \\ 5: & x:=i \cdot j \cdot k \\ 6: & \text { end for } \\ 7: & \text { end for } \\ 8: & \text { end for } \\ 9: & \text { end procedure }\end{array}$
+$$\begin{array}{lc}2: & \text { for } i:=1 \text { to } n \text { do } \\
+ 3: & \text { for } j:=1 \text { to } i \text { do } \\ 
+ 4: & \text { for } k:=1 \text { to } j \text { do } \\ 
+ 5: & x:=i \cdot j \cdot k \\ 
+ 6: & \text { end for } \\ 
+ 7: & \text { end for } \\ 
+ 8: & \text { end for } \\ 
+ 9: & \text { end procedure }
+ \end{array}$$
 
 Este algoritmo por ejemplo hace dos multiplicaciones para calcular el producto de 3 enteros y tiene 3 for anidados.
 
