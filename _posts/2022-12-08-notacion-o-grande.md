@@ -5,7 +5,7 @@ excerpt: "Encontrar algoritmos eficientes para hacer todo tipo de tareas es algo
 date: 2022-12-08
 classes: wide
 header:
-  teaser: /assets/images/residuos-cuadraticos/legendre.jpg  
+  teaser: /assets/images/notacion-o-grande/portada.png 
   teaser_home_page: true
   icon: 
 categories:
