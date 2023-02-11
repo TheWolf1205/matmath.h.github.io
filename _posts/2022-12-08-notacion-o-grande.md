@@ -32,7 +32,9 @@ En resumen, el número de residuos cuaráticos es a lo más $$\dfrac{p-1}{2}$$.
 
 Por tanto $$k^2-j^2$$ es múltiplo de $$p$$. Y como $$k^2-j^2=(k-j)(k+j)$$, entonces $$p$$ divide a uno de los factores, pero $$k+j$$ es menor que $$p$$, lueg es primo relativo con $$p$$.
 
-Finalmente, $$k-j$$ es múltiplo de $$p$$, así que $$j-k=0$$ ya que $$j-k<p$$. Se concluye que $$j=k$$, es decir, ningún par de cuadrados entre los primeros $$\dfrac{p-1}{2}$$ de $$1^2,2^2,\cdots,(p-1)^2$$ son congruentes entre sí.
+Finalmente, $$k-j$$ es múltiplo de $$p$$, así que $$j-k=0$$ ya que $$j-k< p$$.
+
+Se concluye que $$j=k$$, es decir, ningún par de cuadrados entre los primeros $$\dfrac{p-1}{2}$$ de $$1^2,2^2,\cdots,(p-1)^2$$ son congruentes entre sí.
 
 Y como entre esos primeros $$\dfrac{p-1}{2}$$ residuos no hay dos equiresiduales, entonces el número de residuos cuadráticos en $$1,2,\cdots,(p-1)$$ es a menos $$\dfrac{p-1}{2}$$. Luego hay exactamente $$\dfrac{p-1}{2}$$ residuos incongruentes.
 

@@ -19,7 +19,7 @@ Al estudiar los residuos cuadráticos notamos que estos tienen la siguiente sime
 
 ## Residuos cuadráticos módulo 7919
 
-<center> <img src="/assets/images/residuos-cuadraticos/Residuos.svg$$" width="65%" heigth="65%"> </center>
+<center> <img src="/assets/images/residuos-cuadraticos/Residuos.svg" width="65%" heigth="65%"> </center>
 <br>
 
 Aquí veremos la razón de la simetría e introduciremos el criterio de **Euler** y la ley de reciprocidad cuadrática.
