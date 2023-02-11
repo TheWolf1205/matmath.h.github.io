@@ -48,7 +48,7 @@ $$\tag*{$\blacksquare$}$$
 
 El pequeño teorema de **Fermat** nos dice que si $$mcd(a,p)=1$$, entonces $$a^{p-1}-1\equiv 0 (mód p)$$, como:
 
-$$a^{p-1}-1=(a^{\dfrac{p-1}{2}}-1)(a^{\dfrac{p-1}{2}}+1)$$
+$$a^{p-2}-1=(a^{\dfrac{p-1}{2}}-1)(a^{\dfrac{p-1}{2}}+1)$$
 
 tenemos que:
 
