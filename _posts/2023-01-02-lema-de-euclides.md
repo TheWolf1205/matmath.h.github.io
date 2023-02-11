@@ -25,7 +25,7 @@ Sean a y $$b \in \mathbb{Z}$$, si $$d=$$ m.c. $$d(a, b)$$ entonces exiten $$x$$ 
 
 ## Demostración:
 
-Demostración. Supongamos que $$d=(a, b)$$ y sea
+Supongamos que $$d=(a, b)$$ y sea
 
 $$
 S=\left\{z \in \mathbb{Z}^{+} \mid z=a x+b y \text { con } x, y \in \mathbb{Z}\right\} .
