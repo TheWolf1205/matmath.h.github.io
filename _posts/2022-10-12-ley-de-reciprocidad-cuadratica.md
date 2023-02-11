@@ -12,7 +12,9 @@ header:
 categories:
   - Teoría de Números
 tags:  
-  - X
+  - Residuos cuadráticos
+  - Ley de reciprocidad cuadrática
+  - Gauss
 ---
 
 Al estudiar los residuos cuadráticos notamos que estos tienen la siguiente simetría.
