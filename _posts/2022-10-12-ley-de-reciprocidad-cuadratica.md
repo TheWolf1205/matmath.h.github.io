@@ -60,8 +60,36 @@ $$a^{\dfrac{p-1}{2}}\equiv (a\mid p) (mód p)$$
 
 ## Demostración
 
-Por colocar ..
----
+Acabamos de ver que todo entero $$a$$ satisface alguna de las congruencias
+
+$$
+a^{\frac{p-1}{2}} \equiv 1(\bmod p) \quad \text { o, } \quad a^{\frac{p-1}{2}} \equiv-1(\bmod p) .
+$$
+
+Además no puede satisfacer simultáneamente las dos, pues en tal caso se tendría que $$p \mid 2$$, lo cual es imposible ya que $$p$$ es un primo impar.
+
+Si $$(a \mid p)=1$$, entonces existe una $$x_0$$ tal que $$x_0^2 \equiv a(\bmod p)$$ y por lo tanto
+
+$$
+a^{\frac{p-1}{2}} \equiv\left(x_0^2\right)^{\frac{p-1}{2}}=x_0^{p-1} \equiv 1(\bmod p),
+$$
+
+luego en este caso tenemos que $$a^{\frac{p-1}{2}} \equiv(a \mid p)(\bmod p)$$. El razonamiento anterior también nos muestra que todo residuo cuadrático módulo $p$ es solución de la congruencia
+
+$$
+x^{\frac{p-1}{2}} \equiv 1(\bmod p),
+$$
+
+y por el Teorema de Lagrange, concluimos que los $$\frac{p-1}{2}$$ residuos cuadráticos son precisamente todas las soluciones de esta congruencia. Por lo tanto, si un número $$a$$ no es residuo cuadrático, es decir si $$(a \mid p)=-1$$, entonces $$a$$ satisface la congruencia
+
+$$
+a^{\frac{p-1}{2}} \equiv-1(\bmod p),
+$$
+
+y también en este caso tenemos que $$a^{\frac{p-1}{2}} \equiv(a \mid p)(\bmod p)$$
+
+$$\tag*{$\blacksquare$}$$
+
 
 ## Teorema (Algunas propiedades)
 
