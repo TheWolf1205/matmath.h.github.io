@@ -51,6 +51,57 @@ tags:
 
 \end{tikzpicture}
 
-
 </script>
 </center>
+
+Sabemos que por el teorema de pitágoras al ser un triangulo rectángulo se tiene que $$a^2+b^2=c^2$$, entonces consideramos $$a$$ y $$b \neq 0$$ ya que ningún lado puede ser 0 Sabemos que el área de un triángulo es $$\frac{a b}{2}$$ y que el perímetro sería $$a+b+c$$, luego
+ 
+$$
+\frac{a b}{2}=a+b+c
+$$
+
+Luego como $$c^2=a^2+b^2$$
+
+$$
+\left(\frac{a b}{2}-a-b\right)^2=a^2+b^2
+$$
+
+Ahora expandiendo el cuadrado, tenemos que
+
+$$
+\left(\frac{a b}{2}-a-b\right)^2=\frac{a^2 b^2}{4}+a^2+b^2-a^2 b-a b^2+2 a b
+$$
+
+Y por tanto
+
+$$
+\frac{a^2 b^2}{4}-a^2 b-a b^2+2 a b=0
+$$
+
+Ahora factorizamos $a b$ y nos queda lo siguiente:
+
+$$
+a b\left(\frac{a b}{4}-a-b+2\right)=0
+$$
+
+Y como $$a$$ y $$b \neq 0$$, entonces $$a b \neq 0$$, de esto sigue que
+
+$$
+\frac{a b}{4}-a-b+2=0
+$$
+
+Luego $$a b-4 a-4 b+8=0$$, así $$a b-4 a-4 b+16=8$$ y factorizamos otra vez xd
+
+$$
+(a-4)(b-4)=8
+$$
+
+Y listo, resolvimos el problema, ¿por qué?, pues básicamente nos basta considerar las formas posibles de obtener 8 como producto de dos naturales y como conocemos la factorización de 8 , es fácil.
+
+Podemos tener $$4 * 2$$ o $$8 * 1$$, esto ya que $$2 * 4$$ y $$1 * 8$$ nos darían el mismo triangulo.
+
+Ahora, si $$(a-4)=4$$ entonces $$a=8$$ y si $$(b-4)=2$$ entonces $$b=6$$ y obtenemos por el teorema de pitágoras $$(8,10,6)$$
+
+Para el segundo consideramos $$(a-4)=8$$, entonces $$a=12$$ y si $$(b-4)=1$$, entonces $$b=5$$, obteniendo entonces $$(12,13,5)$$
+
+Y listo, concluimos que estos son los posibles casos.
