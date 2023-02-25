@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Algunas ecuaciones diofanticas 2
-excerpt: "esta ecuación diofantica no tiene soluciones no triviales y veremos que probar esto es equivalente a probar que la ecuación $$x^4+y^4=z^4$$ no tiene soluciones no triviales también. Además que $$x^n+y^m=z^n$$ no tiene soluciones no triviales si $$n$$ es una potencia de $$2$$ mayor que $$2$$."
+excerpt: "esta ecuación diofantica no tiene soluciones no triviales y veremos que probar esto es equivalente a probar que la ecuación $$x^4+y^4=z^4$$ no tiene soluciones no triviales también. Además que $$x^n+y^n=z^n$$ no tiene soluciones no triviales si $$n$$ es una potencia de $$2$$ mayor que $$2$$."
 date: 2023-01-04
 classes: wide
 header:
@@ -17,8 +17,8 @@ tags:
 
 ## La ecuación $$x^4+y^4=z^2$$
 
-esta ecuación diofantica no tiene soluciones no triviales y veremos que probar esto es equivalente a probar que la ecuación $$x^4+y^4=z^4$$ no tiene soluciones no triviales también.
-además que $$x^n+y^m=z^n$$ no tiene soluciones no triviales si $$n$$ es una potencia de $$2$$ mayor que $$2$$.
+Esta ecuación diofantica no tiene soluciones no triviales y veremos que probar esto es equivalente a probar que la ecuación $$x^4+y^4=z^4$$ no tiene soluciones no triviales también.
+Además que $$x^n+y^n=z^n$$ no tiene soluciones no triviales si $$n$$ es una potencia de $$2$$ mayor que $$2$$.
 
 Veamos entonces este primer resultado.
 
