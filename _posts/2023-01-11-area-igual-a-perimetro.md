@@ -15,77 +15,40 @@ tags:
   - Lema de Euclides
 ---
 
-## Lema de Euclides
 
-Si $$a \mid b c$$ y m.c.d. $$(a, b)=1$$, entonces $$a \mid c$$
 
-## Identidad de Bezout
 
-Sean a y $$b \in \mathbb{Z}$$, si $$d=$$ m.c. $$d(a, b)$$ entonces exiten $$x$$ y $$y \in \mathbb{Z}$$ tales que $$d=a x+b y$$
+<center><script type="text/tikz">
 
-## Demostración:
 
-Supongamos que $$d=(a, b)$$ y sea
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
-$$
-S=\left\{z \in \mathbb{Z}^{+} \mid z=a x+b y \text { con } x, y \in \mathbb{Z}\right\} .
-$$
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,472); %set diagram left start at 0, and has height of 472
 
-$$ S \neq \varnothing$$ puesto que $$z=a^2+b^2 \in S$$. Luego por el Principio del Buen Orden, $$S$$ posee un mínimo, llamémoslo $$g$$ que podemos escribir en la forma $$g=a x_0+b y_0$$. Probaremos que $$g=d=(a, b)$$. En efecto $$g$$ es divisor común de $$a$$ y $$b$$, pues si dividimos $$a$$ entre $$g$$ tenemos:
+%Shape: Grid [id:dp9210298878677159] 
+\draw  [draw opacity=0][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (473.43,128.86) -- (473.43,449.52) -- (94.1,449.52) -- cycle ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (94.1,449.52)(123.1,128.86) -- (123.1,449.52)(152.1,128.86) -- (152.1,449.52)(181.1,128.86) -- (181.1,449.52)(210.1,128.86) -- (210.1,449.52)(239.1,128.86) -- (239.1,449.52)(268.1,128.86) -- (268.1,449.52)(297.1,128.86) -- (297.1,449.52)(326.1,128.86) -- (326.1,449.52)(355.1,128.86) -- (355.1,449.52)(384.1,128.86) -- (384.1,449.52)(413.1,128.86) -- (413.1,449.52)(442.1,128.86) -- (442.1,449.52)(471.1,128.86) -- (471.1,449.52) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (473.43,128.86)(94.1,157.86) -- (473.43,157.86)(94.1,186.86) -- (473.43,186.86)(94.1,215.86) -- (473.43,215.86)(94.1,244.86) -- (473.43,244.86)(94.1,273.86) -- (473.43,273.86)(94.1,302.86) -- (473.43,302.86)(94.1,331.86) -- (473.43,331.86)(94.1,360.86) -- (473.43,360.86)(94.1,389.86) -- (473.43,389.86)(94.1,418.86) -- (473.43,418.86)(94.1,447.86) -- (473.43,447.86) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  ;
+%Shape: Right Triangle [id:dp2427837281444376] 
+\draw  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=0.51 ] (100.37,213.37) -- (319.54,373.01) -- (204.91,428.67) -- cycle ;
+%Shape: Right Triangle [id:dp7742542755528874] 
+\draw  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=0.56 ] (466.64,377.85) -- (237.75,189.23) -- (337.85,137.77) -- cycle ;
 
-$$
-a=q g+r \text { con } 0 \leq r<g
-$$
+% Text Node
+\draw (276.67,149.52) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {5};
+% Text Node
+\draw (403.33,235.19) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {12};
+% Text Node
+\draw (305.33,265.19) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {13};
+% Text Node
+\draw (203.33,275.86) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {10};
+% Text Node
+\draw (134,312.19) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {8};
+% Text Node
+\draw (256,404.52) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {6};
 
-luego,
 
-$$
-\begin{aligned}
-r & =a-q g \\
-& =a-q\left(a x_0+b y_0\right) \\
-& =a\left(1-q x_0\right)+b\left(-q y_0\right) \\
-& =a x^{\prime}+b y^{\prime} .
-\end{aligned}
-$$
+\end{tikzpicture}
 
-Ahora, si $$r \neq 0$$ entonces $$r \in S$$ lo cual contradice la minimalidad de $$g$$, en consecuencia $$r=0$$ y así $$g \mid a$$. Análogamente se verifica que $$g \mid b$$.
 
-Como $$d=(a, b)$$ y $$g$$ es un divisor común entonces $$g \leq d$$.
-
-De otra parte $$g=a x_0+b y_0$$ y $$d \mid a$$ y $$d \mid b$$ luego $$d \mid g$$ y como ambos números son positivos $$d \leq g$$ y en consecuencia $$d=g$$.
-
-$$\tag*{$\blacksquare$}$$
-
-## Demostración (Lema de Euclides):
-
-Tenemos que m.c.d. $$(a, b)=1$$, por la identidad de Bezout existen $$x$$ y $$y \in \mathbb{Z}$$ tal que $$1=a x+b y$$, luego $$c=c \cdot a x+$$ c. by, luego a $$\mid c \cdot a x$$ y como a $$\mid$$ bc entonces a $$\mid c \cdot b y)$$ por tanto a $$\mid c$$
-
-$$\tag*{$\blacksquare$}$$
-
-Veamos ahora un ejemplo de ejercicio clásico cuya prueba depende fuertemente del Lema de Euclides.
-
-## Ejercicio:
-
-Demuestre que si $$\frac{a}{b}+\frac{c}{d}=n$$ con $$n \in \mathbb{Z}$$ y m.c.d. $$(a, b)=$$ m.c.d. $$(c, d)=1$$, entonces $$ \mid b \mid = \mid d \mid $$
-
-Es decir que si la suma de dos fracciones irreducibles es un número entero entonces el valor absoluto de sus denominadores es igual.
-
-Los invito a pensar en la solución antes de leerla :v
-
-## Solución:
-
-Para la solución necesitaremos este teorema:
-
-## Teorema:
-
-Sean a y $$b \in \mathbb{Z}$$, si $$a \mid b$$ y $$b \mid a$$, entonces $$ \mid a \mid = \mid b \mid $$
-
-Esto se puede probar fácilmente de la definición de divisibilidad y usando que si $$a \mid b$$ y $$b \neq 0$$ entonces $$ \mid a \mid  \leq \mid b \mid $$ .
-
-$$2 \mid 4 $$ y $$4 \neq 0$$ entonces $$  \mid 2 \mid \leq  \mid 4 \mid $$
-
-## Demostración:
-
-Tenemos que $$\dfrac{a d+b c}{b d}=n$$, con $$n \in \mathbb{Z}$$, entonces b y d dividen a $$a d+b c$$, luego $$b \mid$$ ad y $$d \mid b c$$ y como m.c.d. $$(a, b)=m . c . d .(c, d)=1$$, por el lema de Euclides sigue que $$b \mid d$$ y $$d \mid b$$, así $$ \mid b \mid = \mid d \mid $$.
-
-$$\tag*{$\blacksquare$}$$
+</script>
+</center>
