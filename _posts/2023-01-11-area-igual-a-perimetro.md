@@ -54,6 +54,8 @@ tags:
 </script>
 </center>
 
+
+
 Sabemos que por el teorema de pitágoras al ser un triangulo rectángulo se tiene que $$a^2+b^2=c^2$$, entonces consideramos $$a$$ y $$b \neq 0$$ ya que ningún lado puede ser 0 Sabemos que el área de un triángulo es $$\frac{a b}{2}$$ y que el perímetro sería $$a+b+c$$, luego
  
 $$
