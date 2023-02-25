@@ -11,8 +11,8 @@ header:
 categories:
   - Teoría de Números
 tags:  
-  - Teorema chino del Residuo
-  - Lema de Euclides
+  - Teoría de Números
+  - Geometría
 ---
 
 
@@ -21,30 +21,32 @@ tags:
 <center><script type="text/tikz">
 
 
+
+
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,472); %set diagram left start at 0, and has height of 472
 
 %Shape: Grid [id:dp9210298878677159] 
-\draw  [draw opacity=0][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (473.43,128.86) -- (473.43,449.52) -- (94.1,449.52) -- cycle ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (94.1,449.52)(123.1,128.86) -- (123.1,449.52)(152.1,128.86) -- (152.1,449.52)(181.1,128.86) -- (181.1,449.52)(210.1,128.86) -- (210.1,449.52)(239.1,128.86) -- (239.1,449.52)(268.1,128.86) -- (268.1,449.52)(297.1,128.86) -- (297.1,449.52)(326.1,128.86) -- (326.1,449.52)(355.1,128.86) -- (355.1,449.52)(384.1,128.86) -- (384.1,449.52)(413.1,128.86) -- (413.1,449.52)(442.1,128.86) -- (442.1,449.52)(471.1,128.86) -- (471.1,449.52) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (473.43,128.86)(94.1,157.86) -- (473.43,157.86)(94.1,186.86) -- (473.43,186.86)(94.1,215.86) -- (473.43,215.86)(94.1,244.86) -- (473.43,244.86)(94.1,273.86) -- (473.43,273.86)(94.1,302.86) -- (473.43,302.86)(94.1,331.86) -- (473.43,331.86)(94.1,360.86) -- (473.43,360.86)(94.1,389.86) -- (473.43,389.86)(94.1,418.86) -- (473.43,418.86)(94.1,447.86) -- (473.43,447.86) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  ;
+\draw  [draw opacity=0][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (400.99,128.86) -- (400.99,388.29) -- (94.1,388.29) -- cycle ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (94.1,388.29)(117.56,128.86) -- (117.56,388.29)(141.02,128.86) -- (141.02,388.29)(164.48,128.86) -- (164.48,388.29)(187.94,128.86) -- (187.94,388.29)(211.4,128.86) -- (211.4,388.29)(234.87,128.86) -- (234.87,388.29)(258.33,128.86) -- (258.33,388.29)(281.79,128.86) -- (281.79,388.29)(305.25,128.86) -- (305.25,388.29)(328.71,128.86) -- (328.71,388.29)(352.18,128.86) -- (352.18,388.29)(375.64,128.86) -- (375.64,388.29)(399.1,128.86) -- (399.1,388.29) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (94.1,128.86) -- (400.99,128.86)(94.1,152.32) -- (400.99,152.32)(94.1,175.78) -- (400.99,175.78)(94.1,199.24) -- (400.99,199.24)(94.1,222.7) -- (400.99,222.7)(94.1,246.17) -- (400.99,246.17)(94.1,269.63) -- (400.99,269.63)(94.1,293.09) -- (400.99,293.09)(94.1,316.55) -- (400.99,316.55)(94.1,340.01) -- (400.99,340.01)(94.1,363.48) -- (400.99,363.48)(94.1,386.94) -- (400.99,386.94) ; \draw  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  ;
 %Shape: Right Triangle [id:dp2427837281444376] 
-\draw  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=0.51 ] (100.37,213.37) -- (319.54,373.01) -- (204.91,428.67) -- cycle ;
+\draw  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=0.51 ] (99.17,197.23) -- (276.48,326.38) -- (183.75,371.41) -- cycle ;
 %Shape: Right Triangle [id:dp7742542755528874] 
-\draw  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=0.56 ] (466.64,377.85) -- (237.75,189.23) -- (337.85,137.77) -- cycle ;
+\draw  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=0.56 ] (395.5,330.3) -- (210.32,177.7) -- (291.3,136.06) -- cycle ;
 
 % Text Node
-\draw (276.67,149.52) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {5};
+\draw (240.85,144.05) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {5};
 % Text Node
-\draw (403.33,235.19) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {12};
+\draw (342.65,213.36) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {12};
 % Text Node
-\draw (305.33,265.19) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {13};
+\draw (263.37,237.63) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {13};
 % Text Node
-\draw (203.33,275.86) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {10};
+\draw (180.85,246.26) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {10};
 % Text Node
-\draw (134,312.19) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {8};
+\draw (125.42,275.65) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {8};
 % Text Node
-\draw (256,404.52) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {6};
+\draw (224.13,350.35) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,opacity=1 ] [align=left] {6};
 
 
 \end{tikzpicture}
