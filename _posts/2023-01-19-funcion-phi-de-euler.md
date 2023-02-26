@@ -17,7 +17,7 @@ tags:
 
 
 <center>
-<img src="/assets/images/funcion-phi-de-euler/Eulertotient.jpg" width="50%" heigth="50%"> 
+<img src="/assets/images/funcion-phi-de-euler/Eulertotient.jpg" width="70%" heigth="70%"> 
 </center>
 
 
