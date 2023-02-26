@@ -59,7 +59,7 @@ $$\tag*{$\blacksquare$}$$
 
 Lo que hemos probado es que cualquier polinomio con estas condiciones, siempre generará una infinita cantidad de números compuestos, por lo tanto es imposible que nos genere solamente números primos.
 
-El primero en demostrar esto fue **Golbach** en $$1772$$, **Legendre** también demostró la imposibilidad de una función algebraica racional que siempre genere números primos. <br> Pero esto ocurre para polinomio de una variable, en caso de tener más, sí es posible, veamos el siguiente teorema:
+El primero en demostrar esto fue **Goldbach** en $$1772$$, **Legendre** también demostró la imposibilidad de una función algebraica racional que siempre genere números primos. <br> Pero esto ocurre para polinomio de una variable, en caso de tener más, sí es posible, veamos el siguiente teorema:
 
 ## Teorema (Jones, Sato, Wada y Wiens, 1976)
 
