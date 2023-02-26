@@ -32,9 +32,11 @@ Para entender este resultado primero debemos conocer la función $$\zeta$$.
 
 $$
 \begin{align*}
-\zeta(s)&=1+\dfrac{1}{2^s}+\dfrac{1}{3^s}+\dfrac{1}{4^s}+\dfrac{1}{5^s}+\dfrac{1}{6^s}+\cdots &&\text{ Donde $s$ es un número complejo}
+\zeta(s)&=1+\dfrac{1}{2^s}+\dfrac{1}{3^s}+\dfrac{1}{4^s}+\dfrac{1}{5^s}+\dfrac{1}{6^s}+\cdots
 \end{align*}
 $$
+
+Donde $s$ es un número complejo.
 
 **Euler** se dio cuenta que si multiplicaba a ambos lados de la igualdad por $$\dfrac{1}{2^s}$$ la función $$\zeta$$ tomaba la siguiente forma:
 

@@ -46,7 +46,7 @@ Podemos ver a partir de este teorema lo siguiente:
 
 $$3=2^2-1$$, es decir un primo de Mersenne, entonces $$\left(2^1\right) \cdot\left(2^2-1\right)=2 \cdot 3=6$$, que sabemos que es un número perfecto.
 
-Análogamente podemos ver que si $n=3,2^3-1=7$, por lo tanto por el teorema anterior:
+Análogamente podemos ver que si $$n=3,2^3-1=7$$, por lo tanto por el teorema anterior:
 
 $$\left(2^2\right) \cdot\left(2^3-1\right)=4 \cdot 7=28$$ y 28 es un número perfecto
 Por lo tanto, podemos ver que siempre que tengamos un primo de Mersenne podemos generar a partir de él un número perfecto.

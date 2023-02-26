@@ -64,14 +64,14 @@ $$
 \end{aligned}
 $$
 
-Debería ser claro que $$r_n=$$ m.c.d$$\left(r_n, r_{n-1}\right)$$, luego $$r_n=m c . d\left(r_{n-1}, r_{n-2}\right)$$ y así es fácil ver que podemos concluir que m.c.d$$(a, b)=r_n$$.
+Debería ser claro que $$r_n=$$ m.c.d$$\left(r_n, r_{n-1}\right)$$, luego $$r_n=m.c.d\left(r_{n-1}, r_{n-2}\right)$$ y así es fácil ver que podemos concluir que m.c.d$$(a, b)=r_n$$.
 
 ## Teorema de Bézout
 
 Sean $$a, b \in \mathbb{Z}$$ distintos de 0 , entonces se tiene que existen $$x, y \in \mathbb{Z}$$ tales que:
 
 $$
-a x+b y=m \cdot c . d(a, b)
+a x+b y=m.c.d(a, b)
 $$
 
 (La demostración de este teorema la dejaremos para futuros post en los que estudiemos el comportamiento de algunos conjuntos y propiedades especiales en los números naturales).

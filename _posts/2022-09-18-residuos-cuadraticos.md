@@ -79,7 +79,7 @@ $$
 f(x) \equiv 0(\operatorname{mód} p)
 $$
 
-tiene a lo más $n$ soluciones incongruentes módulo p.
+tiene a lo más $$n$$ soluciones incongruentes módulo p.
 
 Luego la congruencia anterior tiene a lo más dos soluciones incongruentes módulo $$p$$.
 

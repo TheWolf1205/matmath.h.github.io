@@ -120,7 +120,8 @@ x_1^{\prime}(t) & x_2^{\prime}(t)
 \end{array}\right|+\left|\begin{array}{cc}
 x_1(t) & x_2(t) \\
 x_1^{\prime \prime}(t) & x_2^{\prime \prime}(t)
-\end{array}\right|=\left|\begin{array}{cc}
+\end{array}\right|\\
+&=\left|\begin{array}{cc}
 x_1(t) & x_2(t) \\
 x_1^{\prime \prime}(t) & x_2^{\prime \prime}(t)
 \end{array}\right| \\

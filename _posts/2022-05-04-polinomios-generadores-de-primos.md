@@ -39,7 +39,7 @@ Estos polinomios nos generan $$49,45,29$$ y $$16$$ números primos, en cada caso
 
 Pero los polinomios no son la única forma de obtener números primos, por ejemplo tenemos la siguiente expresión:
 
-$$a(n)= \rfloor \dfrac{Res(n!,n+1)}{n}\lfloor (n-1) + 2$$
+$$a(n)= \lfloor \dfrac{Res(n!,n+1)}{n}\rfloor (n-1) + 2$$
 
 Donde $$Res(n!,n+1)$$ denota el resto de la división entera entre $$n!$$ y $$n+1$$, esta expresión genera números primos para todo entero positivo $$n$$, el problema es que tiene un gran costo computacional porque implica el cálculo de un factorial. Siendo así, buscar polinomios o expresiones diferentes que nos generen primos es una gran solución para disminuir la complejidad del cálculo. Por otro lado, es imposible que un polinomio con coeficientes enteros, de una variable y entrada en los enteros nos genere siempre números primos, ya que:
 

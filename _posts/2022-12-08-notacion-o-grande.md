@@ -124,7 +124,7 @@ Note que esto es un abuso de notación tremendo, pero lo importante es que sirve
 Asumiendo que una operación toma un nanosegundo ( $$10^{-9}$$ segundo), comparamos el tiempo computacional para diferentes ordenes de una función $$f(n)$$ a continuación.
 
 $$
-\begin{array}{|c||c|c|c|c|}
+\tiny{\begin{array}{|c||c|c|c|c|}
 \hline f(n) & n=10 & n=10^3 & n=10^5 & n=10^7 \\
 \hline \log _2(n) & 3,3 * 10^{-9} \mathrm{~s} & 10^{-8} \mathrm{~s} & 1,7 * 10^{-8} \mathrm{~s} & 2,3 * 10^{-8} \mathrm{~s} \\
 n & 10^{-8} \mathrm{~s} & 10^{-6} \mathrm{~s} & 0,0001 \mathrm{~s} & 0,01 \mathrm{~s} \\
@@ -133,7 +133,7 @@ n^2 & 10^{-7} \mathrm{~s} & 0,0010 \mathrm{~s} & 10 \mathrm{~s} & 27 \text { hor
 n^3 & 10^{-6} \mathrm{~s} & 1 \mathrm{~s} & 11,5 \text { días } & 31709 \text { años } \\
 2^n & 10^{-6} \mathrm{~s} & - & - & - \\
 \hline
-\end{array}
+\end{array}}
 $$
 
 Luego el orden logaritmico sería lo más ideal si queremos que nuestros programas compilen rápido y el exponencial el peor, para tareas pesadas nos podemos morir sin conocer el resultado.
