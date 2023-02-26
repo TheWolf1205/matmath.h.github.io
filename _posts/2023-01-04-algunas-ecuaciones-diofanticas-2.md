@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Algunas ecuaciones diofanticas 2
-excerpt: "esta ecuación diofantica no tiene soluciones no triviales y veremos que probar esto es equivalente a probar que la ecuación $$x^4+y^4=z^4$$ no tiene soluciones no triviales también. Además que $$x^n+y^n=z^n$$ no tiene soluciones no triviales si $$n$$ es una potencia de $$2$$ mayor que $$2$$."
+excerpt: "Esta ecuación diofantica no tiene soluciones no triviales y veremos que probar esto es equivalente a probar que la ecuación $$x^4+y^4=z^4$$ no tiene soluciones no triviales también. Además que $$x^n+y^n=z^n$$ no tiene soluciones no triviales si $$n$$ es una potencia de $$2$$ mayor que $$2$$."
 date: 2023-01-04
 classes: wide
 header:
@@ -9,10 +9,10 @@ header:
   teaser_home_page: true
   icon: 
 categories:
-  - X
+  - Teoría de Números
 tags:  
-  - X
-  - X
+  - Teoría de Números
+  - Ecuaciones diofánticas
 ---
 
 ## La ecuación $$x^4+y^4=z^2$$
@@ -100,4 +100,14 @@ Finalmente veamos que si $$n$$ es una potencia de $$2$$ mayor que $$2$$, entonce
 
 ## Demostración
 
-Si $$n$$ es una potencia mayor que $$2$$, entonces $$n=2^\ell$$, con $$\ell \geq 2$$.
+Si $$n$$ es una potencia mayor que 2 , entonces $$n=2^{\ell}$$, con $$\ell \geq 2$$. Supongamos que la ecuación $$x^n+y^n=z^n$$ tiene solución, entonces $$x^{2^{\ell}}+y^{2^{\ell}}=z^{2^{\ell}}$$ tiene solución, luego
+
+$$
+\left(x^{2^{l-2}}\right)^4+\left(y^{2^{l-2}}\right)^4=\left(z^{2^{l-2}}\right)^4
+$$
+
+tiene solución entera, lo cual contradice el teorema anterior.
+
+Es sorprendente ver lo lejos que podemos llegar a veces en matemáticas con tan pocas herramientas.
+
+
