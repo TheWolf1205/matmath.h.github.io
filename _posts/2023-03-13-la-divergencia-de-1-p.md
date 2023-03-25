@@ -126,4 +126,4 @@ Y como $$\operatorname{lím}_{x \rightarrow \infty}(\log (x))=\infty$$, entonce
 
 $$\tag*{$\blacksquare$}$$
 
-Ahora, como $$\sum_{p \in \mathcal{P}}\dfrac{1}{p}$$ diverge, entonces los primos son infinitos.
+Ahora, como $$\sum_{p \in \mathcal{P}}\dfrac{1}{p}$$ diverge, entonces los primos son infinitos
