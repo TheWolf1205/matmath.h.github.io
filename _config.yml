@@ -19,12 +19,12 @@ locale                   : "es-ES"
 title                    : "MatMath.h"
 title_separator          : "-"
 name                     : "MatMath.h"
-description              : "Posts about mathemathics"
-url                      : "https://snowscan.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Divulgación matemática"
+url                      : "https://matmathh.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "slemire/slemire.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "matmathh/matmathh.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 logo                     : "/assets/images/masthead.png"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "favicon.ico" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -102,12 +102,12 @@ analytics:
 # Site Author
 author:
   name             : "MatMath.h"
-  avatar           : "/assets/images/avatar.png"
-  bio              : "We r Maths students 🦉.<br>Divulgative posts of mathematics, particularly in number theory, algebra and related topics."
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : "Somos estudiantes de matemáticas <link href='https://emoji-css.afeld.me/emoji.css' rel='stylesheet'><i class='em em-owl' aria-role='presentation' aria-label='BIRD'></i>.<br>Post divulgativos de matemáticas, particularmente de teoría de números, álgebra y temas relacionados."
   location         : "Colombia"
-  email            : #"info@snowscan.io"
+  email            : "matm4th.h@gmail.com"
   uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
+  home             : matmathh.github.io # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
