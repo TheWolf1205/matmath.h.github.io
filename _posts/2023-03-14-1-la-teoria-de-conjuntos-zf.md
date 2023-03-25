@@ -21,7 +21,7 @@ tags:
 
 <center><img src="/assets/images/1-la-teoria-de-conjuntos-zf/vacio.png" width="30%" heigth="30%"> </center>
 
-A través de la historia de las matemáticas algunas mentes maestras han intentado fundamentar las bases de las mismas intentando reducir estás a problemas aparentemente "sencillos" de comprender. No obstante, a pesar de tener que reducir las matemáticas a sistemas axiomáticos, matemáticos cómo Cantor, Frege, Rusell, Zermelo, Fraenkel y otros muchos más se tomaron la tarea de comprimir el entendimiento de las matemáticas a modelos conjuntistas.
+A través de la historia de las matemáticas algunas mentes maestras han intentado fundamentar las bases de las mismas intentando reducir estas a problemas aparentemente "sencillos" de comprender. No obstante, a pesar de tener que reducir las matemáticas a sistemas axiomáticos, matemáticos cómo Cantor, Frege, Rusell, Zermelo, Fraenkel y otros muchos más se tomaron la tarea de comprimir el entendimiento de las matemáticas a modelos conjuntistas.
 
 <center>
   <table>
